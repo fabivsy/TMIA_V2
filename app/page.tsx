@@ -2,122 +2,16 @@ import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import MapCard from "@/components/MapCard";
 import Footer from "@/components/Footer";
+import { MAP_REGISTRY } from "@/data/registry";
 
-const MAPS = [
-  {
-    title: "Creadores",
-    description: "Herramientas de IA para creación de contenido, diseño y arte.",
-    href: "https://creadores.tumapaia.com/",
-    gradientClass: "bg-gradient-creadores",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Mapa IA: Creadores",
-      "description": "Curation of AI tools for content creators and designers.",
-      "provider": { "@type": "Organization", "name": "Tu Mapa IA" }
-    }
-  },
-  {
-    title: "Productividad",
-    description: "Herramientas de IA para eficiencia y ahorro de tiempo.",
-    href: "https://productividad.tumapaia.com/",
-    gradientClass: "bg-gradient-productividad",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Mapa IA: Productividad",
-      "description": "Curation of AI tools for productivity and efficiency.",
-      "provider": { "@type": "Organization", "name": "Tu Mapa IA" }
-    }
-  },
-  {
-    title: "Gratis",
-    description: "Una lista curada de herramientas de IA con planes gratuitos.",
-    href: "https://gratis.tumapaia.com/",
-    gradientClass: "bg-gradient-gratis",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Mapa IA: Gratis",
-      "description": "Curation of free AI tools and platforms.",
-      "provider": { "@type": "Organization", "name": "Tu Mapa IA" }
-    }
-  },
-  {
-    title: "Negocios",
-    description: "Herramientas de IA para crecimiento, marketing y ventas.",
-    href: "https://negocios.tumapaia.com/",
-    gradientClass: "bg-gradient-negocios",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Mapa IA: Negocios",
-      "description": "Curation of AI tools for business growth and marketing.",
-      "provider": { "@type": "Organization", "name": "Tu Mapa IA" }
-    }
-  },
-  {
-    title: "Viajeros",
-    description: "IA para planificar viajes, encontrar ofertas e explorar el mundo.",
-    href: "https://viajeros.tumapaia.com/",
-    gradientClass: "bg-gradient-viajeros",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Mapa IA: Viajeros",
-      "description": "Curation of AI tools for travelers and trip planning.",
-      "provider": { "@type": "Organization", "name": "Tu Mapa IA" }
-    }
-  },
-  {
-    title: "Finanzas",
-    description: "Herramientas de IA para inversión, gestión y crecimiento financiero.",
-    href: "https://finanzas.tumapaia.com/",
-    gradientClass: "bg-gradient-finanzas",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Mapa IA: Finanzas",
-      "description": "Curation of AI tools for financial management and investment.",
-      "provider": { "@type": "Organization", "name": "Tu Mapa IA" }
-    }
-  },
-  {
-    title: "No-Code",
-    description: "Construye apps, webs y automations sin escribir código.",
-    href: "https://nocode.tumapaia.com/",
-    gradientClass: "bg-gradient-nocode",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Mapa IA: No-Code",
-      "description": "Curation of AI-powered no-code development tools.",
-      "provider": { "@type": "Organization", "name": "Tu Mapa IA" }
-    }
-  },
-  {
-    title: "Académicos",
-    description: "Herramientas de IA para estudio, investigación y escritura.",
-    href: "https://academicos.tumapaia.com/",
-    gradientClass: "bg-gradient-academicos",
-    schema: {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "name": "Mapa IA: Académicos",
-      "description": "Curation of AI tools for academic research and study.",
-      "provider": { "@type": "Organization", "name": "Tu Mapa IA" }
-    }
-  },
-];
-
-
+// Re-render trigger: Consolidated Registry 2.0
 export default function Home() {
   return (
     <>
       <Navbar />
       <main className="flex-grow">
         <Hero />
-
+        
         {/* Maps Section */}
         <section id="mapas" className="py-32 bg-brand-dark relative overflow-hidden">
           <div className="container mx-auto px-6">
@@ -132,9 +26,22 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
-              {MAPS.map((map) => (
-                <MapCard key={map.title} {...map} />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+              {MAP_REGISTRY.map((map) => (
+                <MapCard
+                  key={map.id}
+                  title={map.title}
+                  description={map.description}
+                  href={`/${map.slug}`}
+                  gradientClass={map.gradientClass}
+                  schema={{
+                    "@context": "https://schema.org",
+                    "@type": "Service",
+                    "name": `Mapa IA: ${map.title}`,
+                    "description": map.description,
+                    "provider": { "@type": "Organization", "name": "Tu Mapa IA" }
+                  }}
+                />
               ))}
             </div>
           </div>
