@@ -1,0 +1,97 @@
+/*
+  Tu Mapa IA: Main Stylesheet v2.4 (Single Source of Truth)
+  - AUTHOR: AI Lead
+  - CHANGES:
+    - CONSOLIDATION: All variables are now self-contained in this file. 'variables.css' is obsolete.
+    - NEW: Added dark gradient overlay to Map Cards for premium look and improved text readability.
+    - NEW: Applied brand accent color to footer social & legal links on hover.
+    - CRITICAL FIX: Fully functional hamburger menu logic.
+*/
+
+/* --- LIBRARIES --- */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css');
+
+/* --- VARIABLES (Single Source of Truth) --- */
+:root {
+    --bg-dark: #121212;
+    --card-bg: #1a1a1a;
+    --footer-bg: #0E0E10;
+    --text-light: #e0e0e0;
+    --text-dark: #212529;
+    --text-muted: #a0a0a0;
+    --accent-primary: #FFC107;
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+/* --- GENERIC SETUP --- */
+body { margin: 0; background-color: var(--bg-dark); }
+.entry-content { padding: 0 !important; max-width: none !important; }
+.tumapa-container { max-width: 1200px; margin: 0 auto; text-align: center; }
+
+.tumapa-homepage-container {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* All other styles remain the same... */
+.tumapa-nav { background-color: rgba(18, 18, 18, 0.85); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px); padding: 1rem 1.5rem; position: sticky; top: 0; z-index: 1000; border-bottom: 1px solid var(--border-color); }
+.tumapa-nav-container { display: flex; justify-content: space-between; align-items: center; max-width: 1200px; margin: 0 auto; }
+.tumapa-nav-logo a { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+.tumapa-nav-logo svg { height: 32px; width: auto; }
+.tumapa-nav-links { display: flex; gap: 2rem; align-items: center; }
+.tumapa-nav-links a { color: var(--text-light); text-decoration: none; font-weight: 600; transition: color 0.3s ease; }
+.tumapa-nav-links a:hover { color: var(--accent-primary); }
+.tumapa-hero { display: flex; flex-direction: column; justify-content: center; align-items: center; min-height: 90vh; text-align: center; padding: 4rem 1.5rem; position: relative; background-color: #090a0f; background-image: linear-gradient(rgba(18, 18, 18, 0.6), rgba(18, 18, 18, 0.8)), url('https://tumapaia.com/wp-content/uploads/2025/07/hero_pic_final.webp'); background-size: cover; background-position: center; }
+.tumapa-hero-content h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); font-weight: 700; margin-bottom: 0.5rem; color: #fff; line-height: 1.2; text-shadow: 0 2px 15px rgba(0,0,0,0.6); }
+.tumapa-hero-content .philosophy { font-size: clamp(1rem, 2.5vw, 1.25rem); color: var(--text-light); opacity: 0.9; max-width: 600px; margin: 1rem auto 2.5rem; }
+.tumapa-cta-button { display: inline-block; background-color: var(--accent-primary); color: var(--text-dark); font-size: 1.1rem; font-weight: 700; padding: 1rem 3rem; border-radius: 50px; text-decoration: none; transition: transform 0.3s ease, box-shadow 0.3s ease; box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); }
+.tumapa-cta-button:hover { transform: scale(1.05); box-shadow: 0 8px 30px rgba(255, 193, 7, 0.35); }
+.tumapa-maps-section { padding: 6rem 1.5rem; }
+.tumapa-maps-section h2 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; margin-bottom: 1rem; color: #fff; }
+.tumapa-maps-section .section-subtitle { font-size: 1.1rem; color: var(--text-light); opacity: 0.7; max-width: 700px; margin: 0 auto 4rem; }
+.tumapa-maps-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; text-align: left; }
+.tumapa-map-card { display: block; background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 12px; padding: 2.5rem; text-decoration: none; color: var(--text-light); transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease; overflow: hidden; }
+.tumapa-map-card:hover { transform: translateY(-10px); border-color: var(--accent-primary); box-shadow: 0 10px 30px rgba(0,0,0,0.4); }
+.tumapa-map-card h3 { font-size: 1.5rem; font-weight: 600; color: #fff; margin-top: 0; margin-bottom: 0.75rem; }
+.tumapa-map-card p { margin-bottom: 0; opacity: 0.8; }
+.card-creadores { background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 70%), linear-gradient(135deg, #7C3AED 0%, #0EA5E9 100%); }
+.card-productividad { background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 70%), linear-gradient(135deg, #007BFF 0%, #00BFFF 100%); }
+.card-gratis { background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 70%), linear-gradient(135deg, #10B981 0%, #06B6D4 100%); }
+.card-negocios { background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 70%), linear-gradient(135deg, #FFB700 0%, #FF8C00 100%); }
+.card-viajeros { background: linear-gradient(to top, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 70%), linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%); }
+.tumapa-mission-section { padding: 6rem 1.5rem; background-color: #1a1a1a; border-top: 1px solid var(--border-color); border-bottom: 1px solid var(--border-color); }
+.mission-container { max-width: 900px; margin: 0 auto; text-align: center; }
+.mission-container .icon { color: var(--accent-primary); font-size: 3rem; margin-bottom: 1.5rem; }
+.mission-container h2 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 700; color: #fff; margin-bottom: 1.5rem; }
+.mission-container p { font-size: 1.15rem; color: var(--text-muted); max-width: 750px; margin: 0 auto; line-height: 1.8; }
+.tumapa-newsletter-section { background-color: #f8fafc; color: var(--text-dark); padding: 5rem 1.5rem; }
+.tumapa-newsletter-section h2 { font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 700; margin-bottom: 1rem; }
+.tumapa-newsletter-section .section-subtitle { font-size: 1.1rem; color: #4b5563; max-width: 600px; margin: 0 auto 2.5rem; }
+.tumapa-newsletter-form { display: flex; flex-direction: column; gap: 1rem; max-width: 500px; margin: 0 auto; }
+@media (min-width: 768px) { .tumapa-newsletter-form { flex-direction: row; } }
+.tumapa-newsletter-form input { flex-grow: 1; padding: 0.9rem 1.2rem; border-radius: 8px; border: 2px solid #e5e7eb; font-family: 'Poppins', sans-serif; font-size: 1rem; transition: border-color 0.3s, box-shadow 0.3s; }
+.tumapa-newsletter-form input:focus { outline: none; border-color: var(--accent-primary); box-shadow: 0 0 0 3px rgba(255, 193, 7, 0.3); }
+.tumapa-newsletter-form button { background: var(--accent-primary); color: var(--text-dark); font-size: 1rem; font-weight: 700; padding: 0.9rem 2rem; border-radius: 8px; border: none; cursor: pointer; transition: transform 0.3s, box-shadow 0.3s; white-space: nowrap; }
+.tumapa-newsletter-form button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,0.15); }
+.tumapa-footer { background-color: var(--footer-bg); color: var(--text-muted); padding: 4rem 1.5rem 2rem; text-align: center; }
+.tumapa-footer h3 { color: var(--text-light); font-size: 1.75rem; font-weight: 700; margin: 0 0 0.5rem; }
+.tumapa-footer-tagline { color: var(--text-muted); margin-bottom: 2rem; }
+.tumapa-footer-socials { display: flex; justify-content: center; gap: 1.5rem; margin-bottom: 2.5rem; }
+.tumapa-footer-socials a { color: var(--text-muted); font-size: 1.5rem; transition: color 0.3s ease, transform 0.3s ease; }
+.tumapa-footer-socials a:hover { color: var(--accent-primary); transform: scale(1.1); }
+.tumapa-footer-legal { border-top: 1px solid var(--border-color); padding-top: 2rem; font-size: 0.9rem; }
+.tumapa-footer-legal p { margin: 0 0 0.5rem; }
+.tumapa-footer-legal a { color: var(--text-muted); text-decoration: none; transition: color 0.3s ease; margin: 0 0.5rem; }
+.tumapa-footer-legal a:hover { color: var(--accent-primary); }
+.tumapa-hamburger { display: none; background: none; border: none; color: #FFFFFF; font-size: 24px; cursor: pointer; padding: 10px; z-index: 1001; }
+@media (max-width: 768px) {
+    .tumapa-hamburger { display: block; }
+    .tumapa-nav-links { display: none; position: absolute; top: 0; left: 0; width: 100%; height: 100vh; background-color: rgba(18, 20, 25, 0.98); flex-direction: column; justify-content: center; align-items: center; gap: 30px; }
+    .tumapa-nav-links.is-active { display: flex; }
+    .tumapa-nav-links a { font-size: 2rem; font-weight: 500; color: #FFFFFF; }
+    .tumapa-hamburger.is-active .fa-bars { display: none; }
+    .tumapa-hamburger.is-active::before { content: '\f00d'; font-family: 'Font Awesome 6 Free'; font-weight: 900; }
+}

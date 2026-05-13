@@ -1,26 +1,38 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-primary: #FFC107;
+  --color-brand-dark: #0a0a0a;
+  --color-brand-card: rgba(255, 255, 255, 0.05);
+  
+  --font-poppins: "Poppins", sans-serif;
+
+  --background-image-gradient-creadores: linear-gradient(135deg, #7C3AED 0%, #0EA5E9 100%);
+  --background-image-gradient-productividad: linear-gradient(135deg, #007BFF 0%, #00BFFF 100%);
+  --background-image-gradient-gratis: linear-gradient(135deg, #10B981 0%, #06B6D4 100%);
+  --background-image-gradient-negocios: linear-gradient(135deg, #FFB700 0%, #FF8C00 100%);
+  --background-image-gradient-viajeros: linear-gradient(135deg, #8B5CF6 0%, #EC4899 100%);
+  --background-image-gradient-finanzas: linear-gradient(135deg, #14532D 0%, #EAB308 100%);
+  --background-image-gradient-nocode: linear-gradient(135deg, #C01C80 0%, #8B238B 100%);
+  --background-image-gradient-academicos: linear-gradient(135deg, #343D52 0%, #5C7C9E 100%);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --background: #0a0a0a;
+  --foreground: #ffffff;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
+
+@layer base {
+  * {
+    @apply border-white/10;
+  }
+}
+
