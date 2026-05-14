@@ -6,6 +6,8 @@ import Footer from "@/components/Footer";
 import FixGeoCTA from "@/components/FixGeoCTA";
 import ToolCard from "@/components/ToolCard";
 import ToolModal from "@/components/ToolModal";
+import FAQSection from "@/components/FAQSection";
+import ExpertIdentityBlock from "@/components/ExpertIdentityBlock";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { useState, use } from "react";
@@ -69,6 +71,7 @@ export default function MapPage({ params }: PageProps) {
           <nav className="flex gap-10 border-b border-white/5 mb-16 pb-4 sticky top-24 bg-black/20 backdrop-blur-2xl z-30 px-6 rounded-t-2xl">
             <a href="#mapa" className="text-white hover:text-purple-400 transition-colors font-bold uppercase tracking-widest text-[11px]">Directorio</a>
             <a href="#guia" className="text-white/60 hover:text-purple-400 transition-colors font-bold uppercase tracking-widest text-[11px]">Guía Estratégica</a>
+            {mapData.faqs && <a href="#faq" className="text-white/60 hover:text-purple-400 transition-colors font-bold uppercase tracking-widest text-[11px]">FAQ</a>}
           </nav>
 
           {/* Directory: White Cards on Dark BG */}
@@ -99,6 +102,14 @@ export default function MapPage({ params }: PageProps) {
               />
             </article>
           </section>
+
+          {mapData.faqs && mapData.faqs.length > 0 && (
+            <FAQSection faqs={mapData.faqs} mapTitle={mapData.title} />
+          )}
+
+          {mapData.expertIdentity && (
+            <ExpertIdentityBlock identity={mapData.expertIdentity} />
+          )}
 
           <FixGeoCTA />
 

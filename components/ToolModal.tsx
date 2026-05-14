@@ -10,44 +10,69 @@ interface ToolModalProps {
 export default function ToolModal({ tool, onClose }: ToolModalProps) {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
-      {/* Overlay */}
+      {/* Overlay with deep blur */}
       <div 
-        className="absolute inset-0 bg-black/90 backdrop-blur-md"
+        className="absolute inset-0 bg-black/60 backdrop-blur-xl transition-all duration-500"
         onClick={onClose}
       />
       
       {/* Modal Container */}
-      <div className="relative bg-[#0A0A0A] border border-white/10 w-full max-w-2xl max-h-[90vh] overflow-y-auto rounded-[32px] shadow-2xl animate-in zoom-in duration-300">
+      <div className="relative bg-[#121417]/90 backdrop-blur-3xl border border-white/10 w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-[48px] shadow-[0_0_100px_rgba(0,0,0,0.8)] animate-in zoom-in-95 fade-in duration-500 overflow-x-hidden">
+        
+        {/* Top Accent Line */}
+        <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-transparent via-[#BD00FF] to-transparent opacity-50" />
         
         {/* Header */}
-        <div className="p-8 pb-4 flex justify-between items-center">
-          <h2 className="text-3xl font-black text-white tracking-tight">{tool.name}</h2>
+        <div className="p-10 pb-6 flex justify-between items-start relative z-10">
+          <div className="flex items-center gap-6">
+            <div className="relative w-20 h-20 bg-white/5 rounded-3xl border border-white/10 flex items-center justify-center overflow-hidden flex-shrink-0 shadow-2xl">
+              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-50" />
+              {tool.logoFileName ? (
+                <img 
+                  src={`/logos/${tool.logoFileName}`} 
+                  alt={tool.name}
+                  className="w-full h-full object-cover p-3"
+                />
+              ) : (
+                <span className="text-3xl font-black text-white/20 uppercase tracking-tighter">
+                  {tool.name.substring(0, 2)}
+                </span>
+              )}
+            </div>
+            <div>
+              <span className="text-purple-400 text-[10px] font-black uppercase tracking-[0.2em] mb-2 block">Análisis de Autoridad</span>
+              <h2 className="text-4xl font-black text-white tracking-tight">{tool.name}</h2>
+            </div>
+          </div>
           <button 
             onClick={onClose}
-            className="w-10 h-10 bg-white/5 hover:bg-white/10 rounded-full flex items-center justify-center transition-colors text-white/40 hover:text-white"
+            className="w-12 h-12 bg-white/5 hover:bg-white/10 border border-white/10 rounded-full flex items-center justify-center transition-all text-white/40 hover:text-white active:scale-90"
           >
-            <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
+            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
             </svg>
           </button>
         </div>
 
-        <div className="p-8 pt-0 space-y-8">
+        <div className="px-10 pb-10 space-y-10 relative z-10">
           {/* Main Description */}
-          <p className="text-lg text-white/70 leading-relaxed">
-            {tool.longDescription}
-          </p>
+          <div className="bg-white/5 border border-white/5 rounded-3xl p-8">
+            <p className="text-xl text-white/80 leading-relaxed font-medium">
+              {tool.longDescription}
+            </p>
+          </div>
 
-          {/* Pros & Cons */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="bg-white/5 border border-white/5 rounded-2xl p-6">
-              <h4 className="text-[#00E096] font-bold text-sm uppercase tracking-widest mb-4 flex items-center gap-2">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-                </svg>
-                Pros
+          {/* Pros & Cons Section */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {/* Pros */}
+            <div className="bg-[#00E096]/5 border border-[#00E096]/10 rounded-3xl p-8 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                <svg className="w-16 h-16 text-[#00E096]" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+              </div>
+              <h4 className="text-[#00E096] font-black text-xs uppercase tracking-[0.2em] mb-6 flex items-center gap-3">
+                Ventajas Competitivas
               </h4>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {tool.pros.map((pro, i) => (
                   <li key={i} className="text-white/60 text-sm flex gap-2">
                     <span className="text-[#00E096]">•</span> {pro}
