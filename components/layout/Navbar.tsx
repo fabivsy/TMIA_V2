@@ -25,21 +25,19 @@ export default function Navbar() {
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-10 h-10 bg-brand-primary rounded-full flex items-center justify-center shadow-glow group-hover:scale-110 transition-transform">
-            <svg
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2.5"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="w-6 h-6 text-brand-dark"
-            >
-              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+          <div className="w-10 h-10 flex items-center justify-center group-hover:rotate-90 transition-transform duration-700 ease-in-out">
+            <svg viewBox="0 0 512 512" fill="none" className="w-full h-full drop-shadow-[0_2px_10px_rgba(212,175,55,0.2)]">
+              <circle cx="256" cy="256" r="200" stroke="#D4AF37" strokeWidth="32"/>
+              <path d="M256 30L290 220H222L256 30Z" fill="#D4AF37"/>
+              <path d="M256 482L222 292H290L256 482Z" fill="#D4AF37"/>
+              <path d="M482 256L292 222V290L482 256Z" fill="#D4AF37"/>
+              <path d="M30 256L220 290V222L30 256Z" fill="#D4AF37"/>
+              <circle cx="256" cy="256" r="115" fill="#D4AF37" />
+              <text x="256" y="302" fontFamily="Arial Black, sans-serif" fontWeight="900" fontSize="120" fill="white" textAnchor="middle" style={{ letterSpacing: '-8px' }}>IA</text>
             </svg>
           </div>
-          <span className="text-xl font-bold tracking-tight text-white">
-            Tu Mapa <span className="text-brand-primary">IA</span>
+          <span className="text-xl font-black tracking-tight text-white group-hover:text-[#D4AF37] transition-all">
+            Tu Mapa <span className="text-[#D4AF37]">IA</span>
           </span>
         </Link>
 

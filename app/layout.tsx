@@ -11,6 +11,9 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Tu Mapa IA | Tu Curador de Confianza en IA",
   description: "La herramienta es artificial. La inteligencia es tuya. Navegando el universo de la Inteligencia Artificial, juntos.",
+  icons: {
+    icon: '/favicon.svg',
+  },
 };
 
 export default function RootLayout({

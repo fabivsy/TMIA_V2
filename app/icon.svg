@@ -1,0 +1,16 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Outer Ring - Bold for visibility in tabs -->
+  <circle cx="256" cy="256" r="200" stroke="#D4AF37" stroke-width="40"/>
+  
+  <!-- Symmetrical Diamond Points -->
+  <path d="M256 30L296 216H216L256 30Z" fill="#D4AF37"/>
+  <path d="M256 482L216 296H296L256 482Z" fill="#D4AF37"/>
+  <path d="M482 256L296 216V296L482 256Z" fill="#D4AF37"/>
+  <path d="M30 256L216 296V216L30 256Z" fill="#D4AF37"/>
+  
+  <!-- Center Hub -->
+  <circle cx="256" cy="256" r="110" fill="#D4AF37"/>
+  
+  <!-- Minimalist Center Dot - Pure white for high contrast in browser tabs -->
+  <circle cx="256" cy="256" r="30" fill="white"/>
+</svg>

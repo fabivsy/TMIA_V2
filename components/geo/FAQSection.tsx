@@ -39,7 +39,7 @@ export default function FAQSection({ faqs, mapTitle }: FAQSectionProps) {
 
       {/* Section Header */}
       <div className="text-center mb-16">
-        <span className="inline-block px-5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-[0.2em] bg-purple-500/10 text-purple-400 border border-purple-500/20 mb-6">
+        <span className="inline-block px-5 py-1.5 rounded-full text-[11px] font-bold uppercase tracking-[0.2em] bg-brand-primary/10 text-brand-primary border border-brand-primary/20 mb-6">
           Preguntas Estratégicas
         </span>
         <h2 className="text-4xl md:text-5xl font-black text-white tracking-tight mb-4">
@@ -60,7 +60,7 @@ export default function FAQSection({ faqs, mapTitle }: FAQSectionProps) {
               className={`
                 relative rounded-2xl border transition-all duration-500 overflow-hidden
                 ${isOpen
-                  ? "bg-white/[0.06] border-purple-500/30 shadow-[0_0_40px_-12px_rgba(168,85,247,0.15)]"
+                  ? "bg-white/[0.06] border-brand-primary/30 shadow-[0_0_40px_-12px_rgba(var(--brand-primary-rgb),0.15)]"
                   : "bg-white/[0.02] border-white/[0.06] hover:border-white/10 hover:bg-white/[0.04]"
                 }
               `}
@@ -76,7 +76,7 @@ export default function FAQSection({ faqs, mapTitle }: FAQSectionProps) {
                   className={`
                     flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center text-sm font-bold transition-all duration-500
                     ${isOpen
-                      ? "bg-purple-500/20 text-purple-400 rotate-45"
+                      ? "bg-brand-primary/20 text-brand-primary rotate-45"
                       : "bg-white/5 text-gray-500 rotate-0"
                     }
                   `}
@@ -90,7 +90,7 @@ export default function FAQSection({ faqs, mapTitle }: FAQSectionProps) {
                 className={`transition-all duration-500 ease-in-out ${isOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"}`}
               >
                 <div className="px-6 md:px-7 pb-7">
-                  <div className="h-px bg-gradient-to-r from-transparent via-purple-500/20 to-transparent mb-5" />
+                  <div className="h-px bg-gradient-to-r from-transparent via-brand-primary/20 to-transparent mb-5" />
                   <p className="text-gray-400 leading-relaxed text-[15px]">
                     {faq.answer}
                   </p>

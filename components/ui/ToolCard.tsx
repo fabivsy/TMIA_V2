@@ -3,10 +3,12 @@ import { Tool } from "@/data/registry";
 interface ToolCardProps {
   tool: Tool;
   gradientClass: string;
+  primaryColor?: string;
+  secondaryColor?: string;
   onOpenDetails: (tool: Tool) => void;
 }
 
-export default function ToolCard({ tool, onOpenDetails, gradientClass }: ToolCardProps) {
+export default function ToolCard({ tool, onOpenDetails, gradientClass, primaryColor, secondaryColor }: ToolCardProps) {
   return (
     <article className="group relative bg-[#121417]/60 backdrop-blur-2xl rounded-[40px] p-8 border border-white/5 flex flex-col h-full transition-all duration-700 hover:border-white/20 hover:-translate-y-3 overflow-hidden shadow-2xl">
       
@@ -16,35 +18,34 @@ export default function ToolCard({ tool, onOpenDetails, gradientClass }: ToolCar
       {/* Header Section */}
       <div className="flex items-start justify-between mb-8">
         <div className="flex items-center gap-5">
-          <div className="relative">
-            <div className={`absolute inset-0 blur-xl opacity-20 group-hover:opacity-40 transition-opacity rounded-2xl ${gradientClass}`} />
-            <div className="relative w-16 h-16 bg-[#1a1c20] rounded-2xl border border-white/5 flex items-center justify-center overflow-hidden shadow-inner ring-1 ring-white/5">
+          <div className="relative flex-shrink-0">
+            <div 
+              className="absolute inset-0 blur-xl opacity-20 group-hover:opacity-40 transition-opacity rounded-2xl" 
+              style={{ background: `linear-gradient(to bottom right, ${primaryColor || 'var(--brand-primary)'}, ${secondaryColor || 'var(--brand-secondary)'})` }}
+            />
+            <div className="relative w-20 h-20 bg-white rounded-2xl flex items-center justify-center overflow-hidden shadow-inner ring-1 ring-white/10 group-hover:scale-105 transition-transform duration-500">
               {tool.logoFileName ? (
                 <img 
                   src={`/logos/${tool.logoFileName}`} 
                   alt={tool.name}
-                  className="w-full h-full object-cover p-2 group-hover:scale-110 transition-transform duration-500"
+                  className="w-full h-full object-contain p-2"
                 />
               ) : (
-                <span className="text-2xl font-black text-white uppercase tracking-tighter opacity-80 group-hover:opacity-100 transition-opacity">
-                  {tool.name.substring(0, 2)}
-                </span>
+                <div className="text-2xl font-black text-gray-400">
+                  {tool.name.substring(0, 2).toUpperCase()}
+                </div>
               )}
             </div>
           </div>
+          
           <div>
-            <h3 className="text-2xl font-black text-white leading-none mb-2 tracking-tight group-hover:text-purple-400 transition-colors">
+            <h3 className="text-2xl font-black text-white leading-tight mb-2">
               {tool.name}
             </h3>
-            <span className="inline-block px-3 py-1 bg-white/5 border border-white/5 rounded-full text-[10px] font-bold text-gray-400 uppercase tracking-widest">
+            <span className="inline-block px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[10px] font-bold text-gray-400 uppercase tracking-widest">
               {tool.category}
             </span>
           </div>
-        </div>
-        
-        {/* Pricing Badge */}
-        <div className="text-[10px] font-black text-purple-400 bg-purple-500/10 px-3 py-1 rounded-full border border-purple-500/20 uppercase tracking-tighter">
-          {tool.pricing}
         </div>
       </div>
 

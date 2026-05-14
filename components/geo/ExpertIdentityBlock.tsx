@@ -27,18 +27,18 @@ export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockPro
 
       <div className="max-w-4xl mx-auto relative">
         {/* Ambient glow */}
-        <div className="absolute -inset-4 bg-purple-600/5 blur-[80px] rounded-full pointer-events-none" />
+        <div className="absolute -inset-4 bg-brand-primary/5 blur-[80px] rounded-full pointer-events-none" />
 
         <div className="relative bg-white/[0.03] backdrop-blur-2xl border border-white/[0.07] rounded-3xl overflow-hidden">
           {/* Top accent line */}
-          <div className="h-px bg-gradient-to-r from-transparent via-purple-500/40 to-transparent" />
+          <div className="h-px bg-gradient-to-r from-transparent via-brand-primary/40 to-transparent" />
 
           <div className="p-8 md:p-12">
             {/* Header row */}
             <div className="flex flex-col md:flex-row md:items-center gap-6 mb-10">
               {/* Monogram */}
-              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-purple-600/30 to-purple-800/30 border border-purple-500/20 flex items-center justify-center flex-shrink-0">
-                <span className="text-2xl font-black text-purple-400 tracking-tighter">
+              <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-brand-primary/30 to-brand-primary/30 border border-brand-primary/20 flex items-center justify-center flex-shrink-0">
+                <span className="text-2xl font-black text-brand-primary tracking-tighter">
                   {identity.name.split(" ").map(w => w[0]).join("")}
                 </span>
               </div>
@@ -46,7 +46,7 @@ export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockPro
                 <h3 className="text-2xl font-black text-white tracking-tight">
                   {identity.name}
                 </h3>
-                <p className="text-purple-400 text-sm font-bold uppercase tracking-widest mt-1">
+                <p className="text-brand-primary text-sm font-bold uppercase tracking-widest mt-1">
                   {identity.role}
                 </p>
                 <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider mt-1">
@@ -71,7 +71,7 @@ export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockPro
                     key={i}
                     className="flex items-start gap-3 bg-white/[0.03] border border-white/[0.05] rounded-xl px-5 py-4"
                   >
-                    <span className="text-purple-500 mt-0.5 text-sm">◆</span>
+                    <span className="text-brand-primary mt-0.5 text-sm">◆</span>
                     <span className="text-gray-300 text-sm leading-relaxed">{cred}</span>
                   </div>
                 ))}
@@ -90,7 +90,7 @@ export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockPro
           </div>
 
           {/* Bottom accent line */}
-          <div className="h-px bg-gradient-to-r from-transparent via-purple-500/20 to-transparent" />
+          <div className="h-px bg-gradient-to-r from-transparent via-brand-primary/20 to-transparent" />
         </div>
       </div>
     </section>

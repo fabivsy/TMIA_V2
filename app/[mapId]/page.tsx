@@ -1,14 +1,15 @@
 "use client";
 
 import { MAP_REGISTRY, Tool } from "@/data/registry";
-import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import FixGeoCTA from "@/components/FixGeoCTA";
-import ToolCard from "@/components/ToolCard";
-import ToolModal from "@/components/ToolModal";
-import FAQSection from "@/components/FAQSection";
-import ExpertIdentityBlock from "@/components/ExpertIdentityBlock";
-import AdditionalResources from "@/components/AdditionalResources";
+import Navbar from "@/components/layout/Navbar";
+import Footer from "@/components/layout/Footer";
+import FixGeoCTA from "@/components/sections/FixGeoCTA";
+import ToolCard from "@/components/ui/ToolCard";
+import ToolModal from "@/components/ui/ToolModal";
+import FAQSection from "@/components/geo/FAQSection";
+import ExpertIdentityBlock from "@/components/geo/ExpertIdentityBlock";
+import AdditionalResources from "@/components/sections/AdditionalResources";
+import StrategicBridge from "@/components/sections/StrategicBridge";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { useState, use } from "react";
@@ -26,19 +27,76 @@ export default function MapPage({ params }: PageProps) {
     notFound();
   }
 
-  const schema = {
+  const mainSchema = {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "headline": mapData.title,
-    "description": mapData.longDescription,
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": `https://tumapaia.com/${mapData.slug}`,
+        "url": `https://tumapaia.com/${mapData.slug}`,
+        "name": `${mapData.title} | Tu Mapa IA`,
+        "headline": mapData.title,
+        "description": mapData.longDescription,
+        "author": {
+          "@type": "Person",
+          "name": "Fabio Yocco",
+          "jobTitle": "Lead Curator & GEO Strategist",
+          "affiliation": {
+            "@type": "Organization",
+            "name": "The Curator Group LLC"
+          }
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "The Curator Group LLC",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://tumapaia.com/logo.png"
+          }
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": mapData.faqs?.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      },
+      ...mapData.tools.map(tool => ({
+        "@type": "SoftwareApplication",
+        "name": tool.name,
+        "description": tool.shortDescription,
+        "applicationCategory": tool.category,
+        "operatingSystem": "Web",
+        "offers": {
+          "@type": "Offer",
+          "price": tool.pricing.replace(/[^0-9.]/g, '') || "0",
+          "priceCurrency": "USD"
+        },
+        "author": {
+          "@type": "Organization",
+          "name": tool.name
+        }
+      }))
+    ]
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-[#0A0B0D] text-white relative overflow-hidden">
+    <div 
+      className="min-h-screen flex flex-col bg-[#0A0B0D] text-white relative overflow-hidden"
+      style={{ 
+        '--brand-primary': mapData.primaryColor || '#FFC107',
+        '--brand-secondary': mapData.secondaryColor || '#00BFFF'
+      } as React.CSSProperties}
+    >
       {/* Deep Dark Accents */}
-      <div className="absolute top-0 left-0 w-full h-[1200px] bg-gradient-to-b from-purple-900/10 to-transparent pointer-events-none" />
-      <div className="absolute top-[10%] -right-[10%] w-[800px] h-[800px] bg-purple-600/5 blur-[150px] rounded-full pointer-events-none" />
-      <div className="absolute bottom-[20%] -left-[10%] w-[600px] h-[600px] bg-blue-600/5 blur-[130px] rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-0 w-full h-[1200px] bg-gradient-to-b from-[var(--brand-primary)]/10 to-transparent pointer-events-none" />
+      <div className="absolute top-[10%] -right-[10%] w-[800px] h-[800px] bg-[var(--brand-primary)]/5 blur-[150px] rounded-full pointer-events-none" />
+      <div className="absolute bottom-[20%] -left-[10%] w-[600px] h-[600px] bg-[var(--brand-secondary)]/5 blur-[130px] rounded-full pointer-events-none" />
       
       {/* Subtle Grid Pattern for authority feel */}
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.03] pointer-events-none" />
@@ -48,7 +106,7 @@ export default function MapPage({ params }: PageProps) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify(schema).replace(/<\/script>/g, '<\\/script>')
+          __html: JSON.stringify(mainSchema).replace(/<\/script>/g, '<\\/script>')
         }}
       />
 
@@ -57,10 +115,13 @@ export default function MapPage({ params }: PageProps) {
           
           {/* Header with White/Silver Text */}
           <header className="mb-16">
-            <Link href="/" className="text-purple-400 hover:text-purple-300 mb-6 inline-flex items-center gap-2 font-bold text-sm transition-colors">
+            <Link href="/" className="text-[var(--brand-primary)] hover:opacity-80 mb-6 inline-flex items-center gap-2 font-bold text-sm transition-opacity">
               <span>←</span> Volver al Mapa General
             </Link>
-            <h1 className="text-6xl md:text-8xl font-black mb-8 text-white tracking-tighter leading-none">
+            <h1 
+              className="text-6xl md:text-8xl font-black mb-8 tracking-tighter leading-none bg-clip-text text-transparent"
+              style={{ backgroundImage: `linear-gradient(to right, white, ${mapData.secondaryColor || 'var(--brand-secondary)'})` }}
+            >
               {mapData.title}
             </h1>
             <p className="text-2xl text-gray-400 max-w-4xl leading-relaxed font-medium">
@@ -70,9 +131,11 @@ export default function MapPage({ params }: PageProps) {
 
           {/* Nav Tab with Glassmorphism */}
           <nav className="flex gap-10 border-b border-white/5 mb-16 pb-4 sticky top-24 bg-black/20 backdrop-blur-2xl z-30 px-6 rounded-t-2xl">
-            <a href="#mapa" className="text-white hover:text-purple-400 transition-colors font-bold uppercase tracking-widest text-[11px]">Directorio</a>
-            <a href="#guia" className="text-white/60 hover:text-purple-400 transition-colors font-bold uppercase tracking-widest text-[11px]">Guía Estratégica</a>
-            {mapData.faqs && <a href="#faq" className="text-white/60 hover:text-purple-400 transition-colors font-bold uppercase tracking-widest text-[11px]">FAQ</a>}
+            <a href="#mapa" className="text-white hover:text-[var(--brand-primary)] transition-colors font-bold uppercase tracking-widest text-[11px]">Directorio</a>
+            <a href="#guia" className="text-white/60 hover:text-[var(--brand-primary)] transition-colors font-bold uppercase tracking-widest text-[11px]">Guía Estratégica</a>
+            {mapData.faqs && mapData.faqs.length > 0 && (
+              <a href="#faq" className="text-white/60 hover:text-[var(--brand-primary)] transition-colors font-bold uppercase tracking-widest text-[11px]">FAQ</a>
+            )}
           </nav>
 
           {/* Directory: White Cards on Dark BG */}
@@ -85,6 +148,8 @@ export default function MapPage({ params }: PageProps) {
                   <ToolCard 
                     tool={tool} 
                     gradientClass={mapData.gradientClass}
+                    primaryColor={mapData.primaryColor}
+                    secondaryColor={mapData.secondaryColor}
                     onOpenDetails={(t) => setSelectedTool(t)}
                   />
                 </div>
@@ -94,14 +159,13 @@ export default function MapPage({ params }: PageProps) {
 
           {/* Guide with Dark High-End Aesthetic */}
           <section id="guia" className="mb-32">
-            <article className="max-w-4xl mx-auto bg-white/5 backdrop-blur-md border border-white/10 rounded-[56px] p-10 md:p-24 shadow-2xl relative overflow-hidden">
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-purple-500 to-transparent opacity-50" />
-              <h2 className="text-4xl font-black text-white mb-12 text-center">Protocolo de Autoridad</h2>
-              <div 
-                className="guide-content prose prose-invert prose-purple max-w-none text-gray-300 leading-relaxed text-lg"
-                dangerouslySetInnerHTML={{ __html: mapData.guideContent }} 
-              />
-            </article>
+            <StrategicBridge 
+              content={mapData.guideContent}
+              guideUrl={mapData.guideUrl}
+              selectionUrl={mapData.selectionUrl}
+              primaryColor={mapData.primaryColor}
+              secondaryColor={mapData.secondaryColor}
+            />
           </section>
 
           {mapData.faqs && mapData.faqs.length > 0 && (
@@ -128,6 +192,8 @@ export default function MapPage({ params }: PageProps) {
       {selectedTool && (
         <ToolModal 
           tool={selectedTool} 
+          primaryColor={mapData.primaryColor}
+          secondaryColor={mapData.secondaryColor}
           onClose={() => setSelectedTool(null)} 
         />
       )}

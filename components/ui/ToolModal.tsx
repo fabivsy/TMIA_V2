@@ -4,10 +4,12 @@ import { Tool } from "@/data/registry";
 
 interface ToolModalProps {
   tool: Tool;
+  primaryColor?: string;
+  secondaryColor?: string;
   onClose: () => void;
 }
 
-export default function ToolModal({ tool, onClose }: ToolModalProps) {
+export default function ToolModal({ tool, onClose, primaryColor, secondaryColor }: ToolModalProps) {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4">
       {/* Overlay with deep blur */}
@@ -25,22 +27,32 @@ export default function ToolModal({ tool, onClose }: ToolModalProps) {
         {/* Header */}
         <div className="p-10 pb-6 flex justify-between items-start relative z-10">
           <div className="flex items-center gap-6">
-            <div className="relative w-20 h-20 bg-white/5 rounded-3xl border border-white/10 flex items-center justify-center overflow-hidden flex-shrink-0 shadow-2xl">
-              <div className="absolute inset-0 bg-gradient-to-br from-purple-500/10 to-transparent opacity-50" />
+            <div className="relative w-24 h-24 bg-white rounded-3xl flex items-center justify-center overflow-hidden flex-shrink-0 shadow-2xl ring-1 ring-white/10">
               {tool.logoFileName ? (
                 <img 
                   src={`/logos/${tool.logoFileName}`} 
                   alt={tool.name}
-                  className="w-full h-full object-cover p-3"
+                  className="w-full h-full object-contain p-3.5 rounded-3xl"
                 />
               ) : (
-                <span className="text-3xl font-black text-white/20 uppercase tracking-tighter">
+                <span className="text-4xl font-black text-[#1a1c20] uppercase tracking-tighter opacity-80">
                   {tool.name.substring(0, 2)}
                 </span>
               )}
             </div>
             <div>
-              <span className="text-purple-400 text-[10px] font-black uppercase tracking-[0.2em] mb-2 block">Análisis de Autoridad</span>
+              <div className="flex items-center gap-3 mb-2">
+                <span className="text-purple-400 text-[10px] font-black uppercase tracking-[0.2em] block">Análisis de Autoridad</span>
+                <div 
+                  className="text-[9px] font-black bg-white/5 px-3 py-1 rounded-full border uppercase tracking-widest whitespace-nowrap"
+                  style={{ 
+                    color: secondaryColor || 'var(--brand-secondary)',
+                    borderColor: `${secondaryColor || 'var(--brand-secondary)'}33`
+                  }}
+                >
+                  {tool.pricing}
+                </div>
+              </div>
               <h2 className="text-4xl font-black text-white tracking-tight">{tool.name}</h2>
             </div>
           </div>
@@ -99,9 +111,20 @@ export default function ToolModal({ tool, onClose }: ToolModalProps) {
           </div>
 
           {/* Ideal Para */}
-          <div className="border-2 border-[#BD00FF] rounded-2xl p-6 bg-[#BD00FF]/5">
+          <div 
+            className="border-2 rounded-2xl p-6"
+            style={{ 
+              borderColor: primaryColor || 'var(--brand-primary)',
+              backgroundColor: `${primaryColor || 'var(--brand-primary)'}0D`
+            }}
+          >
             <p className="text-white text-base font-bold leading-relaxed">
-              <span className="text-[#BD00FF] block text-[10px] uppercase tracking-widest mb-2">Ideal para:</span>
+              <span 
+                className="block text-[10px] uppercase tracking-widest mb-2"
+                style={{ color: primaryColor || 'var(--brand-primary)' }}
+              >
+                Ideal para:
+              </span>
               {tool.idealPara}
             </p>
           </div>
@@ -116,7 +139,11 @@ export default function ToolModal({ tool, onClose }: ToolModalProps) {
               href={tool.url}
               target="_blank"
               rel="noopener nofollow"
-              className="w-full md:w-auto px-10 py-4 bg-[#BD00FF] text-white font-black text-center rounded-2xl hover:bg-[#a000db] transition-all shadow-lg shadow-purple-900/20"
+              className="w-full md:w-auto px-10 py-4 text-white font-black text-center rounded-2xl transition-all shadow-lg hover:brightness-110 active:scale-95"
+              style={{ 
+                backgroundColor: primaryColor || 'var(--brand-primary)',
+                boxShadow: `0 10px 30px -10px ${primaryColor || 'var(--brand-primary)'}66`
+              }}
             >
               Visitar Sitio ↗
             </a>
