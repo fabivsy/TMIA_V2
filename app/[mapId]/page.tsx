@@ -8,6 +8,7 @@ import ToolCard from "@/components/ToolCard";
 import ToolModal from "@/components/ToolModal";
 import FAQSection from "@/components/FAQSection";
 import ExpertIdentityBlock from "@/components/ExpertIdentityBlock";
+import AdditionalResources from "@/components/AdditionalResources";
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { useState, use } from "react";
@@ -109,6 +110,14 @@ export default function MapPage({ params }: PageProps) {
 
           {mapData.expertIdentity && (
             <ExpertIdentityBlock identity={mapData.expertIdentity} />
+          )}
+
+          {mapData.guideUrl && mapData.selectionUrl && (
+            <AdditionalResources
+              guideUrl={mapData.guideUrl}
+              selectionUrl={mapData.selectionUrl}
+              mapTitle={mapData.title}
+            />
           )}
 
           <FixGeoCTA />

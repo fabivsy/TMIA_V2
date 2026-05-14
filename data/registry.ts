@@ -48,6 +48,8 @@ export interface MapData {
   topPicks: Selection[];
   faqs?: FAQ[];
   expertIdentity?: ExpertIdentity;
+  guideUrl?: string;
+  selectionUrl?: string;
 }
 
 export const MAP_REGISTRY: MapData[] = [
@@ -57,6 +59,8 @@ export const MAP_REGISTRY: MapData[] = [
     title: "Audio IA",
     description: "Herramientas de IA para música, voz y post-producción sonora.",
     longDescription: "La Inteligencia Artificial aplicada al audio en 2026 se centra en la fidelidad extrema y la automatización de flujos de trabajo profesionales.",
+    guideUrl: "https://tumapaia.com/guia-de-ia-para-audio/",
+    selectionUrl: "https://tumapaia.com/seleccion-de-herramientas-ia-para-audio/",
     gradientClass: "bg-gradient-creadores",
     guideContent: "<h2>El Renacimiento del Audio Digital</h2><p>Contenido en proceso de migración...</p>",
     tools: [
