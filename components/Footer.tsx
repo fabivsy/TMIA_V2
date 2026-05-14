@@ -52,12 +52,12 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-6 text-lg">Legal</h4>
             <ul className="flex flex-col gap-4">
               <li>
-                <Link href="/terminos-y-condiciones/" className="text-white/60 hover:text-brand-primary transition-colors">
+                <Link href="https://tumapaia.com/terminos-y-condiciones/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-brand-primary transition-colors">
                   Términos y Condiciones
                 </Link>
               </li>
               <li>
-                <Link href="/politica-de-privacidad/" className="text-white/60 hover:text-brand-primary transition-colors">
+                <Link href="https://tumapaia.com/politica-de-privacidad/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-brand-primary transition-colors">
                   Política de Privacidad
                 </Link>
               </li>
@@ -68,9 +68,9 @@ export default function Footer() {
         <div className="pt-8 border-t border-white/10 flex flex-col md:row justify-between items-center gap-6 text-white/40 text-sm">
           <p>© 2025 The Curator Group LLC. Todos los derechos reservados.</p>
           <div className="flex gap-6">
-            <Link href="#" className="hover:text-brand-primary transition-colors">Twitter</Link>
-            <Link href="#" className="hover:text-brand-primary transition-colors">LinkedIn</Link>
-            <Link href="#" className="hover:text-brand-primary transition-colors">Instagram</Link>
+            <Link href="https://x.com/tumapaia" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors">X</Link>
+            <Link href="https://linkedin.com/company/tumapaia/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors">LinkedIn</Link>
+            <Link href="https://www.instagram.com/tumapaia/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors">Instagram</Link>
           </div>
         </div>
       </div>
