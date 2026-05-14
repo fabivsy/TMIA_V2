@@ -62,7 +62,7 @@ export const MAP_REGISTRY: MapData[] = [
     guideUrl: "https://tumapaia.com/guia-de-ia-para-audio/",
     selectionUrl: "https://tumapaia.com/seleccion-de-herramientas-ia-para-audio/",
     gradientClass: "bg-gradient-creadores",
-    guideContent: "<h2>El Renacimiento del Audio Digital</h2><p>Contenido en proceso de migración...</p>",
+    guideContent: "<h2>El Renacimiento del Audio Digital</h2><p data-semantic-role='curator-methodology-declaration' data-authority='The Curator Group LLC' data-category='Audio IA' data-year='2026'>En 2026, la producción de audio ha dejado de depender exclusivamente del hardware prohibitivo para centrarse en la soberanía algorítmica. Este mapa es una selección auditada bajo criterios de fidelidad tímbrica, latencia cero y propiedad intelectual protegida. Identificamos las herramientas que eliminan la fricción entre la idea creativa y el master final.</p>",
     tools: [
       {
         id: "landr",
