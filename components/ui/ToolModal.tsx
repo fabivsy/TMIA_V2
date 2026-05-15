@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Tool } from "@/data/registry";
 
 interface ToolModalProps {
@@ -27,13 +28,17 @@ export default function ToolModal({ tool, onClose, primaryColor, secondaryColor 
         {/* Header */}
         <div className="p-10 pb-6 flex justify-between items-start relative z-10">
           <div className="flex items-center gap-6">
-            <div className="relative w-24 h-24 bg-white rounded-3xl flex items-center justify-center overflow-hidden flex-shrink-0 shadow-2xl ring-1 ring-white/10">
+            <div className="relative w-24 h-24 bg-white rounded-3xl flex items-center justify-center overflow-hidden flex-shrink-0 shadow-2xl ring-1 ring-white/10 p-4">
               {tool.logoFileName ? (
-                <img 
-                  src={`/logos/${tool.logoFileName}`} 
-                  alt={tool.name}
-                  className="w-full h-full object-contain p-3.5 rounded-3xl"
-                />
+                <div className="relative w-full h-full">
+                  <Image 
+                    src={`/logos/${tool.logoFileName}`} 
+                    alt={tool.name}
+                    fill
+                    className="object-contain rounded-3xl"
+                    sizes="96px"
+                  />
+                </div>
               ) : (
                 <span className="text-4xl font-black text-[#1a1c20] uppercase tracking-tighter opacity-80">
                   {tool.name.substring(0, 2)}

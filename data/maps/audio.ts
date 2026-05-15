@@ -26,7 +26,8 @@ export const audioMap: MapData = {
       pros: ["Masterización consistente", "Distribución digital integrada", "Referencia técnica masiva"],
       cons: ["Menos control artístico que un ingeniero humano", "Curva de precios por suscripción"],
       pricing: "DESDE $8.25/MES",
-      category: "Masterización"
+      category: "Masterización",
+      tags: ["#Masterización", "#EstudioVirtual"]
     },
     {
       id: "lalalai",
@@ -43,7 +44,8 @@ export const audioMap: MapData = {
       pros: ["Calidad de separación líder", "Procesamiento en la nube ultra rápido", "Soporta múltiples formatos"],
       cons: ["Costo por minuto procesado", "Dependencia de la calidad del archivo fuente"],
       pricing: "DESDE $18 (90 MIN)",
-      category: "Separación de Stems"
+      category: "Separación de Stems",
+      tags: ["#SeparaciónDeStems", "#Sampling"]
     },
     {
       id: "suno",
@@ -60,7 +62,8 @@ export const audioMap: MapData = {
       pros: ["Generación en segundos", "Indistinguible en muchos géneros", "Control de estructura lírica"],
       cons: ["Control limitado sobre instrumentos individuales", "Implicaciones éticas de autoría"],
       pricing: "FREEMIUM / PRO $10/MES",
-      category: "Generación Musical"
+      category: "Generación Musical",
+      tags: ["#GeneraciónMusical", "#Composición"]
     },
     {
       id: "elevenlabs",
@@ -77,7 +80,8 @@ export const audioMap: MapData = {
       pros: ["Realismo inigualable", "Soporte para más de 70 idiomas", "Control emocional granular"],
       cons: ["Suscripción basada en caracteres", "Riesgos de seguridad (Deepfakes)"],
       pricing: "DESDE $5/MES",
-      category: "Voz IA"
+      category: "Voz IA",
+      tags: ["#VozIA", "#Doblaje", "#ClonaciónVocal"]
     },
     {
       id: "descript",
@@ -94,7 +98,8 @@ export const audioMap: MapData = {
       pros: ["Interfaz extremadamente intuitiva", "Función Studio Sound milagrosa", "Colaboración en tiempo real"],
       cons: ["Dependencia total de la transcripción", "Plan gratuito muy limitado"],
       pricing: "DESDE $12/MES",
-      category: "Edición"
+      category: "Edición",
+      tags: ["#EdiciónPro", "#Transcripción", "#Podcasting"]
     },
     {
       id: "izotoperx",
@@ -111,7 +116,8 @@ export const audioMap: MapData = {
       pros: ["Capacidad de reparación inigualable", "Repair Assistant inteligente", "Estándar industrial"],
       cons: ["Curva de aprendizaje empinada", "Precio de entrada elevado"],
       pricing: "DESDE $129 (ELEMENTS)",
-      category: "Restauración de Audio"
+      category: "Restauración de Audio",
+      tags: ["#Restauración", "#PostProducción"]
     },
     {
       id: "mubert",
@@ -128,7 +134,8 @@ export const audioMap: MapData = {
       pros: ["100% libre de derechos", "Generación infinita", "API para desarrolladores"],
       cons: ["Limitado a géneros electrónicos/ambient", "Poco control sobre la composición final"],
       pricing: "DESDE $14/MES",
-      category: "Música Generativa"
+      category: "Música Generativa",
+      tags: ["#MúsicaGenerativa", "#CopyrightFree"]
     },
     {
       id: "aiva",
@@ -145,7 +152,8 @@ export const audioMap: MapData = {
       pros: ["Reconocimiento legal único", "Edición de partituras MIDI", "Gran variedad de estilos"],
       cons: ["Plan gratuito muy limitado", "Requiere conocimientos musicales para edición"],
       pricing: "DESDE €49/MES (PRO)",
-      category: "Composición"
+      category: "Composición",
+      tags: ["#Composición", "#MúsicaClásica"]
     },
     {
       id: "udio",
@@ -162,7 +170,8 @@ export const audioMap: MapData = {
       pros: ["Calidad de audio superior", "Control de estructura", "Vocales realistas"],
       cons: ["Tiempos de generación variables", "Curva de aprendizaje en los prompts"],
       pricing: "DESDE $10/MES",
-      category: "Generación Musical"
+      category: "Generación Musical",
+      tags: ["#GeneraciónMusical", "#AltaFidelidad"]
     },
     {
       id: "producer-ai",
@@ -179,7 +188,8 @@ export const audioMap: MapData = {
       pros: ["Interfaz tipo chat intuitiva", "Remezclas en tiempo real", "Multimodal (texto/audio)"],
       cons: ["Aún en fase de desarrollo activo", "Estilos tradicionales menos auténticos"],
       pricing: "FREEMIUM",
-      category: "Co-Producción"
+      category: "Co-Producción",
+      tags: ["#CoProducción", "#ChatbotMusical"]
     },
     {
       id: "izotope-neutron",
@@ -196,7 +206,8 @@ export const audioMap: MapData = {
       pros: ["Asistente de mezcla rápido", "Tratamiento por bandas inteligente", "Interconexión de plugins"],
       cons: ["Puede inducir a decisiones de mezcla perezosas", "Requiere hardware moderno"],
       pricing: "DESDE $249",
-      category: "Mezcla de Audio"
+      category: "Mezcla de Audio",
+      tags: ["#MezclaInteligente", "#Mixing"]
     },
     {
       id: "riverside",
@@ -213,7 +224,8 @@ export const audioMap: MapData = {
       pros: ["Audio/Video local de alta calidad", "Transcripción proactiva", "Generador de clips IA"],
       cons: ["Costo premium", "Dependencia de la plataforma web"],
       pricing: "DESDE $15/MES",
-      category: "Grabación Remota"
+      category: "Grabación Remota",
+      tags: ["#GrabaciónRemota", "#Podcasting"]
     },
     {
       id: "bandlab-mastering",
@@ -230,7 +242,8 @@ export const audioMap: MapData = {
       pros: ["100% Gratuito", "Extremadamente rápido", "No requiere conocimientos técnicos"],
       cons: ["Control limitado (solo 4 presets)", "Menos detalle que opciones de pago"],
       pricing: "GRATIS",
-      category: "Masterización"
+      category: "Masterización",
+      tags: ["#Masterización", "#Gratis"]
     },
     {
       id: "voicemod",
@@ -247,7 +260,8 @@ export const audioMap: MapData = {
       pros: ["Tiempo real sin lag", "Enorme biblioteca de voces", "Fácil de usar"],
       cons: ["Uso principalmente recreativo", "Calidad dependiente del micrófono"],
       pricing: "GRATIS / PRO",
-      category: "Voz IA"
+      category: "Voz IA",
+      tags: ["#VozIA", "#Streaming"]
     }
   ],
   topPicks: [

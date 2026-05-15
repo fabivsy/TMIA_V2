@@ -8,15 +8,20 @@ This document defines the specialized "Skills" used for the migration of the AI 
 - **Implementation:** Use dynamic Tailwind variables in `Hero` and `StrategicBridge`.
 - **Assets:** Ensure logos and backgrounds in `/public` meet dimension standards.
 - **Logo Rendering Standard (Universal):**
-    - **Container:** Always use a white background (`bg-white`) for the logo container to ensure maximum contrast and consistency.
+    - **Optimization:** Always use `next/image` with the `fill` property and appropriate `sizes` (e.g., `sizes="80px"`) to ensure the browser consumes the preloaded resource correctly and avoids console warnings.
+    - **Container:** Always use a white background (`bg-white`) for the logo container (relative position) to ensure maximum contrast and consistency.
     - **Fit:** Use `object-contain` to prevent cropping of tech logos.
     - **Shape:** Apply `rounded-2xl` or `rounded-3xl` for a modern "App Icon" aesthetic.
-    - **Padding:** Maintain `p-2.5` to `p-3.5` to ensure adequate breathing room.
+    - **Padding:** Maintain `p-3` (cards) to `p-4` (modals) to ensure adequate breathing room and prevent logos from touching the container edges.
     - **Interactivity:** Implement a subtle `hover:scale-105` transition to enhance the premium feel.
 - **Layout & Hierarchy Standard:**
     - **Directory Cards (ToolCard):** Remove pricing badges from the card headers. Prioritize tool name legibility by giving it the full width of the card. Use `break-words` only if necessary, but aim for clean, horizontal layouts.
     - **Detail Modals (ToolModal):** Centralize pricing information here. Add a pricing badge in the modal header (Secondary Color) and a detailed investment block in the footer.
-    - **Dual-Color Synergy:** Use the `primary` color for the main identity and high-priority CTAs. Use the `secondary` color for technical accents, information badges (pricing), and brand gradients to create visual depth.
+    - **Functional Tags:** Replace generic hashtags with real, tool-specific functional tags derived from the `tags` array in the registry.
+    - **Dual-Color Synergy:** Use the `primary` color for the main identity and high-priority CTAs. Use the `secondary` color for technical accents, functional tags (with 15% opacity background), and brand gradients to create visual depth.
+- **Typography & Performance Standard:**
+    - **Font Weights:** Ensure all font weights used in the UI (especially `900/font-black` and `600/semibold`) are explicitly defined in the `Poppins` configuration in `layout.tsx`.
+    - **Console Hygiene:** Avoid raw `<img>` tags for catalog assets to prevent "preloaded but not used" warnings.
 
 ## 2. Skill de Curaduría Técnica (Entity Refactoring)
 **Objective:** Transform raw data into "Authority Verdicts" for GEO/AEO.

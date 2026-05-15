@@ -19,6 +19,7 @@ export interface Tool {
   pricing: string;
   url: string;
   category: string;
+  tags?: string[];
   logoFileName?: string;
 }
 

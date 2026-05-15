@@ -8,7 +8,7 @@ export const videoMap: MapData = {
   longDescription: "IA para creación, edición y optimización de video. En 2026, la narrativa visual ha evolucionado hacia una síntesis generativa instantánea. Este mapa audita las 30 herramientas que definen la soberanía creativa, centrándose en la consistencia temporal, el realismo físico y la eliminación de la fricción técnica en cada fase de la producción.",
   primaryColor: "#6A0DAD",
   secondaryColor: "#00BFFF",
-  gradientClass: "from-[#6A0DAD]/85 to-[#00BFFF]/85",
+  gradientClass: "bg-gradient-to-br from-[#6A0DAD]/80 to-[#00BFFF]/80",
   guideUrl: "https://tumapaia.com/guia-de-ia-para-video/",
   selectionUrl: "https://tumapaia.com/seleccion-de-herramientas-ia-para-video/",
   guideContent: "<h2>Soberanía Visual en la Era de la Síntesis</h2><p>En 2026, la narrativa visual ha evolucionado hacia una síntesis generativa instantánea. Este mapa audita las 30 herramientas que definen la soberanía creativa, centrándose en la consistencia temporal, el realismo físico y la eliminación de la fricción técnica en cada fase de la producción.</p>",
@@ -28,7 +28,8 @@ export const videoMap: MapData = {
       cons: ["Coste elevado", "Requiere tiempo de procesamiento"],
       idealPara: "Directores de arte y cineastas experimentales.",
       pricing: "Desde $12/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#GeneraciónDeVideo", "#CineIA"]
     },
     {
       id: "synthesia",
@@ -45,7 +46,8 @@ export const videoMap: MapData = {
       cons: ["Expresividad emocional limitada", "Plan básico restringido"],
       idealPara: "Equipos de formación, ventas y marketing corporativo.",
       pricing: "Desde $22.50/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#AvataresIA", "#Doblaje", "#LipSync"]
     },
     {
       id: "descript",
@@ -62,7 +64,8 @@ export const videoMap: MapData = {
       cons: ["Dependencia de la transcripción", "Consumo alto de recursos"],
       idealPara: "Podcasters y editores de contenido conversacional.",
       pricing: "Desde $12/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#EdiciónPro", "#Transcripción"]
     },
     {
       id: "invideo",
@@ -79,7 +82,8 @@ export const videoMap: MapData = {
       cons: ["Ajustes manuales necesarios", "Calidad variable según prompt"],
       idealPara: "Social Media Managers y creadores de contenido rápido.",
       pricing: "Desde $15/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#RedesSociales", "#StockFootage"]
     },
     {
       id: "vidnoz",
@@ -96,7 +100,8 @@ export const videoMap: MapData = {
       cons: ["Avatares menos naturales", "Tiempos de renderizado"],
       idealPara: "Marketers con presupuesto optimizado.",
       pricing: "Desde $14.99/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#AvataresIA", "#FaceSwap"]
     },
     {
       id: "lumen5",
@@ -113,7 +118,8 @@ export const videoMap: MapData = {
       cons: ["Personalización limitada", "Funciones Pro costosas"],
       idealPara: "Equipos de marketing de contenidos.",
       pricing: "Desde $19/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#Repurposing", "#Marketing"]
     },
     {
       id: "tubebuddy",
@@ -130,7 +136,8 @@ export const videoMap: MapData = {
       cons: ["Interfaz abrumadora", "Funciones clave bajo pago"],
       idealPara: "YouTubers enfocados en crecimiento orgánico.",
       pricing: "Desde $4.99/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#SEO", "#YouTube"]
     },
     {
       id: "vidiq",
@@ -147,7 +154,8 @@ export const videoMap: MapData = {
       cons: ["Versión gratuita limitada", "Curva de aprendizaje"],
       idealPara: "Creadores que basan su estrategia en analítica de datos.",
       pricing: "Desde $12/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#SEO", "#YouTube", "#Analytics"]
     },
     {
       id: "pictory",
@@ -164,7 +172,8 @@ export const videoMap: MapData = {
       cons: ["Menor flexibilidad creativa", "Ajustes manuales frecuentes"],
       idealPara: "Creadores de cursos y marketing de contenidos.",
       pricing: "Desde $19/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#Highlights", "#Repurposing"]
     },
     {
       id: "elevenlabs",
@@ -181,7 +190,8 @@ export const videoMap: MapData = {
       cons: ["Suscripción por caracteres", "Riesgos de seguridad"],
       idealPara: "Creadores que necesitan narraciones profesionales.",
       pricing: "Desde $5/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#Doblaje", "#Locución", "#VozIA"]
     },
     {
       id: "premierepro",
@@ -198,7 +208,8 @@ export const videoMap: MapData = {
       cons: ["Curva de aprendizaje empinada", "Requiere hardware potente"],
       idealPara: "Editores profesionales y cineastas.",
       pricing: "Desde $20.99/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#EdiciónPro", "#AdobeSensei"]
     },
     {
       id: "capcut",
@@ -215,7 +226,8 @@ export const videoMap: MapData = {
       cons: ["Versión escritorio menos ágil", "Rendimiento según dispositivo"],
       idealPara: "Creadores de TikTok, Instagram y Shorts.",
       pricing: "Gratis / Plan Pro",
-      category: "Video"
+      category: "Video",
+      tags: ["#TikTok", "#Viral", "#SocialMedia"]
     },
     {
       id: "opusclip",
@@ -232,7 +244,8 @@ export const videoMap: MapData = {
       cons: ["Precisión variable", "Menos control creativo fino"],
       idealPara: "Podcasters y agencias de redes sociales.",
       pricing: "Desde $12/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#Repurposing", "#Clips", "#Sentiment"]
     },
     {
       id: "veed",
@@ -249,7 +262,8 @@ export const videoMap: MapData = {
       cons: ["Dependencia de internet", "Limitación en proyectos pesados"],
       idealPara: "Equipos de marketing y educadores.",
       pricing: "Desde $12/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#EdiciónPro", "#Subtítulos"]
     },
     {
       id: "filmora",
@@ -266,7 +280,8 @@ export const videoMap: MapData = {
       cons: ["Menos pro que DaVinci", "Recursos premium extra"],
       idealPara: "YouTubers intermedios y creadores creativos.",
       pricing: "Desde $49.99/año",
-      category: "Video"
+      category: "Video",
+      tags: ["#EdiciónPro", "#EfectosIA"]
     },
     {
       id: "canva",
@@ -283,7 +298,8 @@ export const videoMap: MapData = {
       cons: ["Edición técnica limitada", "Personalización restringida"],
       idealPara: "Emprendedores y equipos de comunicación.",
       pricing: "Gratis / Pro $119.99/año",
-      category: "Video"
+      category: "Video",
+      tags: ["#Diseño", "#Plantillas"]
     },
     {
       id: "murf",
@@ -300,7 +316,8 @@ export const videoMap: MapData = {
       cons: ["Créditos limitados", "Menos emocional que ElevenLabs"],
       idealPara: "Creadores de tutoriales y contenido educativo.",
       pricing: "Desde $19/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#Locución", "#E-Learning"]
     },
     {
       id: "davinciresolve",
@@ -317,7 +334,8 @@ export const videoMap: MapData = {
       cons: ["Curva de aprendizaje alta", "Requiere hardware de élite"],
       idealPara: "Coloristas y editores de video de alta gama.",
       pricing: "Gratis / $295 (Lifetime)",
-      category: "Video"
+      category: "Video",
+      tags: ["#CorrecciónDeColor", "#VFX"]
     },
     {
       id: "demoair",
@@ -334,7 +352,8 @@ export const videoMap: MapData = {
       cons: ["Nicho muy específico", "Post-producción limitada"],
       idealPara: "YouTubers educativos y equipos de soporte.",
       pricing: "Desde $9.99/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#Tutoriales", "#Screencast"]
     },
     {
       id: "jasper",
@@ -351,7 +370,8 @@ export const videoMap: MapData = {
       cons: ["Solo texto", "Requiere edición humana"],
       idealPara: "Guionistas y marketers de contenido.",
       pricing: "Desde $39/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#Copywriting", "#Guionismo"]
     },
     {
       id: "kinemaster",
@@ -368,7 +388,8 @@ export const videoMap: MapData = {
       cons: ["Marca de agua (gratis)", "Interfaz compleja en pantallas pequeñas"],
       idealPara: "Creadores móviles y video-periodistas.",
       pricing: "Desde $4.99/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#EdiciónMóvil", "#4K"]
     },
     {
       id: "offeo",
@@ -385,7 +406,8 @@ export const videoMap: MapData = {
       cons: ["Enfoque en videos cortos", "Menos flexible para contenido largo"],
       idealPara: "Agencias de branding y creadores visuales.",
       pricing: "Desde $9.99/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#Branding", "#Animación"]
     },
     {
       id: "topaz",
@@ -402,7 +424,8 @@ export const videoMap: MapData = {
       cons: ["Hardware potente requerido", "Pago único elevado"],
       idealPara: "Restauradores de video e ingenieros de imagen.",
       pricing: "$299.99 (Compra única)",
-      category: "Video"
+      category: "Video",
+      tags: ["#Upscaling", "#Restauración"]
     },
     {
       id: "aftereffects",
@@ -419,7 +442,8 @@ export const videoMap: MapData = {
       cons: ["Curva de aprendizaje muy alta", "Suscripción mensual"],
       idealPara: "Diseñadores de motion graphics y artistas de VFX.",
       pricing: "Desde $20.99/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#MotionGraphics", "#VFX"]
     },
     {
       id: "blender",
@@ -436,7 +460,8 @@ export const videoMap: MapData = {
       cons: ["Interfaz técnica", "Requiere conocimientos de 3D"],
       idealPara: "Artistas 3D y creadores independientes.",
       pricing: "Gratis",
-      category: "Video"
+      category: "Video",
+      tags: ["#3D", "#Animación"]
     },
     {
       id: "obsstudio",
@@ -453,7 +478,8 @@ export const videoMap: MapData = {
       cons: ["Configuración técnica", "Interfaz austera"],
       idealPara: "Streamers y educadores en vivo.",
       pricing: "Gratis",
-      category: "Video"
+      category: "Video",
+      tags: ["#Streaming", "#OpenSource"]
     },
     {
       id: "streamlabs",
@@ -470,7 +496,8 @@ export const videoMap: MapData = {
       cons: ["Pesado en recursos", "Pago para funciones premium"],
       idealPara: "Streamers que buscan facilidad y engagement.",
       pricing: "Gratis / Prime $12/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#Streaming", "#Engagement"]
     },
     {
       id: "thumbly",
@@ -487,7 +514,8 @@ export const videoMap: MapData = {
       cons: ["Estilos similares entre usuarios", "Suscripción para funciones pro"],
       idealPara: "YouTubers que quieren maximizar su CTR.",
       pricing: "Desde $9/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#CTR", "#Miniaturas"]
     },
     {
       id: "tubemagic",
@@ -504,7 +532,8 @@ export const videoMap: MapData = {
       cons: ["Validación humana requerida", "Precio premium"],
       idealPara: "Creadores enfocados en crecimiento basado en datos.",
       pricing: "Desde $25/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#SEO", "#Crecimiento"]
     },
     {
       id: "socialblade",
@@ -521,7 +550,8 @@ export const videoMap: MapData = {
       cons: ["Estimaciones aproximadas", "Interfaz antigua"],
       idealPara: "Analistas y YouTubers profesionales.",
       pricing: "Gratis / Pro $3.99/mes",
-      category: "Video"
+      category: "Video",
+      tags: ["#Analytics", "#Benchmarking"]
     }
   ],
   topPicks: [
@@ -541,6 +571,26 @@ export const videoMap: MapData = {
     {
       question: "¿Puedo mejorar la calidad de un video antiguo con IA?",
       answer: "Sí, Topaz Video AI es el estándar industrial para el upscaling y restauración de texturas, permitiendo llevar material de baja resolución a 4K u 8K con fidelidad profesional."
+    },
+    {
+      question: "¿Cómo mantener la consistencia de personajes en videos de IA?",
+      answer: "La consistencia se logra mediante el uso de 'Character References' y control de 'Seeds' en herramientas como Runway Gen-3. Es vital utilizar descriptores físicos constantes en el prompt para anclar la identidad visual en el espacio latente del modelo."
+    },
+    {
+      question: "¿Qué es el Video 'Lip-Sync' y cuál es su precisión actual?",
+      answer: "El Lip-Sync por IA utiliza redes neuronales para sincronizar el movimiento labial con el audio. Herramientas como HeyGen han alcanzado un realismo del 95%, permitiendo doblajes multilingües donde la gesticulación se adapta naturalmente al fonema del nuevo idioma."
+    },
+    {
+      question: "¿Sustituirán los avatares de IA a los presentadores humanos?",
+      answer: "No los sustituyen, sino que escalan su presencia. Los avatares son la solución soberana para contenido educativo y corporativo masivo, mientras que el factor humano sigue siendo irreemplazable en la narrativa de marca de alta carga emocional."
+    },
+    {
+      question: "¿Se puede integrar la IA generativa en Premiere Pro o DaVinci Resolve?",
+      answer: "Sí, mediante funciones nativas como Adobe Sensei y plugins de IA. El flujo de trabajo profesional en 2026 es híbrido: se genera el asset en la nube y se refina con precisión técnica en el software de escritorio."
+    },
+    {
+      question: "¿Cuál es la diferencia entre IA de Difusión e IA de Animación?",
+      answer: "La Difusión (Runway/Luma) crea video desde el ruido estadístico píxel por píxel, mientras que la Animación IA (Pika) suele mover estructuras ya existentes. La Difusión es superior para realismo cinematográfico."
     }
   ],
   expertIdentity: {
