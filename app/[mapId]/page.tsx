@@ -84,7 +84,7 @@ export default function MapPage({ params }: PageProps) {
       ...mapData.tools.map(tool => ({
         "@type": "SoftwareApplication",
         "name": tool.name,
-        "description": tool.shortDescription,
+        "description": tool.verdict || tool.shortDescription,
         "applicationCategory": tool.category,
         "operatingSystem": "Web",
         "offers": {
@@ -178,7 +178,7 @@ export default function MapPage({ params }: PageProps) {
             </p>
 
             <div className="mt-20 animate-in fade-in slide-in-from-bottom-16 duration-1000 delay-300">
-              {mapData.guideUrl && (
+              {mapData.guideUrl && mapData.slug !== 'gratis' && (
                 <div className="relative inline-block group">
                   {/* Strategic Background Glow */}
                   <div
