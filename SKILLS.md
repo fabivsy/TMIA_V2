@@ -3,25 +3,32 @@
 This document defines the specialized "Skills" used for the migration of the AI Map catalog. These protocols ensure consistency, authority, and GEO optimization across all nodes.
 
 ## 1. Skill de Identidad Visual (Branding Node)
-**Objective:** Maintain visual essence without manual CSS intervention.
+**Objective:** Maintain visual essence without manual CSS intervention, following the "Arcane Engine" aesthetic.
 - **Mission:** Configure `primary` and `secondary` colors in the data object.
 - **Implementation:** Use dynamic Tailwind variables in `Hero` and `StrategicBridge`.
-- **Assets:** Ensure logos and backgrounds in `/public` meet dimension standards.
-- **Logo Rendering Standard (Universal):**
-    - **Optimization:** Always use `next/image` with the `fill` property and appropriate `sizes` (e.g., `sizes="80px"`) to ensure the browser consumes the preloaded resource correctly and avoids console warnings.
-    - **Container:** Always use a white background (`bg-white`) for the logo container (relative position) to ensure maximum contrast and consistency.
-    - **Fit:** Use `object-contain` to prevent cropping of tech logos.
-    - **Shape:** Apply `rounded-2xl` or `rounded-3xl` for a modern "App Icon" aesthetic.
-    - **Padding:** Maintain `p-3` (cards) to `p-4` (modals) to ensure adequate breathing room and prevent logos from touching the container edges.
-    - **Interactivity:** Implement a subtle `hover:scale-105` transition to enhance the premium feel.
-- **Layout & Hierarchy Standard:**
-    - **Directory Cards (ToolCard):** Remove pricing badges from the card headers. Prioritize tool name legibility by giving it the full width of the card. Use `break-words` only if necessary, but aim for clean, horizontal layouts.
-    - **Detail Modals (ToolModal):** Centralize pricing information here. Add a pricing badge in the modal header (Secondary Color) and a detailed investment block in the footer.
-    - **Functional Tags:** Replace generic hashtags with real, tool-specific functional tags derived from the `tags` array in the registry.
-    - **Dual-Color Synergy:** Use the `primary` color for the main identity and high-priority CTAs. Use the `secondary` color for technical accents, functional tags (with 15% opacity background), and brand gradients to create visual depth.
-- **Typography & Performance Standard:**
-    - **Font Weights:** Ensure all font weights used in the UI (especially `900/font-black` and `600/semibold`) are explicitly defined in the `Poppins` configuration in `layout.tsx`.
-    - **Console Hygiene:** Avoid raw `<img>` tags for catalog assets to prevent "preloaded but not used" warnings.
+- **Assets:** Ensure logos and backgrounds in `/public/heroes/` meet dimension standards.
+- **Hero Title Standard (Strategic):**
+    - **Format:** Always use the shortened **"[Categoría] IA"** format (e.g., "Video IA", "Gaming IA").
+    - **Branding:** Apply a **dual-color linear gradient** (to right) using the map's `primaryColor` and `secondaryColor`.
+    - **Style:** Use `text-4xl md:text-8xl`, font-black, and `tracking-tighter`. Ensure `pb-4` to prevent clipping of descenders.
+- **Logo Rendering Standard (Hero Only):**
+    - **Optimization:** Use `next/image` with `fill` and `sizes="112px"`.
+    - **Aesthetic:** **NO container boxes**. Logos must float freely.
+    - **Strategic Glow:** Place a `blur-3xl` div behind the logo with the map's `primaryColor` (20-40% opacity).
+- **Kinetic Parallax Standard:**
+    - **Protocol:** Apply a **0.4x scroll factor** to hero images.
+    - **Performance:** Use `translateY` transforms with `will-change-transform` for GPU-accelerated motion.
+    - **Visuals:** Base scale at `1.05`, `grayscale` with full-color transition on parent hover.
+- **Mission Control Dashboard (CTA):**
+    - **Design:** Replace buttons with a **large glassmorphic card** (`bg-[#121417]/40`, `backdrop-blur-2xl`).
+    - **Hierarchy:**
+        1. **Lead-in:** "¿No sabes por dónde empezar? Aprende a elegir con nuestra" (gray-400).
+        2. **Title:** "Guía de IA para [Categoría]" using the brand gradient.
+    - **Minimalism:** **NO arrows**, NO labels (remove "Protocolo de Inicio"). The card itself is the interactive anchor.
+- **Navigation Cleanup:**
+    - **Hero Focus:** Remove ALL secondary links ("Volver al directorio", "Explorar herramientas") from the Hero section to maximize conversion toward the Strategic Guide.
+- **Color Isolation Protocol:**
+    - **Strictness:** ZERO color mixing. Each map is a closed branding ecosystem. Use strictly `primaryColor` and `secondaryColor` for all text gradients, borders, and interactive glows.
 
 ## 2. Skill de Curaduría Técnica (Entity Refactoring)
 **Objective:** Transform raw data into "Authority Verdicts" for GEO/AEO.

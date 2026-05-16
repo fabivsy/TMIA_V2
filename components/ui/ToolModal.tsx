@@ -23,7 +23,10 @@ export default function ToolModal({ tool, onClose, primaryColor, secondaryColor 
       <div className="relative bg-[#121417]/90 backdrop-blur-3xl border border-white/10 w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-[48px] shadow-[0_0_100px_rgba(0,0,0,0.8)] animate-in zoom-in-95 fade-in duration-500 overflow-x-hidden">
         
         {/* Top Accent Line */}
-        <div className="absolute top-0 left-0 w-full h-1.5 bg-gradient-to-r from-transparent via-[#BD00FF] to-transparent opacity-50" />
+        <div 
+          className="absolute top-0 left-0 w-full h-1.5 opacity-50" 
+          style={{ background: `linear-gradient(to right, transparent, ${primaryColor || 'var(--brand-primary, #BD00FF)'}, transparent)` }}
+        />
         
         {/* Header */}
         <div className="p-10 pb-6 flex justify-between items-start relative z-10">
@@ -47,7 +50,12 @@ export default function ToolModal({ tool, onClose, primaryColor, secondaryColor 
             </div>
             <div>
               <div className="flex items-center gap-3 mb-2">
-                <span className="text-purple-400 text-[10px] font-black uppercase tracking-[0.2em] block">Análisis de Autoridad</span>
+                <span 
+                  className="text-[10px] font-black uppercase tracking-[0.2em] block"
+                  style={{ color: secondaryColor || 'var(--brand-secondary, #a855f7)' }}
+                >
+                  Análisis de Autoridad
+                </span>
                 <div 
                   className="text-[9px] font-black bg-white/5 px-3 py-1 rounded-full border uppercase tracking-widest whitespace-nowrap"
                   style={{ 

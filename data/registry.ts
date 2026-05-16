@@ -53,6 +53,8 @@ export interface MapData {
   gradientClass: string;
   primaryColor?: string;
   secondaryColor?: string;
+  heroImage?: string;
+  logo?: string;
   tools: Tool[];
   topPicks: Selection[];
   faqs?: FAQ[];
@@ -65,13 +67,16 @@ export interface MapData {
 import { audioMap } from "./maps/audio";
 import { creadoresMap } from "./maps/creadores";
 import { videoMap } from "./maps/video";
+import { gamingMap } from "./maps/gaming";
+import { productividadMap } from "./maps/productividad";
 
 // ─── Assembly ───
 export const MAP_REGISTRY: MapData[] = [
   audioMap,
   creadoresMap,
   videoMap,
-  { id: "productividad", slug: "productividad", title: "Productividad", description: "IA para eficiencia.", longDescription: "", gradientClass: "bg-gradient-productividad", guideContent: "", tools: [], topPicks: [] },
+  gamingMap,
+  productividadMap,
   { id: "negocios", slug: "negocios", title: "Negocios", description: "IA para empresas.", longDescription: "", gradientClass: "bg-gradient-negocios", guideContent: "", tools: [], topPicks: [] },
   { id: "gratis", slug: "gratis", title: "Gratis", description: "Herramientas gratuitas.", longDescription: "", gradientClass: "bg-gradient-gratis", guideContent: "", tools: [], topPicks: [] },
   { id: "viajeros", slug: "viajeros", title: "Viajeros", description: "IA para viajes.", longDescription: "", gradientClass: "bg-gradient-viajeros", guideContent: "", tools: [], topPicks: [] },
@@ -79,3 +84,4 @@ export const MAP_REGISTRY: MapData[] = [
   { id: "nocode", slug: "nocode", title: "No-Code", description: "Desarrollo sin código.", longDescription: "", gradientClass: "bg-gradient-nocode", guideContent: "", tools: [], topPicks: [] },
   { id: "academicos", slug: "academicos", title: "Académicos", description: "IA para estudio.", longDescription: "", gradientClass: "bg-gradient-academicos", guideContent: "", tools: [], topPicks: [] }
 ];
+

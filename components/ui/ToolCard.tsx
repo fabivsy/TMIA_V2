@@ -53,7 +53,10 @@ export default function ToolCard({ tool, onOpenDetails, gradientClass, primaryCo
 
       {/* Slogan & Description */}
       <div className="space-y-4 mb-8 flex-grow">
-        <p className="text-purple-300/80 text-sm font-semibold italic leading-snug">
+        <p 
+          className="text-sm font-semibold italic leading-snug opacity-80"
+          style={{ color: secondaryColor || 'var(--brand-secondary, #00BFFF)' }}
+        >
           "{tool.slogan}"
         </p>
         <p className="text-gray-400 text-base leading-relaxed font-medium line-clamp-3 group-hover:text-gray-300 transition-colors">
@@ -68,9 +71,9 @@ export default function ToolCard({ tool, onOpenDetails, gradientClass, primaryCo
             key={idx}
             className="px-4 py-1.5 rounded-xl text-[11px] font-bold transition-all border hover:opacity-80"
             style={{
-              backgroundColor: `${secondaryColor || '#00BFFF'}15`,
-              color: secondaryColor || '#00BFFF',
-              borderColor: `${secondaryColor || '#00BFFF'}30`
+              backgroundColor: `${primaryColor || '#007BFF'}15`,
+              color: primaryColor || '#007BFF',
+              borderColor: `${primaryColor || '#007BFF'}30`
             }}
           >
             {tag}
@@ -90,7 +93,11 @@ export default function ToolCard({ tool, onOpenDetails, gradientClass, primaryCo
           href={tool.url}
           target="_blank"
           rel="noopener nofollow"
-          className="flex-1 px-4 py-4 bg-gradient-to-br from-[#BD00FF] to-[#8A00B8] hover:from-[#d547ff] hover:to-[#BD00FF] text-white font-black rounded-2xl transition-all shadow-[0_0_20px_rgba(189,0,255,0.2)] hover:shadow-[0_0_30px_rgba(189,0,255,0.4)] text-[11px] uppercase tracking-widest flex items-center justify-center gap-2 active:scale-95 group/btn"
+          className="flex-1 px-4 py-4 text-white font-black rounded-2xl transition-all text-[11px] uppercase tracking-widest flex items-center justify-center gap-2 active:scale-95 group/btn hover:brightness-110"
+          style={{ 
+            background: `linear-gradient(to bottom right, ${primaryColor || 'var(--brand-primary, #007BFF)'}, ${secondaryColor || 'var(--brand-secondary, #00BFFF)'})`,
+            boxShadow: `0 0 20px ${primaryColor || 'var(--brand-primary, #007BFF)'}40`
+          }}
         >
           Visitar
           <span className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform">↗</span>

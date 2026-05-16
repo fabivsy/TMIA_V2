@@ -4,13 +4,15 @@ export const creadoresMap: MapData = {
   id: "creadores",
   slug: "creadores",
   title: "Creadores IA",
-  description: "IA para creación de contenido, diseño y arte de alto impacto.",
-  longDescription: "En 2026, la creación de contenido ha trascendido la generación masiva para centrarse en la Soberanía Semántica y la Fidelidad Visual. Este mapa audita las herramientas que dominan la arquitectura de la información y el diseño paramétrico.",
-  primaryColor: "#7C3AED", // Vibrant Purple
-  secondaryColor: "#0EA5E9", // Sky Blue
+  description: "Soberanía Semántica y Visual: IA para creación de contenido, diseño y arte de alto impacto.",
+  longDescription: "Soberanía Semántica y Visual: IA para creación de contenido, diseño y arte de alto impacto.",
+  primaryColor: "#7C3AED",
+  secondaryColor: "#0EA5E9",
+  heroImage: "creadores_hero.webp",
+  logo: "creadores_logo.webp",
   guideUrl: "https://tumapaia.com/guia-como-usar-la-ia-para-creadores/",
   selectionUrl: "https://tumapaia.com/seleccion-herramientas-de-ia-para-creadores/",
-  gradientClass: "bg-gradient-creadores",
+  gradientClass: "bg-gradient-to-br from-[#7C3AED]/80 to-[#0EA5E9]/80",
   
   guideContent: `
     <h2>Soberanía Semántica y Visual</h2>

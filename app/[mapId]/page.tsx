@@ -1,6 +1,7 @@
 "use client";
 
 import { MAP_REGISTRY, Tool } from "@/data/registry";
+import Image from "next/image";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 import FixGeoCTA from "@/components/sections/FixGeoCTA";
@@ -12,7 +13,7 @@ import AdditionalResources from "@/components/sections/AdditionalResources";
 import StrategicBridge from "@/components/sections/StrategicBridge";
 import { notFound } from "next/navigation";
 import Link from "next/link";
-import { useState, use } from "react";
+import { useState, use, useEffect } from "react";
 
 interface PageProps {
   params: Promise<{ mapId: string }>;
@@ -20,8 +21,22 @@ interface PageProps {
 
 export default function MapPage({ params }: PageProps) {
   const { mapId } = use(params);
-  const mapData = MAP_REGISTRY.find((m) => m.slug === mapId);
+  const mapData = MAP_REGISTRY.find((m) => m.slug.toLowerCase() === mapId.toLowerCase());
+
+  console.log("DEBUG: Resolved mapId:", mapId);
+  console.log("DEBUG: Found mapData:", !!mapData);
+  console.log("DEBUG: Available slugs:", MAP_REGISTRY.map(m => m.slug));
+
   const [selectedTool, setSelectedTool] = useState<Tool | null>(null);
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   if (!mapData) {
     notFound();
@@ -86,9 +101,9 @@ export default function MapPage({ params }: PageProps) {
   };
 
   return (
-    <div 
+    <div
       className="min-h-screen flex flex-col bg-[#0A0B0D] text-white relative overflow-hidden"
-      style={{ 
+      style={{
         '--brand-primary': mapData.primaryColor || '#FFC107',
         '--brand-secondary': mapData.secondaryColor || '#00BFFF'
       } as React.CSSProperties}
@@ -97,12 +112,12 @@ export default function MapPage({ params }: PageProps) {
       <div className="absolute top-0 left-0 w-full h-[1200px] bg-gradient-to-b from-[var(--brand-primary)]/10 to-transparent pointer-events-none" />
       <div className="absolute top-[10%] -right-[10%] w-[800px] h-[800px] bg-[var(--brand-primary)]/5 blur-[150px] rounded-full pointer-events-none" />
       <div className="absolute bottom-[20%] -left-[10%] w-[600px] h-[600px] bg-[var(--brand-secondary)]/5 blur-[130px] rounded-full pointer-events-none" />
-      
+
       {/* Subtle Grid Pattern for authority feel */}
       <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-[0.03] pointer-events-none" />
 
       <Navbar />
-      
+
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
@@ -110,24 +125,103 @@ export default function MapPage({ params }: PageProps) {
         }}
       />
 
-      <main className="relative flex-grow pt-32 pb-20 z-10">
-        <div className="max-w-7xl mx-auto px-6">
-          
-          {/* Header with White/Silver Text */}
-          <header className="mb-16">
-            <Link href="/" className="text-[var(--brand-primary)] hover:opacity-80 mb-6 inline-flex items-center gap-2 font-bold text-sm transition-opacity">
-              <span>←</span> Volver al Mapa General
-            </Link>
-            <h1 
-              className="text-6xl md:text-8xl font-black mb-8 tracking-tighter leading-none bg-clip-text text-transparent"
-              style={{ backgroundImage: `linear-gradient(to right, white, ${mapData.secondaryColor || 'var(--brand-secondary)'})` }}
+      <main className="relative flex-grow z-10">
+
+        {/* Premium Hero Section for the Map */}
+        <div className="relative w-full min-h-[75vh] flex items-center justify-center overflow-hidden py-24">
+          {mapData.heroImage ? (
+            <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40 grayscale group-hover:grayscale-0 transition-all duration-1000 scale-105"
+              style={{
+                backgroundImage: `url("/heroes/${mapData.heroImage}")`,
+                transform: `translateY(${scrollY * 0.4}px)`
+              }}
+            />
+          ) : (
+            <div className="absolute inset-0 bg-gradient-to-b from-[var(--brand-primary)]/20 to-transparent" />
+          )}
+          <div className="absolute inset-0 bg-gradient-to-b from-[#0A0B0D] via-transparent to-[#0A0B0D]" />
+
+          <div className="max-w-6xl mx-auto px-6 relative z-10 text-center">
+
+            {mapData.logo && (
+              <div className="relative w-28 h-28 mx-auto mb-12 group/logo hover:scale-110 transition-transform duration-700">
+                {/* Strategic Glow behind the logo */}
+                <div
+                  className="absolute inset-0 blur-3xl opacity-20 group-hover:opacity-40 transition-opacity duration-700 rounded-full"
+                  style={{ backgroundColor: mapData.primaryColor || 'var(--brand-primary)' }}
+                />
+                <div className="relative w-full h-full">
+                  <Image
+                    src={`/heroes/${mapData.logo}`}
+                    alt={mapData.title}
+                    fill
+                    sizes="112px"
+                    className="object-contain drop-shadow-[0_0_30px_rgba(255,255,255,0.3)]"
+                  />
+
+                </div>
+              </div>
+            )}
+
+
+            <h1
+              className="text-4xl md:text-7xl lg:text-8xl font-black mb-10 tracking-tighter leading-[1.1] pb-4 bg-clip-text text-transparent animate-in fade-in slide-in-from-bottom-8 duration-1000 px-4"
+              style={{ backgroundImage: `linear-gradient(to right, ${mapData.primaryColor || 'var(--brand-primary)'}, ${mapData.secondaryColor || 'var(--brand-secondary)'})` }}
             >
               {mapData.title}
             </h1>
-            <p className="text-2xl text-gray-400 max-w-4xl leading-relaxed font-medium">
+
+
+            <p className="text-xl md:text-3xl text-gray-300 max-w-4xl mx-auto leading-relaxed font-medium drop-shadow-2xl animate-in fade-in slide-in-from-bottom-12 duration-1000 delay-200">
               {mapData.longDescription}
             </p>
-          </header>
+
+            <div className="mt-20 animate-in fade-in slide-in-from-bottom-16 duration-1000 delay-300">
+              {mapData.guideUrl && (
+                <div className="relative inline-block group">
+                  {/* Strategic Background Glow */}
+                  <div
+                    className="absolute -inset-8 blur-3xl opacity-0 group-hover:opacity-20 transition-opacity duration-1000 rounded-full"
+                    style={{ backgroundColor: mapData.primaryColor || 'var(--brand-primary)' }}
+                  />
+
+                  <a
+                    href={mapData.guideUrl}
+                    target="_blank"
+                    rel="noopener"
+                    className="relative flex flex-col items-center gap-5 bg-[#121417]/40 hover:bg-[#121417]/60 p-8 md:p-10 rounded-[2.5rem] border border-white/5 backdrop-blur-2xl transition-all hover:scale-[1.02] active:scale-[0.98] group/btn overflow-hidden"
+                    style={{ borderBottom: `2px solid ${mapData.primaryColor || 'var(--brand-primary)'}44` }}
+                  >
+                    {/* Inner Shine Effect */}
+                    <div className="absolute inset-0 bg-gradient-to-tr from-white/5 to-transparent opacity-0 group-hover/btn:opacity-100 transition-opacity duration-700" />
+
+                    <p className="text-gray-400 text-sm md:text-base font-medium tracking-wide opacity-50 group-hover/btn:opacity-80 transition-opacity">
+                      ¿No sabes por dónde empezar? Aprende a elegir con nuestra
+                    </p>
+
+                    <div className="flex items-center gap-6">
+                      <span
+                        className="text-2xl md:text-4xl font-black tracking-tighter bg-clip-text text-transparent"
+                        style={{
+                          backgroundImage: `linear-gradient(to right, ${mapData.primaryColor || 'var(--brand-primary)'}, ${mapData.secondaryColor || 'var(--brand-secondary)'})`
+                        }}
+                      >
+                        Guía de IA para {mapData.title.replace(" IA", "")}
+                      </span>
+
+                    </div>
+                  </a>
+                </div>
+              )}
+            </div>
+
+          </div>
+        </div>
+
+        <div id="directorio" className="max-w-7xl mx-auto px-6">
+
+
 
           {/* Nav Tab with Glassmorphism */}
           <nav className="flex gap-10 border-b border-white/5 mb-16 pb-4 sticky top-24 bg-black/20 backdrop-blur-2xl z-30 px-6 rounded-t-2xl">
@@ -144,9 +238,12 @@ export default function MapPage({ params }: PageProps) {
               {mapData.tools.map((tool) => (
                 <div key={tool.id} className="relative group">
                   {/* Subtle Glow behind cards on hover */}
-                  <div className="absolute inset-0 bg-purple-500/10 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-[32px]" />
-                  <ToolCard 
-                    tool={tool} 
+                  <div 
+                    className="absolute inset-0 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-[32px]" 
+                    style={{ backgroundColor: `${mapData.primaryColor || '#a855f7'}1A` }}
+                  />
+                  <ToolCard
+                    tool={tool}
                     gradientClass={mapData.gradientClass}
                     primaryColor={mapData.primaryColor}
                     secondaryColor={mapData.secondaryColor}
@@ -159,7 +256,7 @@ export default function MapPage({ params }: PageProps) {
 
           {/* Guide with Dark High-End Aesthetic */}
           <section id="guia" className="mb-32">
-            <StrategicBridge 
+            <StrategicBridge
               content={mapData.guideContent}
               guideUrl={mapData.guideUrl}
               selectionUrl={mapData.selectionUrl}
@@ -190,11 +287,11 @@ export default function MapPage({ params }: PageProps) {
       </main>
 
       {selectedTool && (
-        <ToolModal 
-          tool={selectedTool} 
+        <ToolModal
+          tool={selectedTool}
           primaryColor={mapData.primaryColor}
           secondaryColor={mapData.secondaryColor}
-          onClose={() => setSelectedTool(null)} 
+          onClose={() => setSelectedTool(null)}
         />
       )}
 
