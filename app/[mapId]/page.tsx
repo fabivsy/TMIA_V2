@@ -178,7 +178,7 @@ export default function MapPage({ params }: PageProps) {
             </p>
 
             <div className="mt-20 animate-in fade-in slide-in-from-bottom-16 duration-1000 delay-300">
-              {mapData.guideUrl && mapData.slug !== 'gratis' && (
+              {mapData.guideUrl && (
                 <div className="relative inline-block group">
                   {/* Strategic Background Glow */}
                   <div
