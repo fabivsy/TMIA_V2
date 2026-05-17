@@ -71,6 +71,8 @@ import { gamingMap } from "./maps/gaming";
 import { productividadMap } from "./maps/productividad";
 
 import { gratisMap } from "./maps/gratis";
+import { negociosMap } from "./maps/negocios";
+import { viajerosMap } from "./maps/viajeros";
 
 // ─── Assembly ───
 export const MAP_REGISTRY: MapData[] = [
@@ -80,8 +82,8 @@ export const MAP_REGISTRY: MapData[] = [
   gamingMap,
   productividadMap,
   gratisMap,
-  { id: "negocios", slug: "negocios", title: "Negocios", description: "IA para empresas.", longDescription: "", gradientClass: "bg-gradient-negocios", guideContent: "", tools: [], topPicks: [] },
-  { id: "viajeros", slug: "viajeros", title: "Viajeros", description: "IA para viajes.", longDescription: "", gradientClass: "bg-gradient-viajeros", guideContent: "", tools: [], topPicks: [] },
+  negociosMap,
+  viajerosMap,
   { id: "finanzas", slug: "finanzas", title: "Finanzas", description: "IA financiera.", longDescription: "", gradientClass: "bg-gradient-finanzas", guideContent: "", tools: [], topPicks: [] },
   { id: "nocode", slug: "nocode", title: "No-Code", description: "Desarrollo sin código.", longDescription: "", gradientClass: "bg-gradient-nocode", guideContent: "", tools: [], topPicks: [] },
   { id: "academicos", slug: "academicos", title: "Académicos", description: "IA para estudio.", longDescription: "", gradientClass: "bg-gradient-academicos", guideContent: "", tools: [], topPicks: [] }

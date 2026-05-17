@@ -238,8 +238,8 @@ export default function MapPage({ params }: PageProps) {
               {mapData.tools.map((tool) => (
                 <div key={tool.id} className="relative group">
                   {/* Subtle Glow behind cards on hover */}
-                  <div 
-                    className="absolute inset-0 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-[32px]" 
+                  <div
+                    className="absolute inset-0 blur-2xl opacity-0 group-hover:opacity-100 transition-opacity rounded-[32px]"
                     style={{ backgroundColor: `${mapData.primaryColor || '#a855f7'}1A` }}
                   />
                   <ToolCard
