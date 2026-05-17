@@ -56,15 +56,6 @@ export default function ToolModal({ tool, onClose, primaryColor, secondaryColor 
                 >
                   Análisis de Autoridad
                 </span>
-                <div 
-                  className="text-[9px] font-black bg-white/5 px-3 py-1 rounded-full border uppercase tracking-widest whitespace-nowrap"
-                  style={{ 
-                    color: secondaryColor || 'var(--brand-secondary)',
-                    borderColor: `${secondaryColor || 'var(--brand-secondary)'}33`
-                  }}
-                >
-                  {tool.pricing}
-                </div>
               </div>
               <h2 className="text-4xl font-black text-white tracking-tight">{tool.name}</h2>
             </div>
