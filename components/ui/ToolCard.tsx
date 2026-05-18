@@ -68,6 +68,7 @@ export default function ToolCard({ tool, onOpenDetails, gradientClass, primaryCo
       <div className="flex flex-wrap gap-2 mb-10">
         {tool.tags?.map((tag, idx) => {
           const isAcademicos = tool.category === 'academicos';
+          const isJuristas = tool.category === 'juristas';
           return (
             <span
               key={idx}
@@ -75,12 +76,18 @@ export default function ToolCard({ tool, onOpenDetails, gradientClass, primaryCo
               style={{
                 backgroundColor: isAcademicos
                   ? 'rgba(165, 184, 206, 0.1)'
+                  : isJuristas
+                  ? 'rgba(205, 127, 50, 0.1)'
                   : `${primaryColor || '#007BFF'}15`,
                 color: isAcademicos
                   ? '#A5B8CE'
+                  : isJuristas
+                  ? '#CD7F32'
                   : primaryColor || '#007BFF',
                 borderColor: isAcademicos
                   ? 'rgba(165, 184, 206, 0.25)'
+                  : isJuristas
+                  ? 'rgba(205, 127, 50, 0.25)'
                   : `${primaryColor || '#007BFF'}30`
               }}
             >

@@ -76,6 +76,7 @@ import { viajerosMap } from "./maps/viajeros";
 import { finanzasMap } from "./maps/finanzas";
 import { noCodeMap } from "./maps/no-code";
 import { academicosMap } from "./maps/academicos";
+import { juristasMap } from "./maps/juristas";
 
 // ─── Assembly ───
 export const MAP_REGISTRY: MapData[] = [
@@ -89,6 +90,7 @@ export const MAP_REGISTRY: MapData[] = [
   viajerosMap,
   finanzasMap,
   noCodeMap,
-  academicosMap
+  academicosMap,
+  juristasMap
 ];
 
