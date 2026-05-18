@@ -3,7 +3,7 @@ import type { MapData } from "../registry";
 export const productividadMap: MapData = {
   id: "productividad",
   slug: "productividad",
-  title: "Productividad IA",
+  title: "Productividad",
   description: "Herramientas de IA para eficiencia y ahorro de tiempo.",
   longDescription: "Tu catálogo centralizado para automatizar tu flujo de trabajo, gestionar proyectos y optimizar cada minuto de tu día.",
   primaryColor: "#007BFF", // Productividad Blue

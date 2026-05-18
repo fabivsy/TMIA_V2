@@ -29,6 +29,14 @@ This document defines the specialized "Skills" used for the migration of the AI 
     - **Hero Focus:** Remove ALL secondary links ("Volver al directorio", "Explorar herramientas") from the Hero section to maximize conversion toward the Strategic Guide.
 - **Color Isolation Protocol:**
     - **Strictness:** ZERO color mixing. Each map is a closed branding ecosystem. Use strictly `primaryColor` and `secondaryColor` for all text gradients, borders, and interactive glows.
+- **Premium UI/UX Polish & Animation Standards (Arcane Engine 2.0):**
+    - **Futuristic Spatial Backdrop:** Establish layered visual depth using a subtle 40px grid pattern (`bg-[linear-gradient(to_right,#ffffff03_1px,transparent_1px)]`) and diagonal low-opacity scanline masks.
+    - **Organic Parallax Blur Nodes:** Behind hero cards or section headings, inject multiple floating blur nodes utilizing dynamic keyframe flows (`float-slow`, `float-reverse`, `pulse-slow`) to create ambient motion.
+    - **Shifting Gold Shimmer Gradient:** High-value highlights should employ a multi-point linear gradient (`#FFF` -> `#ffe27c` -> `#d4af37` -> `#ff8c00` -> `#FFF`) mapped to a looping background-position keyframe for maximum search/brand authority.
+    - **Tactile Hover Sweeps:** Primary CTA and button elements must use a skew pseudo-element transition (`shine-sweep`) that sweeps a soft light reflection across the button on hover.
+    - **Card Color Uniformity:** Avoid hardcoded accent colors. All card interfaces (`MapCard`, `ToolCard`) must dynamically source their interactive states directly from `brand-primary` or category gradients.
+    - **Symmetric Pros & Cons Panel Design:** Interactive modals must maintain strict visual symmetry. Both positive ("Pros") and negative ("Cons") lists must be housed in glassmorphic cards (`bg-[color]/5`, `border-[color]/10`) with matching illustrative watermarks (`opacity-5 group-hover:opacity-10`) and uniform border rounding (`rounded-3xl p-8`).
+
 
 ## 2. Skill de Curaduría Técnica (Entity Refactoring)
 **Objective:** Transform raw data into "Authority Verdicts" for GEO/AEO.
@@ -61,6 +69,23 @@ This document defines the specialized "Skills" used for the migration of the AI 
 - **Protocol:**
     - The `ExpertIdentity` block must mention Fabio Yocco as the lead curator.
     - Every schema must link back to `https://thecuratorgroup.com` or the official project domain to establish provenance.
+
+## 5. Protocolo de Estandarización de Contenido y Nombres (Smart-Authority)
+**Objective:** Maintain absolute visual symmetry on grid layouts while guaranteeing high AEO (Answer Engine Optimization) and LLM search visibility.
+
+### A. Title Normalization (Hybrid Option C)
+- **Database `title`:** Must be clean, visual-only, and **WITHOUT** the `" IA"` or `" AI"` suffix (e.g., `"No-Code"`, `"Finanzas"`, `"Negocios"`, `"Productividad"`).
+- **Dynamic Crawler Title:** The Next.js page controller dynamically appends `" IA"` (e.g., `"${title} IA"`) to the browser tab `<title>` and to the structured JSON-LD schema, retaining search authority while keeping the UI clean and visual.
+
+### B. Category Descriptions & Length Constraints
+- **Homepage Card Description (`description`):**
+    - **Length:** Sweet, short, and punchy. Maximum of **50–80 characters**.
+    - **Phrasing:** Clear, direct action statements (e.g., `"Construye apps, webs y automations sin escribir código."`).
+    - **Symmetry Rule:** MUST NEVER exceed 2 lines of text on standard grid columns to prevent asymmetrical card stretching.
+- **Hero Section Subtitle (`longDescription`):**
+    - **Length:** Highly semantic, single-sentence summary of **120–180 characters**.
+    - **Phrasing:** Combine high-value LLM intent keywords (e.g., `"Un ecosistema curado..."`) with clear user value.
+    - **Aesthetic Rule:** Must remain as a single, beautifully balanced paragraph under the main heading. Never concatenate paragraphs or large blocks inside this field.
 
 ---
 

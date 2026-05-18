@@ -38,6 +38,12 @@ export default function MapPage({ params }: PageProps) {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  useEffect(() => {
+    if (mapData) {
+      document.title = `${mapData.title} IA - Directorio Curado | Tu Mapa IA`;
+    }
+  }, [mapData]);
+
   if (!mapData) {
     notFound();
   }
@@ -49,8 +55,8 @@ export default function MapPage({ params }: PageProps) {
         "@type": "CollectionPage",
         "@id": `https://tumapaia.com/${mapData.slug}`,
         "url": `https://tumapaia.com/${mapData.slug}`,
-        "name": `${mapData.title} | Tu Mapa IA`,
-        "headline": mapData.title,
+        "name": `${mapData.title} IA | Tu Mapa IA`,
+        "headline": `${mapData.title} IA`,
         "description": mapData.longDescription,
         "author": {
           "@type": "Person",

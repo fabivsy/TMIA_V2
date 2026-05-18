@@ -3,7 +3,7 @@ import { MapData } from '../registry';
 export const gratisMap: MapData = {
   id: "gratis",
   slug: "gratis",
-  title: "Gratis IA",
+  title: "Gratis",
   description: "Inteligencia Artificial de primer nivel, sin costo.",
   longDescription: "Inteligencia Artificial de primer nivel, sin costo.",
   primaryColor: "#10B981", // Emerald Green

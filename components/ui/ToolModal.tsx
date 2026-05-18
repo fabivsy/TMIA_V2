@@ -97,14 +97,17 @@ export default function ToolModal({ tool, onClose, primaryColor, secondaryColor 
               </ul>
             </div>
 
-            <div className="bg-white/5 border border-white/5 rounded-2xl p-6">
-              <h4 className="text-[#FF4B4B] font-bold text-sm uppercase tracking-widest mb-4 flex items-center gap-2">
-                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M6 18L18 6M6 6l12 12" />
+            {/* Cons */}
+            <div className="bg-[#FF4B4B]/5 border border-[#FF4B4B]/10 rounded-3xl p-8 relative overflow-hidden group">
+              <div className="absolute top-0 right-0 p-4 opacity-5 group-hover:opacity-10 transition-opacity">
+                <svg className="w-16 h-16 text-[#FF4B4B]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2.5} d="M6 18L18 6M6 6l12 12" />
                 </svg>
-                Contras
+              </div>
+              <h4 className="text-[#FF4B4B] font-black text-xs uppercase tracking-[0.2em] mb-6 flex items-center gap-3">
+                Contras y Limitaciones
               </h4>
-              <ul className="space-y-3">
+              <ul className="space-y-4">
                 {tool.cons.map((con, i) => (
                   <li key={i} className="text-white/60 text-sm flex gap-2">
                     <span className="text-[#FF4B4B]">•</span> {con}

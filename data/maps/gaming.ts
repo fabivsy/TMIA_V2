@@ -3,7 +3,7 @@ import { MapData } from "../registry";
 export const gamingMap: MapData = {
   id: "gaming",
   slug: "gaming",
-  title: "Gaming IA",
+  title: "Gaming",
   description: "IA para desarrollo de videojuegos, assets 3D y diseño de narrativas.",
   longDescription: "El arsenal del creador de mundos: IA para desarrollo de videojuegos, assets 3D y diseño de narrativas.",
   primaryColor: "#7B2CBF", // Royal Purple

@@ -3,7 +3,7 @@ import type { MapData } from "../registry";
 export const audioMap: MapData = {
   id: "audio",
   slug: "audio-ia",
-  title: "Audio IA",
+  title: "Audio",
   description: "IA para música, voz y post-producción sonora de alta fidelidad.",
   longDescription: "El ecosistema del sonido infinito: IA para música, voz y post-producción sonora de alta fidelidad.",
   primaryColor: "#E11D48",

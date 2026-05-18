@@ -35,3 +35,83 @@ body {
   }
 }
 
+/* Custom Premium UI Animations & Utilities */
+@keyframes float-slow {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-20px) scale(1.05); }
+}
+
+@keyframes float-reverse {
+  0%, 100% { transform: translateY(0) scale(1.05); }
+  50% { transform: translateY(20px) scale(0.95); }
+}
+
+@keyframes pulse-slow {
+  0%, 100% { opacity: 0.2; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.1); }
+}
+
+@keyframes text-shine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.animate-float-slow {
+  animation: float-slow 12s ease-in-out infinite;
+}
+
+.animate-float-reverse {
+  animation: float-reverse 15s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+  animation: pulse-slow 8s ease-in-out infinite;
+}
+
+/* Shimmer Sweep Effect */
+.shine-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-sweep::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.4) 50%,
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: all 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.shine-sweep:hover::before {
+  left: 150%;
+}
+
+/* Premium Dynamic Shifting Gold Gradient */
+.text-shine-gold {
+  background: linear-gradient(
+    90deg,
+    #fff 0%,
+    #ffe27c 25%,
+    #d4af37 50%,
+    #ff8c00 75%,
+    #fff 100%
+  );
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: text-shine 6s linear infinite;
+}
+
+

@@ -3,7 +3,7 @@ import { MapData } from "../registry";
 export const videoMap: MapData = {
   id: "video",
   slug: "video",
-  title: "Video IA",
+  title: "Video",
   description: "IA para generación y edición de video, síntesis generativa y efectos visuales.",
   longDescription: "El arsenal del cineasta moderno: IA para síntesis de video, edición generativa y efectos visuales de alta gama.",
   primaryColor: "#6A0DAD",

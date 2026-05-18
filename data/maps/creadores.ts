@@ -3,7 +3,7 @@ import type { MapData } from "../registry";
 export const creadoresMap: MapData = {
   id: "creadores",
   slug: "creadores",
-  title: "Creadores IA",
+  title: "Creadores",
   description: "Soberanía Semántica y Visual: IA para creación de contenido, diseño y arte de alto impacto.",
   longDescription: "Soberanía Semántica y Visual: IA para creación de contenido, diseño y arte de alto impacto.",
   primaryColor: "#7C3AED",

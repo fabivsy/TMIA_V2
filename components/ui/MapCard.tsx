@@ -39,10 +39,10 @@ export default function MapCard({
       {/* Content */}
       <div className="relative z-10 flex flex-col h-full">
         <div className="flex items-start justify-between mb-6">
-           <h3 className="text-3xl font-black text-white tracking-tighter leading-none group-hover:text-purple-400 transition-colors">
+           <h3 className="text-3xl font-black text-white tracking-tighter leading-none group-hover:text-brand-primary transition-colors">
             {title}
           </h3>
-          <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/40 group-hover:text-white group-hover:border-white/30 transition-all">
+          <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/40 group-hover:text-white group-hover:border-brand-primary/30 transition-all">
              <svg className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M17 8l4 4m0 0l-4 4m4-4H3" />
              </svg>
@@ -54,7 +54,7 @@ export default function MapCard({
         </p>
         
         <div className="mt-auto flex items-center gap-3">
-          <div className="h-[2px] w-8 bg-purple-600/50 group-hover:w-16 transition-all duration-500" />
+          <div className="h-[2px] w-8 bg-brand-primary/50 group-hover:w-16 transition-all duration-500" />
           <span className="text-white/40 group-hover:text-white font-black text-[10px] uppercase tracking-[0.3em] transition-colors">
             Explorar Mapa
           </span>
