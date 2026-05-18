@@ -6,7 +6,7 @@ export const juristasMap: MapData = {
   title: "Juristas",
   description: "IA para contratos, investigación y litigios.",
   longDescription: "Auditoría exhaustiva de infraestructuras de IA orientadas al análisis contractual de precisión, eDiscovery a gran escala y automatización del razonamiento legal con cero alucinaciones.",
-  primaryColor: "#001F3F", // Deep Navy Blue
+  primaryColor: "#4E749F", // Slate Navy Blue for professional high contrast
   secondaryColor: "#CD7F32", // Metallic Bronze
   heroImage: "juristas_hero.webp",
   logo: "juristas_logo.webp",
@@ -423,6 +423,18 @@ export const juristasMap: MapData = {
     {
       question: "¿Pueden estas IAs predecir si voy a ganar un juicio?",
       answer: "No pueden predecir un resultado absoluto debido a la variabilidad humana del órgano judicial, pero plataformas de analítica predictiva avanzada (como Lex Machina) calculan probabilidades estadísticas basadas en el comportamiento histórico del juez, la contraparte y los precedentes jurisprudenciales en la materia, permitiendo tomar decisiones altamente informadas."
+    },
+    {
+      question: "¿Tienen validez probatoria en México y América Latina las pruebas recopiladas mediante eDiscovery?",
+      answer: "Sí. En México (conforme al Art. 89 del Código de Comercio y códigos procesales civiles) y la mayoría de países de LATAM, la evidencia digital es admisible. Las suites profesionales de eDiscovery aseguran la cadena de custodia a través de metadatos nativos estructurados, hashes SHA-256 inalterados y trazabilidad de accesos, blindando las pruebas ante objeciones de la contraparte."
+    },
+    {
+      question: "¿Cómo afecta el cumplimiento del RGPD europeo a las firmas que usan IA legal en España?",
+      answer: "En España y la Unión Europea, el tratamiento de información confidencial de clientes mediante IA exige el estricto apego al RGPD. Firmas soberanas deben optar por herramientas que garanticen almacenamiento de datos localizados en nodos soberanos de la UE (como Harvey o Kira en servidores AWS/Azure en Frankfurt o Dublín) y firmar acuerdos específicos de encargo de tratamiento (DPA), evitando la filtración transfronteriza y la indexación en modelos públicos."
+    },
+    {
+      question: "¿Qué validez jurídica tienen los contratos de IA firmados electrónicamente en el Cono Sur (Argentina, Chile, etc.)?",
+      answer: "Existe una distinción técnica crucial entre Firma Digital (con certificación estatal y presunción iuris tantum de autoría) y Firma Electrónica simple. Los contratos redactados y gestionados por suites CLM con IA integradas (como DocuSign CLM) operan comúnmente bajo Firma Electrónica. En caso de litigio, su validez reside en la solidez probatoria de sus trazas de auditoría (logs IP, verificación de correo y firmas criptográficas asimétricas) que las plataformas registran automáticamente."
     }
   ],
   expertIdentity: {
