@@ -75,6 +75,7 @@ import { negociosMap } from "./maps/negocios";
 import { viajerosMap } from "./maps/viajeros";
 import { finanzasMap } from "./maps/finanzas";
 import { noCodeMap } from "./maps/no-code";
+import { academicosMap } from "./maps/academicos";
 
 // ─── Assembly ───
 export const MAP_REGISTRY: MapData[] = [
@@ -88,6 +89,6 @@ export const MAP_REGISTRY: MapData[] = [
   viajerosMap,
   finanzasMap,
   noCodeMap,
-  { id: "academicos", slug: "academicos", title: "Académicos", description: "IA para estudio.", longDescription: "", gradientClass: "bg-gradient-academicos", guideContent: "", tools: [], topPicks: [] }
+  academicosMap
 ];
 

@@ -66,19 +66,28 @@ export default function ToolCard({ tool, onOpenDetails, gradientClass, primaryCo
 
       {/* Functional Tags Section */}
       <div className="flex flex-wrap gap-2 mb-10">
-        {tool.tags?.map((tag, idx) => (
-          <span
-            key={idx}
-            className="px-4 py-1.5 rounded-xl text-[11px] font-bold transition-all border hover:opacity-80"
-            style={{
-              backgroundColor: `${primaryColor || '#007BFF'}15`,
-              color: primaryColor || '#007BFF',
-              borderColor: `${primaryColor || '#007BFF'}30`
-            }}
-          >
-            {tag}
-          </span>
-        ))}
+        {tool.tags?.map((tag, idx) => {
+          const isAcademicos = tool.category === 'academicos';
+          return (
+            <span
+              key={idx}
+              className="px-4 py-1.5 rounded-xl text-[11px] font-bold transition-all border hover:opacity-80"
+              style={{
+                backgroundColor: isAcademicos
+                  ? 'rgba(165, 184, 206, 0.1)'
+                  : `${primaryColor || '#007BFF'}15`,
+                color: isAcademicos
+                  ? '#A5B8CE'
+                  : primaryColor || '#007BFF',
+                borderColor: isAcademicos
+                  ? 'rgba(165, 184, 206, 0.25)'
+                  : `${primaryColor || '#007BFF'}30`
+              }}
+            >
+              {tag}
+            </span>
+          );
+        })}
       </div>
 
       {/* Footer Actions */}
