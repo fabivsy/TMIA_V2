@@ -67,6 +67,7 @@ export default function ToolCard({ tool, onOpenDetails, gradientClass, primaryCo
       {/* Functional Tags Section */}
       <div className="flex flex-wrap gap-2 mb-10">
         {tool.tags?.map((tag, idx) => {
+          const isCrypto = tool.category === 'crypto';
           const isAcademicos = tool.category === 'academicos';
           const isJuristas = tool.category === 'juristas';
           return (
@@ -74,17 +75,23 @@ export default function ToolCard({ tool, onOpenDetails, gradientClass, primaryCo
               key={idx}
               className="px-4 py-1.5 rounded-xl text-[11px] font-bold transition-all border hover:opacity-80"
               style={{
-                backgroundColor: isAcademicos
+                backgroundColor: isCrypto
+                  ? `${secondaryColor || '#FFB700'}15`
+                  : isAcademicos
                   ? 'rgba(165, 184, 206, 0.1)'
                   : isJuristas
                   ? 'rgba(205, 127, 50, 0.1)'
                   : `${primaryColor || '#007BFF'}15`,
-                color: isAcademicos
+                color: isCrypto
+                  ? secondaryColor || '#FFB700'
+                  : isAcademicos
                   ? '#A5B8CE'
                   : isJuristas
                   ? '#CD7F32'
                   : primaryColor || '#007BFF',
-                borderColor: isAcademicos
+                borderColor: isCrypto
+                  ? `${secondaryColor || '#FFB700'}30`
+                  : isAcademicos
                   ? 'rgba(165, 184, 206, 0.25)'
                   : isJuristas
                   ? 'rgba(205, 127, 50, 0.25)'
