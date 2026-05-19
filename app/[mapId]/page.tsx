@@ -211,32 +211,35 @@ export default function MapPage({ params }: PageProps) {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto relative z-20">
               
               {/* Card 1: Software y Análisis de Datos */}
-              <div className="relative group rounded-[40px] overflow-hidden bg-[#16181d]/50 border border-white/10 p-10 flex flex-col text-left backdrop-blur-2xl transition-all duration-500 hover:border-white/20">
-                <div className="absolute -top-20 -right-20 w-64 h-64 blur-[100px] opacity-10 bg-gradient-to-br from-[#4A90E2] to-[#98D8AA] pointer-events-none rounded-full" />
-                <div className="relative w-16 h-16 mb-6">
+              <button
+                onClick={() => handleSelectSubMap("software")}
+                className="relative group rounded-[40px] overflow-hidden bg-[#16181d]/50 border border-white/10 p-10 flex flex-col text-left backdrop-blur-2xl transition-all duration-500 hover:border-[#4A90E2]/40 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] cursor-pointer"
+              >
+                <div className="absolute -top-20 -right-20 w-64 h-64 blur-[100px] opacity-15 bg-gradient-to-br from-[#4A90E2] to-[#98D8AA] pointer-events-none rounded-full group-hover:opacity-25 transition-opacity" />
+                <div className="relative w-16 h-16 mb-6 group-hover:scale-105 transition-transform duration-500">
                   <Image
                     src="/heroes/agricultores_logo.webp"
                     alt="Software"
                     fill
                     sizes="64px"
-                    className="object-contain opacity-50 grayscale"
+                    className="object-contain"
                   />
                 </div>
-                <div className="flex justify-between items-start mb-4">
-                  <h2 className="text-2xl md:text-3xl font-black text-white/60 leading-tight">
+                <div className="flex justify-between items-start mb-4 w-full">
+                  <h2 className="text-2xl md:text-3xl font-black text-white leading-tight group-hover:text-[#4A90E2] transition-colors">
                     Software y Análisis de Datos
                   </h2>
-                  <span className="px-3 py-1 bg-white/5 border border-white/10 rounded-full text-[9px] uppercase tracking-wider text-white/50 font-bold">
-                    Auditoría
+                  <span className="px-3 py-1 bg-[#4A90E2]/10 border border-[#4A90E2]/20 rounded-full text-[9px] uppercase tracking-wider text-[#4A90E2] font-bold">
+                    Activo
                   </span>
                 </div>
-                <p className="text-gray-400 text-sm md:text-base leading-relaxed font-medium mb-8 flex-grow">
+                <p className="text-gray-400 text-sm md:text-base leading-relaxed font-medium mb-8 flex-grow group-hover:text-gray-300 transition-colors">
                   Plataformas de gestión de fincas, análisis satelital predictivo y optimización de recursos híbridos.
                 </p>
-                <div className="w-full px-6 py-4 bg-white/5 border border-white/5 text-white/30 font-bold rounded-2xl transition-all text-xs uppercase tracking-widest text-center">
-                  Próximamente
+                <div className="w-full px-6 py-4 bg-gradient-to-r from-[#4A90E2] to-[#98D8AA] text-white font-black rounded-2xl transition-all text-xs uppercase tracking-widest text-center shadow-[0_4px_20px_rgba(74,144,226,0.3)] group-hover:brightness-110 group-hover:shadow-[0_4px_30px_rgba(152,216,170,0.4)]">
+                  Explorar Mapa de Software
                 </div>
-              </div>
+              </button>
 
               {/* Card 2: Robótica y Automatización */}
               <button
