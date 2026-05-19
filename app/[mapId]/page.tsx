@@ -201,7 +201,7 @@ export default function MapPage({ params }: PageProps) {
 
             {/* Title */}
             <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tighter leading-none pb-4 bg-gradient-to-r from-[#4ADE80] via-[#86EFAC] to-[#FFE4A0] bg-clip-text text-transparent drop-shadow-[0_4px_30px_rgba(74,222,128,0.15)]">
-              Agricultura IA
+              {mapData.title}
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-16 font-medium leading-relaxed drop-shadow-md">
               El Centro de Mando de IA para Agricultura: software para la gestión o robots para la automatización.
