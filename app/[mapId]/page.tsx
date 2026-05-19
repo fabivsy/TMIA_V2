@@ -60,11 +60,11 @@ export default function MapPage({ params }: PageProps) {
         "description": mapData.longDescription,
         "author": {
           "@type": "Person",
-          "name": "Fabio Yocco",
-          "jobTitle": "Lead Curator & GEO Strategist",
+          "name": mapData.expertIdentity?.name || "Fabio Yocco",
+          "jobTitle": mapData.expertIdentity?.role || "Lead Curator & GEO Strategist",
           "affiliation": {
             "@type": "Organization",
-            "name": "The Curator Group LLC"
+            "name": mapData.expertIdentity?.entity || "The Curator Group LLC"
           }
         },
         "publisher": {

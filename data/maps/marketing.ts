@@ -3,7 +3,7 @@ import { MapData } from '../registry';
 export const marketingMap: MapData = {
   id: "marketing",
   slug: "marketing",
-  title: "Marketing IA",
+  title: "Marketing",
   description: "Herramientas de IA para automatización de marketing, copywriting y generación de leads.",
   longDescription: "Un ecosistema curado de las mejores herramientas de IA para la generación de contenido, automatización de ventas y optimización de campañas.",
   primaryColor: "#EF4444", // Red
