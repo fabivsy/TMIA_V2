@@ -70,26 +70,30 @@ export default function ToolCard({ tool, onOpenDetails, gradientClass, primaryCo
           const isCrypto = tool.category === 'crypto';
           const isAcademicos = tool.category === 'academicos';
           const isJuristas = tool.category === 'juristas';
+          const isDesarrolladores = tool.category === 'desarrolladores';
+          const isArquitectura = tool.category === 'arquitectura';
+          const useSecondary = isCrypto || isDesarrolladores || isArquitectura;
+
           return (
             <span
               key={idx}
               className="px-4 py-1.5 rounded-xl text-[11px] font-bold transition-all border hover:opacity-80"
               style={{
-                backgroundColor: isCrypto
+                backgroundColor: useSecondary
                   ? `${secondaryColor || '#FFB700'}15`
                   : isAcademicos
                   ? 'rgba(165, 184, 206, 0.1)'
                   : isJuristas
                   ? 'rgba(205, 127, 50, 0.1)'
                   : `${primaryColor || '#007BFF'}15`,
-                color: isCrypto
+                color: useSecondary
                   ? secondaryColor || '#FFB700'
                   : isAcademicos
                   ? '#A5B8CE'
                   : isJuristas
                   ? '#CD7F32'
                   : primaryColor || '#007BFF',
-                borderColor: isCrypto
+                borderColor: useSecondary
                   ? `${secondaryColor || '#FFB700'}30`
                   : isAcademicos
                   ? 'rgba(165, 184, 206, 0.25)'

@@ -81,6 +81,8 @@ import { inmobiliariasMap } from "./maps/inmobiliarias";
 import { marketingMap } from "./maps/marketing";
 import { ecommerceMap } from "./maps/ecommerce";
 import { cryptoMap } from "./maps/crypto";
+import { desarrolladoresMap } from "./maps/desarrolladores";
+import { arquitecturaMap } from "./maps/arquitectura";
 // ─── Assembly ───
 export const MAP_REGISTRY: MapData[] = [
   audioMap,
@@ -98,6 +100,8 @@ export const MAP_REGISTRY: MapData[] = [
   inmobiliariasMap,
   marketingMap,
   ecommerceMap,
-  cryptoMap
+  cryptoMap,
+  desarrolladoresMap,
+  arquitecturaMap
 ];
 

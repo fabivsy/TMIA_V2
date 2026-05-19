@@ -148,8 +148,8 @@ export default function ToolModal({ tool, onClose, primaryColor, secondaryColor 
               rel="noopener nofollow"
               className="w-full md:w-auto px-10 py-4 text-white font-black text-center rounded-2xl transition-all shadow-lg hover:brightness-110 active:scale-95"
               style={{ 
-                backgroundColor: primaryColor || 'var(--brand-primary)',
-                boxShadow: `0 10px 30px -10px ${primaryColor || 'var(--brand-primary)'}66`
+                background: `linear-gradient(to bottom right, ${primaryColor || 'var(--brand-primary, #007BFF)'}, ${secondaryColor || 'var(--brand-secondary, #00BFFF)'})`,
+                boxShadow: `0 10px 30px -10px ${primaryColor || 'var(--brand-primary, #007BFF)'}66`
               }}
             >
               Visitar Sitio ↗
