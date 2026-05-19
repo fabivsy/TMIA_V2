@@ -21,6 +21,7 @@ export interface Tool {
   category: string;
   tags?: string[];
   logoFileName?: string;
+  subCategory?: string;
 }
 
 export interface FAQ {
@@ -61,6 +62,11 @@ export interface MapData {
   expertIdentity?: ExpertIdentity;
   guideUrl?: string;
   selectionUrl?: string;
+  isSplitMap?: boolean;
+  subMaps?: any[];
+  curator?: any;
+  slogan?: string;
+  gradient?: string;
 }
 
 // ─── Modular Map Imports ───
@@ -84,6 +90,7 @@ import { cryptoMap } from "./maps/crypto";
 import { desarrolladoresMap } from "./maps/desarrolladores";
 import { arquitecturaMap } from "./maps/arquitectura";
 import { ventasMap } from "./maps/ventas";
+import { agriculturaMap } from "./maps/agricultura";
 // ─── Assembly ───
 export const MAP_REGISTRY: MapData[] = [
   audioMap,
@@ -104,7 +111,8 @@ export const MAP_REGISTRY: MapData[] = [
   cryptoMap,
   desarrolladoresMap,
   arquitecturaMap,
-  ventasMap
+  ventasMap,
+  agriculturaMap
 ];
 
 
