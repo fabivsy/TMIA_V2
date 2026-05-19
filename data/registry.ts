@@ -83,6 +83,7 @@ import { ecommerceMap } from "./maps/ecommerce";
 import { cryptoMap } from "./maps/crypto";
 import { desarrolladoresMap } from "./maps/desarrolladores";
 import { arquitecturaMap } from "./maps/arquitectura";
+import { ventasMap } from "./maps/ventas";
 // ─── Assembly ───
 export const MAP_REGISTRY: MapData[] = [
   audioMap,
@@ -102,6 +103,8 @@ export const MAP_REGISTRY: MapData[] = [
   ecommerceMap,
   cryptoMap,
   desarrolladoresMap,
-  arquitecturaMap
+  arquitecturaMap,
+  ventasMap
 ];
+
 
