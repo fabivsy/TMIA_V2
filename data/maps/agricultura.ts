@@ -28,8 +28,8 @@ export const agriculturaMap: MapData = {
       secondaryColor: "#98D8AA",
       logo: "agricultores_logo.webp",
       heroImage: "hero_agricultores.webp",
-      guideUrl: "https://tumapaia.com/guia-de-ia-para-agricultura-software",
-      selectionUrl: "https://tumapaia.com/seleccion-de-herramientas-ia-para-agricultura-software",
+      guideUrl: "https://tumapaia.com/guia-de-ia-para-agricultura/",
+      selectionUrl: "https://tumapaia.com/seleccion-de-herramientas-ia-para-agricultura/",
       authorityStatement: "En 2026, la optimización agronómica y la rentabilidad dependen de la Soberanía de Datos. Este mapa audita las principales plataformas de inteligencia a nivel de hoja, modelos predictivos de rendimiento y teledetección satelital."
     },
     {
