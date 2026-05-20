@@ -1,0 +1,33 @@
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# 1. EXCLUDE LEGACY FOLDERS AND WORDPRESS FROM NEXT.JS ROUTING
+# If the request matches any of these folders, stop processing rewrite rules here
+# so Apache or WordPress can handle them naturally.
+RewriteRule ^(vinos|terrenos|glamping|italia|inmobiliarias|geodesia|consorcio|dentistas|wp-admin|wp-includes|wp-content)($|/) - [L]
+
+# 2. NEXT.JS CLEAN URLS (Serve .html without showing it)
+# Check if the requested URL is NOT a physical file
+RewriteCond %{REQUEST_FILENAME} !-f
+# Check if the requested URL is NOT a physical directory
+RewriteCond %{REQUEST_FILENAME} !-d
+# Check if the .html version of the requested URL exists
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html -f
+# If so, internally rewrite the request to the .html file
+RewriteRule ^(.*)$ $1.html [L]
+
+# 3. NEXT.JS DIRECTORY INDEX (Optional fallback for /folder/ -> /folder/index.html)
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
+RewriteRule ^(.*)$ $1/index.html [L]
+
+# 4. WORDPRESS FALLBACK (Default WP Permalinks)
+# If the request is not for an existing file/directory and wasn't a Next.js HTML page,
+# pass the request to WordPress to handle.
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+
+</IfModule>
