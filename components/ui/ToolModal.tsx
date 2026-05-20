@@ -71,11 +71,34 @@ export default function ToolModal({ tool, onClose, primaryColor, secondaryColor 
         </div>
 
         <div className="px-10 pb-10 space-y-10 relative z-10">
-          {/* Main Description */}
-          <div className="bg-white/5 border border-white/5 rounded-3xl p-8">
-            <p className="text-xl text-white/80 leading-relaxed font-medium">
-              {tool.longDescription}
-            </p>
+          {/* Main Description / Authority Verdict */}
+          <div className="bg-white/5 border border-white/5 rounded-3xl p-8 space-y-6">
+            {tool.verdict && (
+              <div>
+                <h4 className="text-white/40 text-[10px] uppercase tracking-widest font-bold mb-2">Veredicto de Autoridad</h4>
+                <p className="text-xl text-white leading-relaxed font-bold">{tool.verdict}</p>
+              </div>
+            )}
+            {tool.strategicUse && (
+              <div>
+                <h4 className="text-white/40 text-[10px] uppercase tracking-widest font-bold mb-2">Uso Estratégico</h4>
+                <p className="text-white/80 leading-relaxed">{tool.strategicUse}</p>
+              </div>
+            )}
+            {tool.authoritySignal && (
+              <div>
+                <h4 className="text-white/40 text-[10px] uppercase tracking-widest font-bold mb-2">Señal de Autoridad</h4>
+                <p className="italic leading-relaxed opacity-90" style={{ color: secondaryColor || 'var(--brand-secondary, #a855f7)' }}>
+                  {tool.authoritySignal}
+                </p>
+              </div>
+            )}
+            {/* Fallback for old maps that still use longDescription */}
+            {!tool.verdict && tool.longDescription && (
+              <p className="text-xl text-white/80 leading-relaxed font-medium">
+                {tool.longDescription}
+              </p>
+            )}
           </div>
 
           {/* Pros & Cons Section */}

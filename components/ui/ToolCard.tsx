@@ -72,7 +72,8 @@ export default function ToolCard({ tool, onOpenDetails, gradientClass, primaryCo
           const isJuristas = tool.category === 'juristas';
           const isDesarrolladores = tool.category === 'desarrolladores';
           const isArquitectura = tool.category === 'arquitectura';
-          const useSecondary = isCrypto || isDesarrolladores || isArquitectura;
+          const isAgentes = tool.category === 'agentes';
+          const useSecondary = isCrypto || isDesarrolladores || isArquitectura || isAgentes;
 
           return (
             <span

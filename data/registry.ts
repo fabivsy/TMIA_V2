@@ -94,6 +94,7 @@ import { ventasMap } from "./maps/ventas";
 import { agriculturaMap } from "./maps/agricultura";
 import { sostenibilidadMap } from "./maps/sostenibilidad";
 import { rrhhMap } from "./maps/rrhh";
+import { agentesMap } from "./maps/agentes";
 // ─── Assembly ───
 export const MAP_REGISTRY: MapData[] = [
   audioMap,
@@ -117,7 +118,8 @@ export const MAP_REGISTRY: MapData[] = [
   ventasMap,
   agriculturaMap,
   sostenibilidadMap,
-  rrhhMap
+  rrhhMap,
+  agentesMap
 ];
 
 
