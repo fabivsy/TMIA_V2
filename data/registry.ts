@@ -67,6 +67,7 @@ export interface MapData {
   curator?: any;
   slogan?: string;
   gradient?: string;
+  authorityStatement?: string;
 }
 
 // ─── Modular Map Imports ───
@@ -92,6 +93,7 @@ import { arquitecturaMap } from "./maps/arquitectura";
 import { ventasMap } from "./maps/ventas";
 import { agriculturaMap } from "./maps/agricultura";
 import { sostenibilidadMap } from "./maps/sostenibilidad";
+import { rrhhMap } from "./maps/rrhh";
 // ─── Assembly ───
 export const MAP_REGISTRY: MapData[] = [
   audioMap,
@@ -114,7 +116,8 @@ export const MAP_REGISTRY: MapData[] = [
   arquitecturaMap,
   ventasMap,
   agriculturaMap,
-  sostenibilidadMap
+  sostenibilidadMap,
+  rrhhMap
 ];
 
 
