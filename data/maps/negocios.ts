@@ -336,10 +336,14 @@ export const negociosMap: MapData = {
 
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Digital Ecosystem Strategist",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra arquitectura de datos y optimización generativa para transformar marcas tradicionales en entidades de autoridad.",
-    credentials: [],
-    methodology: "En 2026, la competitividad empresarial se define por la Soberanía Operativa. Este mapa audita las infraestructuras de IA que eliminan la fricción en la toma de decisiones, automatizan la inteligencia competitiva y escalan la presencia de marca sin diluir la autoridad humana, bajo estándares estrictos de seguridad de datos y retorno de inversión (ROI)."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Precisión de Inteligencia de Negocios y Soberanía de Datos Corporativos.",
+    auditNode: "Nodo de Auditoría: Precisión de Inteligencia de Negocios y Soberanía de Datos Corporativos.",
+    credentials: ["Nodo de Auditoría: Precisión de Inteligencia de Negocios y Soberanía de Datos Corporativos."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Negocios. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

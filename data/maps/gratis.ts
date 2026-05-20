@@ -543,10 +543,14 @@ export const gratisMap: MapData = {
 
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Digital Ecosystem Strategist",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra geometría paramétrica y arquitectura de datos para transformar marcas tradicionales en entidades de autoridad en la era de la IA.",
-    credentials: [],
-    methodology: "La metodología de Fabio Yocco se enfoca en auditar las herramientas que ofrecen los niveles gratuitos más generosos y potentes."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Fiabilidad de Acceso Abierto e Integridad de Datos en Niveles Gratuitos.",
+    auditNode: "Nodo de Auditoría: Fiabilidad de Acceso Abierto e Integridad de Datos en Niveles Gratuitos.",
+    credentials: ["Nodo de Auditoría: Fiabilidad de Acceso Abierto e Integridad de Datos en Niveles Gratuitos."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Gratis. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

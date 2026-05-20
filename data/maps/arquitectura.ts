@@ -19,11 +19,15 @@ export const arquitecturaMap: MapData = {
 
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Digital Asset Architect & GEO Strategist",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra arquitectura de datos y geometría paramétrica para transformar el diseño tradicional en entidades de autoridad técnica soberana.",
-    credentials: ["GEO Architect", "Parametric Design Analyst", "BIM Integration Specialist"],
-    methodology: "Soberanía Paramétrica aplicada al análisis de viabilidad, cumplimiento normativo y visualización arquitectónica de alta gama."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Inteligencia de Diseño Espacial y Soberanía de Datos BIM.",
+    auditNode: "Nodo de Auditoría: Inteligencia de Diseño Espacial y Soberanía de Datos BIM.",
+    credentials: ["Nodo de Auditoría: Inteligencia de Diseño Espacial y Soberanía de Datos BIM."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Arquitectura. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   },
 
   topPicks: [],

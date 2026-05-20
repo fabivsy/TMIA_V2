@@ -50,7 +50,7 @@ export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockPro
                   {identity.role}
                 </p>
                 <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider mt-1">
-                  Operado por {identity.entity}
+                  {identity.badgeSubtext || "Operado bajo el Protocolo FixGeo"}
                 </p>
               </div>
             </div>
@@ -63,7 +63,7 @@ export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockPro
             {/* Credentials Grid */}
             <div className="mb-10">
               <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-gray-500 mb-5">
-                Credenciales de Autoridad
+                Foco de la Auditoría Técnica
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {identity.credentials.map((cred, i) => (

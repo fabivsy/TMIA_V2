@@ -948,11 +948,15 @@ export const academicosMap: MapData = {
   }
 ],
   expertIdentity: {
-  "name": "Fabio Yocco",
-  "role": "Sovereign Cognitive Architecture Strategist",
-  "entity": "The Curator Group LLC",
-  "bio": "Fabio Yocco lidera el diseño de infraestructuras de conocimiento soberano, optimizando el uso de inteligencia artificial en flujos de investigación científica avanzada.",
-  "credentials": [],
-  "methodology": "En 2026, la investigación académica ha evolucionado hacia la 'Soberanía Cognitiva'. Este mapa audita las infraestructuras de IA que dominan la síntesis de evidencia, el descubrimiento de literatura no lineal y la integridad académica, eliminando el sesgo algorítmico y maximizando la precisión factual en flujos de trabajo científicos de alto nivel."
-}
+    name: "Fabio Yocco",
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Soberanía Cognitiva e Integridad de Datos Académicos.",
+    auditNode: "Nodo de Auditoría: Soberanía Cognitiva e Integridad de Datos Académicos.",
+    credentials: ["Nodo de Auditoría: Soberanía Cognitiva e Integridad de Datos Académicos."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio aplica el Protocolo FixGeo para verificar la fiabilidad factual de herramientas de investigación, asegurando que cumplan el estándar de respuestas basadas en evidencia."
+  }
 };

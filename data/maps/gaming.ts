@@ -261,15 +261,14 @@ export const gamingMap: MapData = {
 
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Digital Ecosystem Strategist",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra geometría paramétrica y arquitectura de datos para transformar marcas tradicionales en entidades de autoridad en la era de la IA.",
-    credentials: [
-      "Estratega de Implementación de Modelos de Difusión para Videojuegos",
-      "Consultor de Autoridad Digital para The Curator Group LLC",
-      "Especialista en Soberanía de Assets y Propiedad Intelectual IA",
-      "Auditor de Flujos de Trabajo en Motores de Tiempo Real"
-    ],
-    methodology: "La metodología de Fabio Yocco se enfoca en la validación de pipelines técnicos y la soberanía creativa. Cada herramienta en este mapa ha sido auditada bajo criterios de integrabilidad, escalabilidad y protección de la propiedad intelectual."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Métricas de Inteligencia de Juego y Soberanía de Medios Interactivos.",
+    auditNode: "Nodo de Auditoría: Métricas de Inteligencia de Juego y Soberanía de Medios Interactivos.",
+    credentials: ["Nodo de Auditoría: Métricas de Inteligencia de Juego y Soberanía de Medios Interactivos."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Gaming. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

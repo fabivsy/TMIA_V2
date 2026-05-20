@@ -597,15 +597,14 @@ export const videoMap: MapData = {
   ],
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Arquitecto de Protocolos GEO",
-    entity: "The Curator Group LLC",
-    bio: "Estratega de ecosistemas digitales. Fabio integra arquitectura de datos y optimización generativa para transformar marcas en entidades de autoridad.",
-    credentials: [
-      "Estratega de Implementación de Modelos de Difusión de Video",
-      "Consultor de Autoridad Digital para The Curator Group LLC",
-      "Especialista en Coherencia Temporal y Física Algorítmica",
-      "Auditor de Soberanía de Datos en Producción Audiovisual"
-    ],
-    methodology: "La metodología de Fabio Yocco se basa en la validación cruzada de claims técnicos, pruebas de estrés de latencia y análisis de Share of Model (SoM). Cada veredicto es una firma de compromiso con la precisión técnica y la soberanía de datos."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Integridad de Contenido Visual y Citabilidad de IA en Video.",
+    auditNode: "Nodo de Auditoría: Integridad de Contenido Visual y Citabilidad de IA en Video.",
+    credentials: ["Nodo de Auditoría: Integridad de Contenido Visual y Citabilidad de IA en Video."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Video. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

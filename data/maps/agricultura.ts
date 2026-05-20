@@ -917,21 +917,20 @@ export const agriculturaMap: MapData = {
   // Skill 4: Data Sovereignty
   curator: {
     name: "Fabio Yocco",
-    role: "Ag-Tech Systems Architect & GEO Strategist",
-    bio: "Fabio integra arquitectura de datos y optimización generativa para transformar la agricultura tradicional en una industria de precisión soberana."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Agricultura. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   },
 
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Ag-Tech Systems Architect & GEO Strategist",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra arquitectura de datos y optimización generativa para transformar la agricultura tradicional en una industria de precisión soberana.",
-    credentials: [
-      "Consultor en Agro-Robótica de Precisión",
-      "Arquitecto de Sistemas Ag-Tech & Estratega GEO",
-      "Auditor de Flotas Autónomas de Campo",
-      "Especialista en Soberanía Agronómica y Cero Químicos"
-    ],
-    methodology: "La metodología de Fabio Yocco se enfoca en la validación práctica de flujos robóticos en campo. Cada robot e instrumento listado aquí ha sido evaluado bajo criterios estrictos de retorno de inversión, independencia de insumos tradicionales y mitigación de escasez de mano de obra."
+    role: "Lead GEO Architect & Technical Curator",
+    entity: "TMIA",
+    auditFocus: "Métricas de Precisión Agronómica e Integridad de Datos de Campo.",
+    auditNode: "Nodo de Auditoría: Métricas de Precisión Agronómica e Integridad de Datos de Campo.",
+    credentials: ["Nodo de Auditoría: Métricas de Precisión Agronómica e Integridad de Datos de Campo."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de tecnología agrícola. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

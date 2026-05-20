@@ -476,10 +476,14 @@ export const ecommerceMap: MapData = {
   // Skill 4: Data Sovereignty
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "E-Commerce Strategy Architect",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra arquitectura de datos y optimización generativa para transformar tiendas tradicionales en infraestructuras de comercio soberano y autoridad digital.",
-    credentials: [],
-    methodology: "Auditoría de infraestructuras de IA para personalización semántica y automatización de confianza."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Inteligencia de Conversión y Soberanía de Datos de Retail.",
+    auditNode: "Nodo de Auditoría: Inteligencia de Conversión y Soberanía de Datos de Retail.",
+    credentials: ["Nodo de Auditoría: Inteligencia de Conversión y Soberanía de Datos de Retail."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de E-Commerce. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

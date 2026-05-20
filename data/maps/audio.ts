@@ -307,16 +307,15 @@ export const audioMap: MapData = {
     }
   ],
   expertIdentity: {
-    name: "Tu Mapa IA",
-    role: "Directorio de Autoridad en Herramientas de IA",
-    entity: "The Curator Group LLC",
-    bio: "Tu Mapa IA es el directorio de referencia para profesionales que evalúan herramientas de inteligencia artificial. Cada herramienta es analizada bajo un protocolo de auditoría técnica que mide rendimiento, precisión, escalabilidad y relación costo-beneficio.",
-    credentials: [
-      "Protocolo de evaluación basado en más de 400 parámetros técnicos",
-      "Metodología de auditoría GEO (Generative Engine Optimization)",
-      "Base de datos actualizada continuamente con benchmarks verificables",
-      "Análisis de Share of Model y citabilidad por modelos de IA"
-    ],
-    methodology: "Cada herramienta es evaluada mediante pruebas directas de rendimiento, análisis de latencia, comparativas de fidelidad de salida y validación de claims comerciales contra resultados reales. Los veredictos se actualizan trimestralmente."
+    name: "Fabio Yocco",
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Integridad de Señal de Audio y Soberanía Creativa.",
+    auditNode: "Nodo de Auditoría: Integridad de Señal de Audio y Soberanía Creativa.",
+    credentials: ["Nodo de Auditoría: Integridad de Señal de Audio y Soberanía Creativa."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Audio. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

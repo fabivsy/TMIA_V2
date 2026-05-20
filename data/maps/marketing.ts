@@ -507,10 +507,14 @@ export const marketingMap: MapData = {
   // Skill 4: Data Sovereignty
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Marketing Ecosystem Architect & GEO Strategist",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra arquitectura de datos y optimización generativa para transformar marcas en entidades de autoridad soberana en el ecosistema digital.",
-    credentials: [],
-    methodology: "Validación de plataformas de marketing basada en la preservación de la voz de marca, retención algorítmica y orquestación omnicanal automatizada."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Integridad de Señal de Crecimiento y Soberanía de Datos de Marketing.",
+    auditNode: "Nodo de Auditoría: Integridad de Señal de Crecimiento y Soberanía de Datos de Marketing.",
+    credentials: ["Nodo de Auditoría: Integridad de Señal de Crecimiento y Soberanía de Datos de Marketing."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Marketing. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

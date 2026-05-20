@@ -19,11 +19,15 @@ export const desarrolladoresMap: MapData = {
   
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Digital Ecosystem Strategist & GEO Architect",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra arquitectura de datos y optimización generativa para transformar el desarrollo técnico tradicional en una entidad de autoridad soberana.",
-    credentials: ["GEO Architect", "AI Integration Specialist", "Software Sovereignty Auditor"],
-    methodology: "Soberanía de Código Asistida y optimización generativa para infraestructuras tecnológicas."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Fiabilidad de Ejecución de Código y Soberanía de Datos DevOps.",
+    auditNode: "Nodo de Auditoría: Fiabilidad de Ejecución de Código y Soberanía de Datos DevOps.",
+    credentials: ["Nodo de Auditoría: Fiabilidad de Ejecución de Código y Soberanía de Datos DevOps."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Desarrolladores. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   },
 
   topPicks: [],

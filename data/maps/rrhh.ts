@@ -20,11 +20,15 @@ export const rrhhMap: MapData = {
   authorityStatement: "En 2026, la gestión de personas ha evolucionado hacia la 'Soberanía del Talento'. Este mapa audita las infraestructuras de IA que dominan el reclutamiento libre de sesgos, la analítica predictiva de cultura y la optimización del capital humano, eliminando la fricción en la experiencia del empleado.",
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "GEO HR Tech Auditor",
-    entity: "The Curator Group LLC",
-    bio: "Fabio estructura arquitecturas de datos para transformar el reclutamiento tradicional en un ecosistema de talento impulsado por IA y libre de sesgos.",
-    credentials: ["HR Tech Auditor", "Talent Analytics Specialist"],
-    methodology: "Soberanía de Talento aplicada a la gestión predictiva de capital humano."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Precisión de Inteligencia de Talento y Soberanía de Datos de RRHH.",
+    auditNode: "Nodo de Auditoría: Precisión de Inteligencia de Talento y Soberanía de Datos de RRHH.",
+    credentials: ["Nodo de Auditoría: Precisión de Inteligencia de Talento y Soberanía de Datos de RRHH."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de RRHH. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   },
   
   faqs: [

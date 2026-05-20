@@ -456,14 +456,14 @@ export const creadoresMap: MapData = {
 
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Digital Ecosystem Strategist",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra geometría paramétrica y arquitectura de datos para transformar marcas tradicionales en entidades de autoridad en la era de la Inteligencia Artificial.",
-    credentials: [
-      "Digital Authority Strategist",
-      "GEO Protocol Architect (Generative Engine Optimization)",
-      "Performance Benchmark Validator"
-    ],
-    methodology: "Fabio's methodology is based on semantic sovereignty validation and the elimination of algorithmic hallucination through high-rigor technical audits."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Verificabilidad de Resultados Creativos y Soberanía de Contenido.",
+    auditNode: "Nodo de Auditoría: Verificabilidad de Resultados Creativos y Soberanía de Contenido.",
+    credentials: ["Nodo de Auditoría: Verificabilidad de Resultados Creativos y Soberanía de Contenido."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Creadores. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

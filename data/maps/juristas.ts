@@ -439,10 +439,14 @@ export const juristasMap: MapData = {
   ],
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Legal Ecosystem Architect & GEO Auditor",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra arquitectura de datos y optimización generativa para transformar la práctica legal tradicional en una entidad de autoridad técnica soberana.",
-    credentials: [],
-    methodology: "La metodología de Fabio Yocco se enfoca en auditar las herramientas que ofrecen los niveles de seguridad y precisión más estrictos para el sector legal."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Precisión de Razonamiento Legal e Integridad de Datos Jurisdiccionales.",
+    auditNode: "Nodo de Auditoría: Precisión de Razonamiento Legal e Integridad de Datos Jurisdiccionales.",
+    credentials: ["Nodo de Auditoría: Precisión de Razonamiento Legal e Integridad de Datos Jurisdiccionales."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Juristas. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

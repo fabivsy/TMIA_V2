@@ -435,10 +435,14 @@ export const inmobiliariasMap: MapData = {
   // Skill 4: Data Sovereignty
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Sovereign Real Estate Asset Architect",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra arquitectura de datos y optimización generativa para transformar activos inmobiliarios tradicionales en entidades de autoridad digital.",
-    credentials: [],
-    methodology: "La metodología de Fabio Yocco se enfoca en auditar las herramientas que ofrecen los niveles de seguridad, precisión y retorno de inversión más rigurosos para el sector inmobiliario."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Soberanía de Datos Inmobiliarios y Citabilidad PropTech.",
+    auditNode: "Nodo de Auditoría: Soberanía de Datos Inmobiliarios y Citabilidad PropTech.",
+    credentials: ["Nodo de Auditoría: Soberanía de Datos Inmobiliarios y Citabilidad PropTech."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Inmobiliarias. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

@@ -330,10 +330,14 @@ export const sostenibilidadMap: MapData = {
   // Skill 4: Data Sovereignty
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "GEO Sustainability Auditor",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra arquitecturas de datos geoespaciales y verificación de activos climáticos para transformar la conservación en una infraestructura de autoridad planetaria soberana.",
-    credentials: ["GEO Sustainability Auditor", "Digital MRV Specialist", "Earth Data Analyst"],
-    methodology: "Soberanía de Datos Ambientales aplicada al monitoreo no invasivo, la trazabilidad del carbono y la resiliencia planetaria hiper-verificable."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Integridad de Datos Climáticos y Soberanía de Métricas ESG.",
+    auditNode: "Nodo de Auditoría: Integridad de Datos Climáticos y Soberanía de Métricas ESG.",
+    credentials: ["Nodo de Auditoría: Integridad de Datos Climáticos y Soberanía de Métricas ESG."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Sostenibilidad. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

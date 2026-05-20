@@ -19,11 +19,15 @@ export const ventasMap: MapData = {
   
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Sales Systems Architect & GEO Strategist",
-    entity: "The Curator Group LLC",
-    bio: "Fabio diseña infraestructuras agénticas de conversión y prospección hiper-personalizada para maximizar el pipeline comercial bajo protocolos de soberanía.",
-    credentials: ["Sales Systems Architect", "GEO Strategist", "Revenue Operations Specialist"],
-    methodology: "Soberanía de Conversión Agéntica aplicada a la optimización del ciclo comercial, prospección inteligente e integración de Revenue Operations."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Precisión de Pipeline de Ventas y Soberanía de Datos de Ingresos.",
+    auditNode: "Nodo de Auditoría: Precisión de Pipeline de Ventas y Soberanía de Datos de Ingresos.",
+    credentials: ["Nodo de Auditoría: Precisión de Pipeline de Ventas y Soberanía de Datos de Ingresos."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Ventas. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   },
 
   topPicks: [],

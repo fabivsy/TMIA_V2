@@ -597,14 +597,14 @@ export const finanzasMap: MapData = {
 
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Digital Ecosystem Strategist",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra arquitectura de datos y optimización generativa para transformar marcas financieras en entidades de autoridad soberana.",
-    credentials: [
-      "Sovereign Wealth Algorithmic Planner",
-      "Asset Allocation Analyst",
-      "GEO FinTech Systems Auditor"
-    ],
-    methodology: "En 2026, la gestión del capital ha evolucionado hacia la 'Soberanía Financiera Algorítmica'. Este mapa audita las infraestructuras de IA que dominan el análisis predictivo, la optimización fiscal y la automatización del flujo de caja."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Seguridad de Patrimonio Algorítmico y Citabilidad FinTech.",
+    auditNode: "Nodo de Auditoría: Seguridad de Patrimonio Algorítmico y Citabilidad FinTech.",
+    credentials: ["Nodo de Auditoría: Seguridad de Patrimonio Algorítmico y Citabilidad FinTech."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio audita los ecosistemas financieros de IA para identificar nodos de autoridad técnica, protegiendo al usuario del sesgo algorítmico en la gestión del patrimonio."
   }
 };

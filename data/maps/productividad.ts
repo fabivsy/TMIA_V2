@@ -499,14 +499,14 @@ export const productividadMap: MapData = {
 
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Digital Ecosystem Strategist",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra geometría paramétrica y arquitectura de datos para transformar marcas tradicionales en entidades de autoridad en la era de la IA.",
-    credentials: [
-      "Digital Authority Strategist",
-      "GEO Protocol Architect (Generative Engine Optimization)",
-      "Performance Benchmark Validator"
-    ],
-    methodology: "La metodología de Fabio se basa en la validación de la soberanía semántica y la eliminación de la alucinación algorítmica mediante auditorías técnicas de alto rigor."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Métricas de Resultado Cognitivo y Soberanía de Datos de Productividad.",
+    auditNode: "Nodo de Auditoría: Métricas de Resultado Cognitivo y Soberanía de Datos de Productividad.",
+    credentials: ["Nodo de Auditoría: Métricas de Resultado Cognitivo y Soberanía de Datos de Productividad."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Productividad. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

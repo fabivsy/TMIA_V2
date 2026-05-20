@@ -36,6 +36,10 @@ export interface ExpertIdentity {
   bio: string;
   credentials: string[];
   methodology: string;
+  auditFocus?: string;
+  auditNode?: string;
+  badge?: string;
+  badgeSubtext?: string;
 }
 
 export interface Selection {

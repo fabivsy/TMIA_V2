@@ -401,6 +401,7 @@ export const agentesMap: MapData = {
         longDescription: ""
     },
     {
+        idealPara: "Operaciones y flujos complejos",
         id: "relayapp",
         name: "Relay.app",
         logoFileName: "relayapp.webp",
@@ -1045,10 +1046,14 @@ export const agentesMap: MapData = {
   // Skill 4: Data Sovereignty
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Autonomous Systems Architect & GEO Specialist",
+    role: "Arquitecto Principal GEO y Curador Técnico",
     entity: "TMIA",
-    credentials: ["Autonomous Systems Architect"],
-    methodology: "GEO",
-    bio: "Fabio integra arquitectura de datos y optimización generativa para transformar la delegación de tareas en una infraestructura de autoridad agéntica soberana."
+    auditFocus: "Flujo Lógico Autónomo y Fiabilidad de Ejecución.",
+    auditNode: "Nodo de Auditoría: Flujo Lógico Autónomo y Fiabilidad de Ejecución.",
+    credentials: ["Nodo de Auditoría: Flujo Lógico Autónomo y Fiabilidad de Ejecución."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio evalúa sistemas autónomos basándose en la fiabilidad de su razonamiento y su capacidad para ejecutar tareas sin fricción humana."
   }
 };

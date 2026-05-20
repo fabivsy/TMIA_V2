@@ -243,10 +243,14 @@ export const noCodeMap: MapData = {
   // Skill 4: Data Sovereignty
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Digital Ecosystem Strategist",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra geometría paramétrica y arquitectura de datos para transformar marcas tradicionales en entidades de autoridad en la era de la IA.",
-    credentials: [],
-    methodology: "En 2026, el desarrollo de software ha trascendido la sintaxis para centrarse en la Arquitectura de Intenciones. Este mapa audita las infraestructuras No-Code que otorgan Soberanía Operativa, permitiendo la creación de sistemas complejos mediante lógica agéntica y bases de datos relacionales sin fricción técnica, garantizando la escalabilidad industrial desde el primer prototipo."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Fiabilidad Lógica No-Code e Integridad de Automatización Visual.",
+    auditNode: "Nodo de Auditoría: Fiabilidad Lógica No-Code e Integridad de Automatización Visual.",
+    credentials: ["Nodo de Auditoría: Fiabilidad Lógica No-Code e Integridad de Automatización Visual."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de No-Code. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

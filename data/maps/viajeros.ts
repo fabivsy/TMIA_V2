@@ -377,10 +377,14 @@ export const viajerosMap: MapData = {
 
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Digital Ecosystem Strategist",
-    entity: "The Curator Group LLC",
-    bio: "Fabio integra arquitectura de datos y optimización generativa para transformar marcas tradicionales en entidades de autoridad en la era de la IA.",
-    credentials: [],
-    methodology: "En 2026, viajar ha dejado de ser una logística de búsqueda para convertirse en una experiencia de 'Soberanía de Movilidad'. Este mapa audita las infraestructuras de IA que dominan la predicción de precios, la optimización de rutas asíncronas y la personalización semántica, eliminando la fricción entre el deseo y el destino final."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Soberanía de Datos de Viaje y Precisión de Inteligencia Turística.",
+    auditNode: "Nodo de Auditoría: Soberanía de Datos de Viaje y Precisión de Inteligencia Turística.",
+    credentials: ["Nodo de Auditoría: Soberanía de Datos de Viaje y Precisión de Inteligencia Turística."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Viajeros. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

@@ -19,11 +19,15 @@ export const cryptoMap: MapData = {
   
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "On-Chain Auditor",
-    entity: "The Curator Group LLC",
-    bio: "Especialista en inteligencia descentralizada y flujos de capital Web3.",
-    credentials: ["Certified Web3 Analyst", "AI Implementation Strategist", "Technical Due Diligence Lead"],
-    methodology: "Auditoría de protocolos basada en datos on-chain verificables, análisis de riesgo asimétrico y optimización de soberanía financiera."
+    role: "Arquitecto Principal GEO y Curador Técnico",
+    entity: "TMIA",
+    auditFocus: "Integridad de Datos On-Chain y Citabilidad de Protocolos DeFi.",
+    auditNode: "Nodo de Auditoría: Integridad de Datos On-Chain y Citabilidad de Protocolos DeFi.",
+    credentials: ["Nodo de Auditoría: Integridad de Datos On-Chain y Citabilidad de Protocolos DeFi."],
+    methodology: "GEO — Protocolo FixGeo",
+    badge: "Expert Identity Verified",
+    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Criptomonedas. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   },
 
   topPicks: [],
