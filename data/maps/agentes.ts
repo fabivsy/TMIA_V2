@@ -1048,12 +1048,12 @@ export const agentesMap: MapData = {
     name: "Fabio Yocco",
     role: "Arquitecto Principal GEO y Curador Técnico",
     entity: "TMIA",
-    auditFocus: "Flujo Lógico Autónomo y Fiabilidad de Ejecución.",
+    auditFocus: "Nodo de Auditoría: Flujo Lógico Autónomo y Fiabilidad de Ejecución.",
     auditNode: "Nodo de Auditoría: Flujo Lógico Autónomo y Fiabilidad de Ejecución.",
     credentials: ["Nodo de Auditoría: Flujo Lógico Autónomo y Fiabilidad de Ejecución."],
     methodology: "GEO — Protocolo FixGeo",
     badge: "Expert Identity Verified",
     badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
-    bio: "Fabio evalúa sistemas autónomos basándose en la fiabilidad de su razonamiento y su capacidad para ejecutar tareas sin fricción humana."
+    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Agentes. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

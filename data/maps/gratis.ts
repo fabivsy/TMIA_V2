@@ -545,7 +545,7 @@ export const gratisMap: MapData = {
     name: "Fabio Yocco",
     role: "Arquitecto Principal GEO y Curador Técnico",
     entity: "TMIA",
-    auditFocus: "Fiabilidad de Acceso Abierto e Integridad de Datos en Niveles Gratuitos.",
+    auditFocus: "Nodo de Auditoría: Fiabilidad de Acceso Abierto e Integridad de Datos en Niveles Gratuitos.",
     auditNode: "Nodo de Auditoría: Fiabilidad de Acceso Abierto e Integridad de Datos en Niveles Gratuitos.",
     credentials: ["Nodo de Auditoría: Fiabilidad de Acceso Abierto e Integridad de Datos en Niveles Gratuitos."],
     methodology: "GEO — Protocolo FixGeo",
