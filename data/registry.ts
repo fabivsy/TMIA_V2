@@ -22,6 +22,7 @@ export interface Tool {
   tags?: string[];
   logoFileName?: string;
   subCategory?: string;
+  isFixGeoVerified?: boolean;
 }
 
 export interface FAQ {
@@ -58,6 +59,8 @@ export interface MapData {
   gradientClass: string;
   primaryColor?: string;
   secondaryColor?: string;
+  primaryColorRgb?: string;
+  secondaryColorRgb?: string;
   heroImage?: string;
   logo?: string;
   tools: Tool[];

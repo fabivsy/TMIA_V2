@@ -1,0 +1,515 @@
+
+> tumapa-v2@0.1.0 build
+> next build && node scripts/post-build.js
+
+▲ Next.js 16.2.6 (Turbopack)
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.4s
+  Running TypeScript ...
+  Finished TypeScript in 4.5s ...
+  Collecting page data using 7 workers ...
+  Generating static pages using 7 workers (0/28) ...
+DEBUG: Resolved mapId: marketing
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: inmobiliarias
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: criptomonedas
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: arquitectura
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: ventas
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: agricultura
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: desarrolladores
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: ecommerce
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+  Generating static pages using 7 workers (7/28) 
+DEBUG: Resolved mapId: sostenibilidad
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: rrhh
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: agentes
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+  Generating static pages using 7 workers (14/28) 
+DEBUG: Resolved mapId: audio-ia
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: creadores
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: video
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: gaming
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: productividad
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: gratis
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+  Generating static pages using 7 workers (21/28) 
+DEBUG: Resolved mapId: negocios
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: academicos
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: no-code
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: juristas
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: finanzas
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+DEBUG: Resolved mapId: viajeros
+DEBUG: Found mapData: true
+DEBUG: Available slugs: [
+  'audio-ia',        'creadores',
+  'video',           'gaming',
+  'productividad',   'gratis',
+  'negocios',        'viajeros',
+  'finanzas',        'no-code',
+  'academicos',      'juristas',
+  'inmobiliarias',   'marketing',
+  'ecommerce',       'criptomonedas',
+  'desarrolladores', 'arquitectura',
+  'ventas',          'agricultura',
+  'sostenibilidad',  'rrhh',
+  'agentes'
+]
+✓ Generating static pages using 7 workers (28/28) in 1386ms
+  Finalizing page optimization ...
+⚠ Statically exporting a Next.js application via `next export` disables API routes and middleware.
+This command is meant for static-only hosts, and is not necessary to make your application static.
+Pages in your application without server-side data dependencies will be automatically statically exported by `next build`, including pages powered by `getStaticProps`.
+Learn more: https://nextjs.org/docs/messages/api-routes-static-export
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ● /[mapId]
+│ ├ /audio-ia
+│ ├ /creadores
+│ ├ /video
+│ └ [+20 more paths]
+├ ○ /icon.svg
+└ ○ /test
+
+
+ƒ Proxy (Middleware)
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+
+🔧 Post-Build Optimization Starting...
+✓ .htaccess copied to out/ root
+✓ llms.txt copied to out/ root
+✓ llms-full.txt copied to out/ root
+✓ _next/ folder verified at root
+
+📦 Output folder root structure:
+  📄 .htaccess
+  📄 404.html
+  📄 __next.__PAGE__.txt
+  📄 __next._full.txt
+  📄 __next._head.txt
+  📄 __next._index.txt
+  📄 __next._tree.txt
+  📁 _next
+  📁 _not-found
+  📄 _not-found.html
+  📄 _not-found.txt
+  📁 academicos
+  📄 academicos.html
+  📄 academicos.txt
+  📁 agentes
+  📄 agentes.html
+  📄 agentes.txt
+  📁 agricultura
+  📄 agricultura.html
+  📄 agricultura.txt
+  📁 arquitectura
+  📄 arquitectura.html
+  📄 arquitectura.txt
+  📁 audio-ia
+  📄 audio-ia.html
+  📄 audio-ia.txt
+  📁 creadores
+  📄 creadores.html
+  📄 creadores.txt
+  📁 criptomonedas
+  📄 criptomonedas.html
+  📄 criptomonedas.txt
+  📁 desarrolladores
+  📄 desarrolladores.html
+  📄 desarrolladores.txt
+  📁 ecommerce
+  📄 ecommerce.html
+  📄 ecommerce.txt
+  📄 favicon.svg
+  📄 file.svg
+  📁 finanzas
+  📄 finanzas.html
+  📄 finanzas.txt
+  📁 gaming
+  📄 gaming.html
+  📄 gaming.txt
+  📄 globe.svg
+  📁 gratis
+  📄 gratis.html
+  📄 gratis.txt
+  📄 hero_pic_final.webp
+  📁 heroes
+  📄 icon.svg
+  📁 images
+  📄 index.html
+  📄 index.txt
+  📁 inmobiliarias
+  📄 inmobiliarias.html
+  📄 inmobiliarias.txt
+  📁 juristas
+  📄 juristas.html
+  📄 juristas.txt
+  📄 llms-full.txt
+  📄 llms.txt
+  📁 logos
+  📁 marketing
+  📄 marketing.html
+  📄 marketing.txt
+  📁 negocios
+  📄 negocios.html
+  📄 negocios.txt
+  📄 next.svg
+  📁 no-code
+  📄 no-code.html
+  📄 no-code.txt
+  📁 productividad
+  📄 productividad.html
+  📄 productividad.txt
+  📁 rrhh
+  📄 rrhh.html
+  📄 rrhh.txt
+  📁 sostenibilidad
+  📄 sostenibilidad.html
+  📄 sostenibilidad.txt
+  📁 test
+  📄 test.html
+  📄 test.txt
+  📁 ventas
+  📄 ventas.html
+  📄 ventas.txt
+  📄 vercel.svg
+  📁 viajeros
+  📄 viajeros.html
+  📄 viajeros.txt
+  📁 video
+  📄 video.html
+  📄 video.txt
+  📄 window.svg
+
+✅ Post-Build Optimization Complete!
+🚀 Ready for Hostinger deployment

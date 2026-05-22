@@ -1,33 +1,56 @@
+# Tu Mapa IA — Hostinger Deployment Configuration
+# Soberanía Algoritmica — Protocol v.2026.5
+
 <IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteBase /
+  RewriteEngine On
+  RewriteBase /
+  
+  # Remove trailing slashes (except for directories)
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^(.*)/$ /$1 [L,R=301]
+  
+  # Rewrite requests to static files and directories to the actual files
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteRule ^ /index.html [QSA,L]
+  
+  # Cache control headers for assets
+  <FilesMatch "\.(js|css|jpg|jpeg|png|gif|ico|svg|webp|woff|woff2|ttf|eot)$">
+    Header set Cache-Control "max-age=31536000, public"
+  </FilesMatch>
+  
+  # Set cache for HTML files (shorter duration for dynamic content)
+  <FilesMatch "\.html$">
+    Header set Cache-Control "max-age=3600, public"
+  </FilesMatch>
+  
+  # Security headers
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
 
-# 1. EXCLUDE LEGACY FOLDERS AND WORDPRESS FROM NEXT.JS ROUTING
-# If the request matches any of these folders, stop processing rewrite rules here
-# so Apache or WordPress can handle them naturally.
-RewriteRule ^(vinos|terrenos|glamping|italia|inmobiliarias|geodesia|consorcio|dentistas|wp-admin|wp-includes|wp-content)($|/) - [L]
+# Enable GZIP compression
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/json
+</IfModule>
 
-# 2. NEXT.JS CLEAN URLS (Serve .html without showing it)
-# Check if the requested URL is NOT a physical file
-RewriteCond %{REQUEST_FILENAME} !-f
-# Check if the requested URL is NOT a physical directory
-RewriteCond %{REQUEST_FILENAME} !-d
-# Check if the .html version of the requested URL exists
-RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}.html -f
-# If so, internally rewrite the request to the .html file
-RewriteRule ^(.*)$ $1.html [L]
-
-# 3. NEXT.JS DIRECTORY INDEX (Optional fallback for /folder/ -> /folder/index.html)
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI}/index.html -f
-RewriteRule ^(.*)$ $1/index.html [L]
-
-# 4. WORDPRESS FALLBACK (Default WP Permalinks)
-# If the request is not for an existing file/directory and wasn't a Next.js HTML page,
-# pass the request to WordPress to handle.
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.php [L]
-
+# Set proper MIME types
+<IfModule mod_mime.c>
+  AddType application/javascript js
+  AddType application/json json
+  AddType text/plain txt
+  AddEncoding gzip svgz
+  AddType image/svg+xml svg svgz
 </IfModule>

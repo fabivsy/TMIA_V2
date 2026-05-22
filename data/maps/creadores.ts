@@ -96,7 +96,8 @@ export const creadoresMap: MapData = {
       idealPara: "Creadores generales y profesionales que buscan un 'todo en uno'.",
       pricing: "FREEMIUM / $20/MES",
       category: "Contenido Escrito",
-      tags: ["#AsistenteIA", "#GeneraciónContenido", "#Brainstorming"]
+      tags: ["#AsistenteIA", "#GeneraciónContenido", "#Brainstorming"],
+      isFixGeoVerified: true
     },
     {
       id: "copyai",
@@ -114,7 +115,8 @@ export const creadoresMap: MapData = {
       idealPara: "Equipos de marketing digital y agencias SaaS.",
       pricing: "DESDE $49/MES",
       category: "Contenido Escrito",
-      tags: ["#Copywriting", "#GTM", "#Automatización"]
+      tags: ["#Copywriting", "#GTM", "#Automatización"],
+      isFixGeoVerified: true
     },
     {
       id: "jasper",
@@ -132,7 +134,8 @@ export const creadoresMap: MapData = {
       idealPara: "Equipos de marketing enterprise and agencias.",
       pricing: "DESDE $39/MES",
       category: "Contenido Escrito",
-      tags: ["#BrandVoice", "#Empresarial", "#ContentMarketing"]
+      tags: ["#BrandVoice", "#Empresarial", "#ContentMarketing"],
+      isFixGeoVerified: true
     },
     {
       id: "writesonic",

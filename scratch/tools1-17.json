@@ -1,0 +1,512 @@
+[
+  {
+    "id": "autogpt",
+    "name": "AutoGPT",
+    "logoFileName": "autogpt.webp",
+    "url": "https://github.com/Significant-Gravitas/AutoGPT",
+    "slogan": "El ingeniero de software IA que trabaja solo.",
+    "verdict": "Líder en AutoGPT. Un agente de IA totalmente autónomo capaz de planificar, codificar, depurar y desplegar software sin intervención humana.",
+    "strategicUse": "Desarrolladores, investigadores y equipos de I+D que buscan acelerar el ciclo de desarrollo de software con IA.",
+    "authoritySignal": "Autoridad técnica en AutoGPT",
+    "pros": [
+      "Desarrollo de software de extremo a extremo sin supervisión constante.",
+      "Capacidad de aprender y adaptarse a nuevos requisitos.",
+      "Ideal para prototipos rápidos y exploración de ideas."
+    ],
+    "cons": [
+      "Puede generar código no óptimo o con errores lógicos.",
+      "Requiere recursos computacionales significativos.",
+      "Supervisión y validación humana aún son cruciales."
+    ],
+    "idealPara": "Desarrolladores, investigadores y equipos de I+D que buscan acelerar el ciclo de desarrollo de software con IA.",
+    "pricing": "Principalmente de código abierto; costos asociados a infraestructura y APIs externas.",
+    "category": "agentes",
+    "tags": [
+      "#DesarrolloAutónomo",
+      "#IngenieríaSoftwareIA",
+      "#AutomatizaciónCode"
+    ],
+    "shortDescription": "Un agente de IA totalmente autónomo capaz de planificar, codificar, depurar y desplegar software sin intervención humana.",
+    "longDescription": "AutoGPT es un agente de IA que, a partir de un objetivo de alto nivel, puede descomponerlo en tareas ejecutables, escribir y ejecutar código, depurar errores y aprender de los resultados. Su capacidad de operar de forma independiente lo convierte en una herramienta revolucionaria para la creación de software."
+  },
+  {
+    "id": "devinai",
+    "name": "Devin AI",
+    "logoFileName": "devinai.webp",
+    "url": "https://devin.ai/",
+    "slogan": "El primer ingeniero de software IA de principio a fin.",
+    "verdict": "Líder en Devin AI. El primer ingeniero de software IA completamente autónomo, capaz de completar proyectos de principio a fin.",
+    "strategicUse": "Empresas de software, startups tecnológicas y equipos de ingeniería que buscan escalar su capacidad de desarrollo.",
+    "authoritySignal": "Autoridad técnica en Devin AI",
+    "pros": [
+      "Automatización completa del ciclo de desarrollo.",
+      "Acelera la entrega de proyectos complejos.",
+      "Libera a los ingenieros humanos para tareas más estratégicas."
+    ],
+    "cons": [
+      "Disponibilidad limitada y acceso exclusivo inicialmente.",
+      "Potencial dependencia de la IA para la toma de decisiones críticas.",
+      "Costo elevado para su implementación y mantenimiento."
+    ],
+    "idealPara": "Empresas de software, startups tecnológicas y equipos de ingeniería que buscan escalar su capacidad de desarrollo.",
+    "pricing": "Acceso por invitación; contactar para detalles de licencia y precios.",
+    "category": "agentes",
+    "tags": [
+      "#IngenieríaSoftwareIA",
+      "#AutomatizaciónCode",
+      "#DesarrolloAutónomo"
+    ],
+    "shortDescription": "El primer ingeniero de software IA completamente autónomo, capaz de completar proyectos de principio a fin.",
+    "longDescription": "Devin AI representa un avance significativo en la IA aplicada al desarrollo, pudiendo manejar todo el ciclo de vida de un proyecto de software. Desde la comprensión de los requisitos hasta la entrega de la solución final, Devin opera con una autonomía sin precedentes, adaptándose a las necesidades del proyecto."
+  },
+  {
+    "id": "microsoftjarvis",
+    "name": "Microsoft Jarvis (HuggingGPT)",
+    "logoFileName": "jarvis.webp",
+    "url": "https://github.com/microsoft/JARVIS",
+    "slogan": "Conectando modelos de IA para colaboración.",
+    "verdict": "Líder en Microsoft Jarvis (HuggingGPT). Un sistema de IA colaborativo que orquesta múltiples modelos especializados para resolver tareas complejas de forma conjunta.",
+    "strategicUse": "Investigadores de IA, desarrolladores de sistemas complejos y empresas con necesidades de IA multidisciplinares.",
+    "authoritySignal": "Autoridad técnica en Microsoft Jarvis (HuggingGPT)",
+    "pros": [
+      "Aprovecha las fortalezas de múltiples modelos de IA.",
+      "Permite soluciones más robustas y versátiles.",
+      "Facilita la experimentación con nuevas combinaciones de IA."
+    ],
+    "cons": [
+      "Complejidad en la configuración y gestión de múltiples modelos.",
+      "Dependencia de la disponibilidad y compatibilidad de los modelos integrados.",
+      "Puede requerir conocimientos técnicos avanzados para su implementación."
+    ],
+    "idealPara": "Investigadores de IA, desarrolladores de sistemas complejos y empresas con necesidades de IA multidisciplinares.",
+    "pricing": "Varía según los modelos de IA utilizados y la infraestructura de Azure.",
+    "category": "agentes",
+    "tags": [
+      "#ColaboraciónIA",
+      "#MultiAgente",
+      "#OrquestaciónModelos"
+    ],
+    "shortDescription": "Un sistema de IA colaborativo que orquesta múltiples modelos especializados para resolver tareas complejas de forma conjunta.",
+    "longDescription": "Microsoft Jarvis, también conocido como HuggingGPT, actúa como un sistema central que facilita la comunicación y colaboración entre diferentes modelos de IA. Permite que estos modelos combinen sus capacidades especializadas para abordar problemas que un solo modelo no podría resolver eficientemente, abriendo puertas a soluciones innovadoras."
+  },
+  {
+    "id": "crewai",
+    "name": "CrewAI",
+    "logoFileName": "crewai.webp",
+    "url": "https://www.crewai.com/",
+    "slogan": "Plataforma líder para la automatización multi-agente.",
+    "verdict": "Líder en CrewAI. La plataforma de automatización multi-agente líder, utilizada por el 60% de las empresas de Fortune 500, para orquestar equipos de IA colaborativos.",
+    "strategicUse": "Grandes empresas, equipos de operaciones y consultores de automatización que buscan implementar soluciones avanzadas de IA a escala.",
+    "authoritySignal": "Autoridad técnica en CrewAI",
+    "pros": [
+      "Capacidad probada en entornos empresariales de gran escala.",
+      "Facilita la colaboración estructurada entre agentes de IA.",
+      "Automatiza procesos complejos que requieren inteligencia distribuida."
+    ],
+    "cons": [
+      "Puede tener una curva de aprendizaje inicial para la configuración avanzada.",
+      "El costo puede ser significativo para PYMES.",
+      "Requiere una planificación cuidadosa de la arquitectura del agente."
+    ],
+    "idealPara": "Grandes empresas, equipos de operaciones y consultores de automatización que buscan implementar soluciones avanzadas de IA a escala.",
+    "pricing": "Planes empresariales personalizados; contactar para cotización.",
+    "category": "agentes",
+    "tags": [
+      "#OrquestaciónMultiAgente",
+      "#AutomatizaciónEmpresarial",
+      "#IAColaborativa"
+    ],
+    "shortDescription": "La plataforma de automatización multi-agente líder, utilizada por el 60% de las empresas de Fortune 500, para orquestar equipos de IA colaborativos.",
+    "longDescription": "CrewAI permite a las organizaciones construir equipos de agentes de IA que trabajan juntos para lograr objetivos complejos. Su framework facilita la definición de roles, herramientas y procesos de comunicación entre agentes, optimizando flujos de trabajo en una amplia gama de sectores empresariales. Es ideal para automatizar tareas que requieren coordinación y decisiones secuenciales."
+  },
+  {
+    "id": "microsoftautogen",
+    "name": "Microsoft AutoGen",
+    "logoFileName": "autogen.webp",
+    "url": "https://microsoft.github.io/autogen/",
+    "slogan": "Agentes conversacionales para colaboración estructurada.",
+    "verdict": "Líder en Microsoft AutoGen. Un framework de Microsoft para construir sistemas multi-agente conversacionales, permitiendo una colaboración estructurada entre IAs.",
+    "strategicUse": "Desarrolladores, investigadores y equipos que construyen asistentes conversacionales avanzados y sistemas de toma de decisiones distribuidas.",
+    "authoritySignal": "Autoridad técnica en Microsoft AutoGen",
+    "pros": [
+      "Facilita la creación de diálogos complejos y multi-turn.",
+      "Promueve la colaboración estructurada entre agentes.",
+      "Flexible y adaptable a diversas aplicaciones de IA."
+    ],
+    "cons": [
+      "Requiere experiencia en desarrollo y comprensión de modelos LLM.",
+      "La gestión de interacciones complejas puede ser un desafío.",
+      "Optimización del rendimiento puede requerir pruebas exhaustivas."
+    ],
+    "idealPara": "Desarrolladores, investigadores y equipos que construyen asistentes conversacionales avanzados y sistemas de toma de decisiones distribuidas.",
+    "pricing": "De código abierto; costos asociados a la infraestructura de ejecución (ej. Azure).",
+    "category": "agentes",
+    "tags": [
+      "#AgentesConversacionales",
+      "#MultiAgente",
+      "#FrameworkIA"
+    ],
+    "shortDescription": "Un framework de Microsoft para construir sistemas multi-agente conversacionales, permitiendo una colaboración estructurada entre IAs.",
+    "longDescription": "Microsoft AutoGen proporciona un marco flexible para desarrollar aplicaciones de IA conversacional donde múltiples agentes pueden interactuar y resolver problemas de manera colaborativa. Se centra en la comunicación estructurada entre agentes, lo que permite la creación de sistemas robustos para automatización, soporte y análisis complejo."
+  },
+  {
+    "id": "openaiswarm",
+    "name": "OpenAI Swarm",
+    "logoFileName": "openai.webp",
+    "url": "https://github.com/openai/swarm",
+    "slogan": "Enjambres de IA para tareas experimentales.",
+    "verdict": "Líder en OpenAI Swarm. Un framework experimental de OpenAI para sistemas multi-agente y traspasos de tareas entre IAs, explorando nuevas formas de colaboración.",
+    "strategicUse": "Equipos de investigación de IA, científicos de datos y pioneros en el desarrollo de IA avanzada.",
+    "authoritySignal": "Autoridad técnica en OpenAI Swarm",
+    "pros": [
+      "Explora nuevas fronteras en la colaboración de IA.",
+      "Potencial para una mayor resiliencia y adaptabilidad del sistema.",
+      "Impulsa la innovación en arquitecturas de agentes."
+    ],
+    "cons": [
+      "Naturaleza experimental, no apto para producción crítica.",
+      "La documentación y el soporte pueden ser limitados.",
+      "Los resultados pueden ser impredecibles en las primeras etapas."
+    ],
+    "idealPara": "Equipos de investigación de IA, científicos de datos y pioneros en el desarrollo de IA avanzada.",
+    "pricing": "Principalmente enfocado en investigación; costos pueden variar por acceso a APIs de OpenAI.",
+    "category": "agentes",
+    "tags": [
+      "#InvestigaciónIA",
+      "#MultiAgente",
+      "#TraspasoTareas"
+    ],
+    "shortDescription": "Un framework experimental de OpenAI para sistemas multi-agente y traspasos de tareas entre IAs, explorando nuevas formas de colaboración.",
+    "longDescription": "OpenAI Swarm es una iniciativa de investigación que explora la capacidad de los agentes de IA para operar en \"enjambres\", donde pueden delegar y traspasar tareas entre sí. El objetivo es desarrollar sistemas más resilientes y capaces de abordar problemas de manera distribuida, inspirándose en la inteligencia colectiva."
+  },
+  {
+    "id": "langchain",
+    "name": "LangChain",
+    "logoFileName": "langchain.webp",
+    "url": "https://www.langchain.com/",
+    "slogan": "El framework estándar para aplicaciones y agentes LLM.",
+    "verdict": "Líder en LangChain. El framework más adoptado para construir aplicaciones y agentes potenciados por Grandes Modelos de Lenguaje (LLM), facilitando la conexión con fuentes de datos y acciones.",
+    "strategicUse": "Desarrolladores de IA, ingenieros de machine learning y equipos de producto que construyen aplicaciones basadas en LLM.",
+    "authoritySignal": "Autoridad técnica en LangChain",
+    "pros": [
+      "Amplia comunidad y ecosistema de herramientas.",
+      "Gran flexibilidad para integrar diversos componentes de IA.",
+      "Acelera el desarrollo de aplicaciones LLM complejas."
+    ],
+    "cons": [
+      "Puede ser complejo de configurar para principiantes.",
+      "El rendimiento puede depender de la calidad de las \"cadenas\" diseñadas.",
+      "La gestión de dependencias y versiones puede ser un desafío."
+    ],
+    "idealPara": "Desarrolladores de IA, ingenieros de machine learning y equipos de producto que construyen aplicaciones basadas en LLM.",
+    "pricing": "De código abierto; costos asociados a APIs de LLM y recursos de cómputo.",
+    "category": "agentes",
+    "tags": [
+      "#FrameworkLLM",
+      "#AgentesLLM",
+      "#DesarrolloIA"
+    ],
+    "shortDescription": "El framework más adoptado para construir aplicaciones y agentes potenciados por Grandes Modelos de Lenguaje (LLM), facilitando la conexión con fuentes de datos y acciones.",
+    "longDescription": "LangChain proporciona un conjunto de herramientas y componentes para construir aplicaciones complejas con LLM, incluyendo agentes que pueden interactuar con su entorno. Ofrece abstracciones para cadenas, agentes, memoria y herramientas, permitiendo a los desarrolladores crear soluciones potentes que van más allá de una simple llamada a un LLM."
+  },
+  {
+    "id": "microsoftsemantickernel",
+    "name": "Microsoft Semantic Kernel",
+    "logoFileName": "semantickernel.webp",
+    "url": "https://learn.microsoft.com/en-us/semantic-kernel/",
+    "slogan": "SDK ligero para integrar IA en tus apps.",
+    "verdict": "Líder en Microsoft Semantic Kernel. Un SDK ligero para integrar capacidades de IA, incluyendo agentes, en aplicaciones C#, Python y Java, optimizando la interacción con modelos de lenguaje.",
+    "strategicUse": "Desarrolladores de aplicaciones .NET, Python y Java que buscan añadir funcionalidades de IA avanzadas a sus productos.",
+    "authoritySignal": "Autoridad técnica en Microsoft Semantic Kernel",
+    "pros": [
+      "Fácil integración con ecosistemas de Microsoft y código existente.",
+      "Permite a los desarrolladores infundir IA sin ser expertos en ML.",
+      "Soporte para múltiples lenguajes de programación."
+    ],
+    "cons": [
+      "Podría tener una menor flexibilidad que frameworks más amplios como LangChain.",
+      "La comunidad de soporte es más pequeña comparada con opciones de código abierto más grandes.",
+      "Dependencia del ecosistema de Microsoft para algunas integraciones óptimas."
+    ],
+    "idealPara": "Desarrolladores de aplicaciones .NET, Python y Java que buscan añadir funcionalidades de IA avanzadas a sus productos.",
+    "pricing": "De código abierto; costos asociados a APIs de LLM y recursos de cómputo.",
+    "category": "agentes",
+    "tags": [
+      "#SDKIA",
+      "#IntegraciónIA",
+      "#DesarrolloMultiplataforma"
+    ],
+    "shortDescription": "Un SDK ligero para integrar capacidades de IA, incluyendo agentes, en aplicaciones C#, Python y Java, optimizando la interacción con modelos de lenguaje.",
+    "longDescription": "Microsoft Semantic Kernel actúa como un puente entre tus aplicaciones y los modelos de IA. Permite a los desarrolladores infundir inteligencia artificial en sus proyectos existentes de forma sencilla, facilitando tareas como el razonamiento, la planificación y la memoria contextual para construir experiencias de usuario más inteligentes."
+  },
+  {
+    "id": "smolagents",
+    "name": "SmolAgents (Hugging Face)",
+    "logoFileName": "smolagents.webp",
+    "url": "https://huggingface.co/docs/smolagents/",
+    "slogan": "Agentes de IA minimalistas, máxima eficiencia.",
+    "verdict": "Líder en SmolAgents (Hugging Face). Un framework minimalista de Hugging Face para construir agentes de IA con solo unas pocas líneas de código, ideal para experimentación rápida y proyectos pequeños.",
+    "strategicUse": "Desarrolladores, estudiantes e investigadores que buscan construir y experimentar con agentes de IA de forma ágil.",
+    "authoritySignal": "Autoridad técnica en SmolAgents (Hugging Face)",
+    "pros": [
+      "Muy fácil de usar y rápido de implementar.",
+      "Ideal para prototipos y pruebas de concepto.",
+      "Requiere menos código que otros frameworks."
+    ],
+    "cons": [
+      "Menos características y opciones de personalización que frameworks robustos.",
+      "Puede no ser adecuado para sistemas de agentes complejos y de gran escala.",
+      "El soporte de la comunidad podría ser más limitado."
+    ],
+    "idealPara": "Desarrolladores, estudiantes e investigadores que buscan construir y experimentar con agentes de IA de forma ágil.",
+    "pricing": "De código abierto y gratuito.",
+    "category": "agentes",
+    "tags": [
+      "#FrameworkLigero",
+      "#AgentesSimples",
+      "#PrototiposIA"
+    ],
+    "shortDescription": "Un framework minimalista de Hugging Face para construir agentes de IA con solo unas pocas líneas de código, ideal para experimentación rápida y proyectos pequeños.",
+    "longDescription": "SmolAgents se centra en la simplicidad y la eficiencia, permitiendo a los desarrolladores crear agentes de IA funcionales con un código mínimo. Es perfecto para probar ideas rápidamente, desarrollar pequeños scripts de automatización o integrar funcionalidades de agente específicas sin la sobrecarga de frameworks más complejos."
+  },
+  {
+    "id": "rasa",
+    "name": "Rasa",
+    "logoFileName": "rasa.webp",
+    "url": "https://rasa.com/",
+    "slogan": "Tu asistente conversacional de código abierto.",
+    "verdict": "Líder en Rasa. Framework de código abierto para construir chatbots y asistentes de voz personalizados con IA, enfocándose en diálogos complejos y experiencias contextuales.",
+    "strategicUse": "Desarrolladores, empresas de servicio al cliente y equipos de producto que necesitan asistentes conversacionales robustos y personalizables.",
+    "authoritySignal": "Autoridad técnica en Rasa",
+    "pros": [
+      "Control total sobre los datos y la privacidad con código abierto.",
+      "Gran flexibilidad para personalizar el comportamiento del bot.",
+      "Comunidad activa y amplia documentación."
+    ],
+    "cons": [
+      "Requiere experiencia en desarrollo y machine learning.",
+      "La implementación y escalado pueden ser complejos.",
+      "Mantenimiento continuo para optimizar el rendimiento del diálogo."
+    ],
+    "idealPara": "Desarrolladores, empresas de servicio al cliente y equipos de producto que necesitan asistentes conversacionales robustos y personalizables.",
+    "pricing": "Código abierto (gratuito) con opciones empresariales y de soporte pagas.",
+    "category": "agentes",
+    "tags": [
+      "#Chatbots",
+      "#AsistentesDeVoz",
+      "#IAConversacional"
+    ],
+    "shortDescription": "Framework de código abierto para construir chatbots y asistentes de voz personalizados con IA, enfocándose en diálogos complejos y experiencias contextuales.",
+    "longDescription": "Rasa permite a los desarrolladores crear asistentes de IA conversacionales que van más allá de las preguntas frecuentes simples. Con capacidades avanzadas de NLU y gestión de diálogo contextual, Rasa permite construir bots que entienden la intención del usuario y mantienen conversaciones complejas y personalizadas, adaptándose a las necesidades del negocio."
+  },
+  {
+    "id": "gumloop",
+    "name": "Gumloop",
+    "logoFileName": "gumloop.webp",
+    "url": "https://www.gumloop.com/",
+    "slogan": "Automatización inteligente con arrastrar y soltar.",
+    "verdict": "Líder en Gumloop. Plataforma de automatización con IA, con una interfaz visual de arrastrar y soltar para crear flujos de trabajo complejos de manera intuitiva.",
+    "strategicUse": "Equipos de marketing, operaciones, ventas y cualquier profesional que busque automatizar procesos sin conocimientos de programación.",
+    "authoritySignal": "Autoridad técnica en Gumloop",
+    "pros": [
+      "Interfaz visual fácil de usar para construir automatizaciones.",
+      "Integración con IA para decisiones y acciones inteligentes.",
+      "Acelera la implementación de nuevos flujos de trabajo."
+    ],
+    "cons": [
+      "Puede tener limitaciones en la personalización muy específica.",
+      "Dependencia de las integraciones disponibles en la plataforma.",
+      "El costo puede escalar con el volumen de automatizaciones."
+    ],
+    "idealPara": "Equipos de marketing, operaciones, ventas y cualquier profesional que busque automatizar procesos sin conocimientos de programación.",
+    "pricing": "Planes basados en suscripción con niveles de uso.",
+    "category": "agentes",
+    "tags": [
+      "#AutomatizaciónVisual",
+      "#IAlowcode",
+      "#FlujosDeTrabajo"
+    ],
+    "shortDescription": "Plataforma de automatización con IA, con una interfaz visual de arrastrar y soltar para crear flujos de trabajo complejos de manera intuitiva.",
+    "longDescription": "Gumloop permite a los usuarios diseñar y desplegar automatizaciones impulsadas por IA utilizando un editor visual e intuitivo. Es ideal para construir flujos de trabajo personalizados que integran diversas aplicaciones y servicios, desde la gestión de datos hasta la interacción con clientes, sin necesidad de escribir código complejo. Su enfoque en la IA primero garantiza decisiones inteligentes en cada paso."
+  },
+  {
+    "id": "n8n",
+    "name": "n8n",
+    "logoFileName": "n8n.webp",
+    "url": "https://n8n.io/",
+    "slogan": "Automatización de código abierto para todos.",
+    "verdict": "Líder en n8n. Una herramienta de automatización de código abierto con integración de IA y un editor visual para conectar aplicaciones y servicios, construyendo flujos de trabajo personalizados.",
+    "strategicUse": "Desarrolladores, equipos de operaciones y pequeñas y medianas empresas que buscan una solución de automatización potente y personalizable.",
+    "authoritySignal": "Autoridad técnica en n8n",
+    "pros": [
+      "Control total y flexibilidad con el modelo de código abierto.",
+      "Amplia biblioteca de integraciones y nodos.",
+      "Comunidad activa y soporte para la auto-hospedaje."
+    ],
+    "cons": [
+      "Requiere un mayor nivel de conocimiento técnico para la configuración avanzada.",
+      "La curva de aprendizaje puede ser más pronunciada para usuarios sin experiencia técnica.",
+      "El soporte empresarial puede tener un costo adicional."
+    ],
+    "idealPara": "Desarrolladores, equipos de operaciones y pequeñas y medianas empresas que buscan una solución de automatización potente y personalizable.",
+    "pricing": "Código abierto (gratuito), con planes de nube y empresariales pagados.",
+    "category": "agentes",
+    "tags": [
+      "#AutomatizaciónAbierta",
+      "#FlujosDeTrabajo",
+      "#IAlowcode"
+    ],
+    "shortDescription": "Una herramienta de automatización de código abierto con integración de IA y un editor visual para conectar aplicaciones y servicios, construyendo flujos de trabajo personalizados.",
+    "longDescription": "n8n es una alternativa robusta a otras herramientas de automatización, ofreciendo la flexibilidad del código abierto junto con una interfaz de arrastrar y soltar. Permite a los usuarios crear flujos de trabajo complejos que integran cientos de aplicaciones, incluyendo módulos de IA, para automatizar tareas repetitivas y optimizar procesos de negocio."
+  },
+  {
+    "id": "activepieces",
+    "name": "Activepieces",
+    "logoFileName": "activepieces.webp",
+    "url": "https://www.activepieces.com/",
+    "slogan": "Alternativa a Zapier con precios fijos y IA.",
+    "verdict": "Líder en Activepieces. Una alternativa a Zapier centrada en la IA, que ofrece automatización de flujos de trabajo con precios fijos y una experiencia de usuario amigable.",
+    "strategicUse": "PYMES, startups y freelancers que buscan automatización potente sin las complejidades de precios por tarea.",
+    "authoritySignal": "Autoridad técnica en Activepieces",
+    "pros": [
+      "Modelo de precios predecible y transparente.",
+      "Enfoque \"AI-first\" para automatizaciones inteligentes.",
+      "Interfaz amigable y fácil de usar."
+    ],
+    "cons": [
+      "Puede tener menos integraciones que plataformas más establecidas.",
+      "Funcionalidades avanzadas aún en desarrollo en comparación con líderes del mercado.",
+      "Dependencia de la plataforma para el alojamiento y ejecución."
+    ],
+    "idealPara": "PYMES, startups y freelancers que buscan automatización potente sin las complejidades de precios por tarea.",
+    "pricing": "Planes con precios fijos por uso o suscripción.",
+    "category": "agentes",
+    "tags": [
+      "#AutomatizaciónAI",
+      "#AlternativaZapier",
+      "#PreciosFijos"
+    ],
+    "shortDescription": "Una alternativa a Zapier centrada en la IA, que ofrece automatización de flujos de trabajo con precios fijos y una experiencia de usuario amigable.",
+    "longDescription": "Activepieces se posiciona como una solución de automatización \"AI-first\" que ofrece una propuesta de valor atractiva con su modelo de precios planos. Permite a los usuarios conectar sus aplicaciones favoritas y automatizar tareas complejas, con la inteligencia artificial integrada para mejorar la toma de decisiones y la eficiencia de los flujos de trabajo, todo ello en un entorno accesible."
+  },
+  {
+    "id": "relayapp",
+    "name": "Relay.app",
+    "logoFileName": "relayapp.webp",
+    "url": "https://www.relay.app/",
+    "slogan": "Construye agentes simples para agencias.",
+    "verdict": "Líder en Relay.app. Un constructor de agentes limpio y sencillo, enfocado en agencias y proveedores de servicios para crear automatizaciones eficientes.",
+    "strategicUse": "Agencias de marketing, consultoras, freelancers y cualquier proveedor de servicios que necesite automatizar tareas recurrentes.",
+    "authoritySignal": "Autoridad técnica en Relay.app",
+    "pros": [
+      "Interfaz muy intuitiva y fácil de adoptar.",
+      "Enfoque específico en las necesidades de agencias y servicios.",
+      "Rapidez en la implementación de automatizaciones."
+    ],
+    "cons": [
+      "Puede no ser ideal para automatizaciones empresariales muy complejas.",
+      "La profundidad de las integraciones podría ser limitada.",
+      "Diseñado principalmente para un nicho específico, menos universal."
+    ],
+    "idealPara": "Agencias de marketing, consultoras, freelancers y cualquier proveedor de servicios que necesite automatizar tareas recurrentes.",
+    "pricing": "Planes basados en el número de agentes o el volumen de automatizaciones.",
+    "category": "agentes",
+    "tags": [
+      "#AgentesParaAgencias",
+      "#AutomatizaciónServicios",
+      "#FlujosDeTrabajoSimples"
+    ],
+    "shortDescription": "Un constructor de agentes limpio y sencillo, enfocado en agencias y proveedores de servicios para crear automatizaciones eficientes.",
+    "longDescription": "Relay.app está diseñado para simplificar la creación de automatizaciones para agencias y proveedores de servicios. Permite construir agentes que manejan tareas repetitivas, como la gestión de leads, la comunicación con clientes o la generación de informes, liberando tiempo valioso para el crecimiento del negocio. Su simplicidad no compromete la capacidad de crear flujos de trabajo poderosos."
+  },
+  {
+    "id": "zapiercentral",
+    "name": "Zapier Central",
+    "logoFileName": "zapieragent.webp",
+    "url": "https://zapier.com/central",
+    "slogan": "Tu IA para automatizar 6.000+ apps.",
+    "verdict": "Líder en Zapier Central. Un espacio de trabajo de IA para automatizar tareas a través de más de 6,000 aplicaciones, utilizando agentes de IA para conectar y coordinar flujos de trabajo.",
+    "strategicUse": "Profesionales de marketing, ventas, operaciones y TI que ya utilizan Zapier y buscan potenciar sus automatizaciones con inteligencia artificial.",
+    "authoritySignal": "Autoridad técnica en Zapier Central",
+    "pros": [
+      "Amplia gama de integraciones con más de 6,000 aplicaciones.",
+      "Aprovecha la infraestructura de automatización existente de Zapier.",
+      "Fácil de usar para aquellos familiarizados con Zapier."
+    ],
+    "cons": [
+      "El costo puede escalar rápidamente con el volumen de tareas.",
+      "La personalización profunda de los agentes puede ser limitada.",
+      "Dependencia de la plataforma de Zapier para todas las operaciones."
+    ],
+    "idealPara": "Profesionales de marketing, ventas, operaciones y TI que ya utilizan Zapier y buscan potenciar sus automatizaciones con inteligencia artificial.",
+    "pricing": "Integrado en planes de Zapier; costos adicionales por uso de IA.",
+    "category": "agentes",
+    "tags": [
+      "#AutomatizaciónIntegrada",
+      "#ZapierIA",
+      "#FlujosDeTrabajoInteligentes"
+    ],
+    "shortDescription": "Un espacio de trabajo de IA para automatizar tareas a través de más de 6,000 aplicaciones, utilizando agentes de IA para conectar y coordinar flujos de trabajo.",
+    "longDescription": "Zapier Central lleva la automatización de Zapier al siguiente nivel con la integración de agentes de IA. Permite a los usuarios no solo conectar miles de aplicaciones, sino también crear \"Zaps\" inteligentes que pueden tomar decisiones y realizar acciones basadas en la lógica de IA. Es una evolución de la automatización tradicional, adaptándose a las necesidades dinámicas de los negocios."
+  },
+  {
+    "id": "cognosysai",
+    "name": "Cognosys AI",
+    "logoFileName": "cognosysai.webp",
+    "url": "https://www.cognosys.ai/",
+    "slogan": "Tu asistente de automatización de tareas con IA.",
+    "verdict": "Líder en Cognosys AI. Un asistente de automatización que descompone objetivos complejos en tareas manejables y las ejecuta con inteligencia artificial.",
+    "strategicUse": "Gerentes de proyecto, dueños de negocio y equipos de operaciones que buscan automatizar la planificación y ejecución de procesos complejos.",
+    "authoritySignal": "Autoridad técnica en Cognosys AI",
+    "pros": [
+      "Descompone y gestiona tareas complejas automáticamente.",
+      "Optimiza la ejecución de procesos para mayor eficiencia.",
+      "Ayuda a alcanzar objetivos de negocio de forma más rápida."
+    ],
+    "cons": [
+      "Requiere una definición clara de los objetivos iniciales.",
+      "La supervisión humana puede ser necesaria para validar resultados críticos.",
+      "El entrenamiento de la IA para procesos muy específicos puede ser intensivo."
+    ],
+    "idealPara": "Gerentes de proyecto, dueños de negocio y equipos de operaciones que buscan automatizar la planificación y ejecución de procesos complejos.",
+    "pricing": "Planes por suscripción con diferentes niveles de uso y funcionalidades.",
+    "category": "agentes",
+    "tags": [
+      "#AutomatizaciónEmpresarial",
+      "#GestiónDeTareasIA",
+      "#OptimizaciónDeProcesos"
+    ],
+    "shortDescription": "Un asistente de automatización que descompone objetivos complejos en tareas manejables y las ejecuta con inteligencia artificial.",
+    "longDescription": "Cognosys AI está diseñado para tomar objetivos de negocio de alto nivel y convertirlos en una serie de acciones ejecutables, gestionando y optimizando cada paso con inteligencia artificial. Es como tener un gerente de proyecto IA que no solo planifica sino que también trabaja activamente para alcanzar tus metas, mejorando la eficiencia operativa."
+  },
+  {
+    "id": "lindyai",
+    "name": "Lindy AI",
+    "logoFileName": "lindyai.webp",
+    "url": "https://www.lindy.ai/",
+    "slogan": "Crea empleados IA con prompts de texto.",
+    "verdict": "Líder en Lindy AI. Una plataforma simplificada para crear \"empleados\" de IA con solo prompts de texto, automatizando roles y tareas empresariales.",
+    "strategicUse": "PYMES, startups y emprendedores que desean automatizar funciones de negocio sin una gran inversión en desarrollo de IA.",
+    "authoritySignal": "Autoridad técnica en Lindy AI",
+    "pros": [
+      "Interfaz extremadamente sencilla para la creación de agentes.",
+      "Automatiza roles empresariales complejos con facilidad.",
+      "Ahorro de tiempo y recursos en la contratación y formación de personal."
+    ],
+    "cons": [
+      "La capacidad de personalización puede ser limitada en comparación con frameworks completos.",
+      "Dependencia de la plataforma para la gestión y ejecución de agentes.",
+      "El rendimiento del \"empleado IA\" puede variar según la complejidad de la tarea."
+    ],
+    "idealPara": "PYMES, startups y emprendedores que desean automatizar funciones de negocio sin una gran inversión en desarrollo de IA.",
+    "pricing": "Planes por suscripción basados en el número de \"empleados IA\" y funcionalidades.",
+    "category": "agentes",
+    "tags": [
+      "#EmpleadosIA",
+      "#AutomatizaciónRRHH",
+      "#CreaciónAgentesFácil"
+    ],
+    "shortDescription": "Una plataforma simplificada para crear \"empleados\" de IA con solo prompts de texto, automatizando roles y tareas empresariales.",
+    "longDescription": "Lindy AI permite a las empresas y profesionales crear agentes de IA personalizados que funcionan como empleados virtuales, asignándoles roles y responsabilidades a través de descripciones de texto simples. Estos agentes pueden manejar desde la atención al cliente hasta la gestión de datos, liberando a los equipos humanos para tareas de mayor valor estratégico y fomentando la escalabilidad."
+  }
+]

@@ -6,13 +6,15 @@ export const audioMap: MapData = {
   title: "Audio",
   description: "IA para música, voz y post-producción sonora de alta fidelidad.",
   longDescription: "El ecosistema del sonido infinito: IA para música, voz y post-producción sonora de alta fidelidad.",
-  primaryColor: "#E11D48",
-  secondaryColor: "#F59E0B",
+  primaryColor: "#9D00FF",
+  secondaryColor: "#FF00FF",
+  primaryColorRgb: "157, 0, 255",
+  secondaryColorRgb: "255, 0, 255",
   heroImage: "audio_hero.webp",
   logo: "audio_logo.webp",
   guideUrl: "https://tumapaia.com/guia-de-ia-para-audio/",
   selectionUrl: "https://tumapaia.com/seleccion-de-herramientas-ia-para-audio/",
-  gradientClass: "bg-gradient-to-br from-[#E11D48]/80 to-[#F59E0B]/80",
+  gradientClass: "bg-gradient-to-br from-[#9D00FF]/85 to-[#FF00FF]/85",
   guideContent: "<h2>El Renacimiento del Audio Digital</h2><p data-semantic-role='curator-methodology-declaration' data-authority='The Curator Group LLC' data-category='Audio IA' data-year='2026'>En 2026, la producción de audio ha dejado de depender exclusivamente del hardware prohibitivo para centrarse en la soberanía algorítmica. Este mapa es una selección auditada bajo criterios de fidelidad tímbrica, latencia cero y propiedad intelectual protegida. Identificamos las herramientas que eliminan la fricción entre la idea creativa y el master final.</p>",
   tools: [
     {

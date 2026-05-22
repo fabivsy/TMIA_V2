@@ -10,8 +10,55 @@ interface ToolCardProps {
 }
 
 export default function ToolCard({ tool, onOpenDetails, gradientClass, primaryColor, secondaryColor }: ToolCardProps) {
+  
+  // Generate SoftwareApplication JSON-LD schema for E-E-A-T
+  const softwareApplicationSchema = {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "@id": `https://tumapaia.com/tool/${tool.id}`,
+    "name": tool.name,
+    "description": tool.longDescription || tool.shortDescription,
+    "applicationCategory": tool.category,
+    "operatingSystem": "Web",
+    "offers": {
+      "@type": "Offer",
+      "price": tool.pricing.replace(/[^0-9.]/g, '') || "0",
+      "priceCurrency": "USD",
+      "url": tool.url
+    },
+    "author": {
+      "@type": "Organization",
+      "name": "The Curator Group LLC",
+      "url": "https://tumapaia.com"
+    },
+    "maintainer": {
+      "@type": "Organization",
+      "@id": "https://tumapaia.com/#organization"
+    },
+    "reviewedBy": {
+      "@type": "Person",
+      "name": "Fabio Yocco",
+      "jobTitle": "Arquitecto Principal GEO y Curador Técnico"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "5",
+      "bestRating": "5",
+      "worstRating": "1",
+      "ratingCount": "1"
+    }
+  };
+
   return (
     <article className="group relative bg-[#121417]/60 backdrop-blur-2xl rounded-[40px] p-8 border border-white/5 flex flex-col h-full transition-all duration-700 hover:border-white/20 hover:-translate-y-3 overflow-hidden shadow-2xl">
+
+      {/* SoftwareApplication JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(softwareApplicationSchema).replace(/<\/script>/g, '<\\/script>')
+        }}
+      />
 
       {/* Dynamic Background Glow based on category */}
       <div className={`absolute -top-20 -right-20 w-64 h-64 blur-[100px] opacity-0 group-hover:opacity-30 transition-opacity duration-700 pointer-events-none rounded-full ${gradientClass || 'bg-gradient-to-br from-brand-primary/50 to-brand-secondary/50'}`} />
@@ -47,6 +94,28 @@ export default function ToolCard({ tool, onOpenDetails, gradientClass, primaryCo
             <h3 className="text-2xl font-black text-white leading-tight">
               {tool.name}
             </h3>
+            {tool.isFixGeoVerified && (
+              <div className="relative inline-flex items-center mt-3 group/seal">
+                <div 
+                  className="absolute inset-0 rounded-full blur-md animate-pulse"
+                  style={{ backgroundColor: secondaryColor || 'var(--brand-secondary, #FFD700)', opacity: 0.3 }}
+                />
+                <div 
+                  className="relative flex items-center gap-1.5 px-3 py-1 rounded-full border bg-black/60 backdrop-blur-xl"
+                  style={{ borderColor: `${secondaryColor || 'var(--brand-secondary, #FFD700)'}40` }}
+                >
+                  <svg className="w-3.5 h-3.5 drop-shadow-md" viewBox="0 0 24 24" fill="none" style={{ color: secondaryColor || 'var(--brand-secondary, #FFD700)' }}>
+                    <path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                  </svg>
+                  <span 
+                    className="text-[9px] uppercase tracking-widest font-black"
+                    style={{ color: secondaryColor || 'var(--brand-secondary, #FFD700)' }}
+                  >
+                    Auditado bajo Protocolo FixGeo
+                  </span>
+                </div>
+              </div>
+            )}
           </div>
         </div>
       </div>
