@@ -19,6 +19,7 @@
 :root {
   --background: #0a0a0a;
   --foreground: #ffffff;
+  --fixgeo-cyan: #00D1FF;
 }
 
 body {

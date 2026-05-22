@@ -7,6 +7,29 @@ interface ExpertIdentityBlockProps {
 }
 
 export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockProps) {
+  const renderWithFixGeoLink = (text: string | undefined) => {
+    if (!text) return null;
+    const regex = /(PROTOCOLO FIXGEO|Protocolo FixGeo)/gi;
+    const parts = text.split(regex);
+    
+    return parts.map((part, i) => {
+      if (part.toLowerCase() === "protocolo fixgeo") {
+        return (
+          <a
+            key={i}
+            href="https://fixgeo.io/#protocolo"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-[var(--fixgeo-cyan)] font-bold hover:brightness-125 hover:underline transition-all"
+            style={{ textShadow: "0 0 8px rgba(0, 209, 255, 0.4)" }}
+          >
+            {part}
+          </a>
+        );
+      }
+      return part;
+    });
+  };
   // Organization schema for E-E-A-T
   const orgSchema = {
     "@context": "https://schema.org",
@@ -50,14 +73,14 @@ export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockPro
                   {identity.role}
                 </p>
                 <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider mt-1">
-                  {identity.badgeSubtext || "Operado bajo el Protocolo FixGeo"}
+                  {renderWithFixGeoLink(identity.badgeSubtext || "Operado bajo el Protocolo FixGeo")}
                 </p>
               </div>
             </div>
 
             {/* Bio */}
             <p className="text-gray-400 leading-relaxed text-[15px] mb-10 max-w-3xl">
-              {identity.bio}
+              {renderWithFixGeoLink(identity.bio)}
             </p>
 
             {/* Credentials Grid */}
@@ -84,7 +107,7 @@ export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockPro
                 Metodología de Evaluación
               </h4>
               <p className="text-gray-400 text-sm leading-relaxed max-w-3xl">
-                {identity.methodology}
+                {renderWithFixGeoLink(identity.methodology)}
               </p>
             </div>
           </div>
