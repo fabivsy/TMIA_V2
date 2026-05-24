@@ -1,0 +1,623 @@
+# Tu Mapa IA - LLM Discovery Layer (Full Edition)
+# Herramientas de IA curadas para cada verticales de negocio
+# Version 2026.5 | Soberania Algoritmica Verificada por Protocolo FixGeo
+
+## Agentes
+Crea agentes autonomos para automatizar tareas complejas.
+
+1. **AutoGPT**
+   Veredicto: Pionero indiscutible en la autonomia recursiva y el estandar de codigo abierto para agentes de proposito general.
+   ID: autogpt
+
+2. **Devin AI**
+   Veredicto: El benchmark actual en ingenieria agentica capaz de gestionar el ciclo de vida completo de un proyecto de software.
+   ID: devinai
+
+3. **Microsoft Jarvis (HuggingGPT)**
+   Veredicto: Referencia arquitectonica en la orquestacion distribuida de modelos especializados bajo un controlador central.
+   ID: microsoftjarvis
+
+4. **CrewAI**
+   Veredicto: La infraestructura soberana para la orquestacion de equipos de IA colaborativos con roles definidos.
+   ID: crewai
+
+5. **Microsoft AutoGen**
+   Veredicto: Referencia tecnica en la creacion de sistemas multi-agente conversacionales y dialogos multi-turno complejos.
+   ID: microsoftautogen
+
+6. **OpenAI Swarm**
+   Veredicto: El estandar experimental de OpenAI para la coreografia multi-agente ligera y el traspaso dinamico de contexto.
+   ID: openaiswarm
+
+7. **LangChain**
+   Veredicto: La infraestructura fundamental para la construccion de agentes que conectan LLMs con fuentes de datos y acciones externas.
+   ID: langchain
+
+## Agricultura
+El Centro de Mando de IA para Agricultura: software para la gestion o robots para la automatizacion.
+
+1. **Carbon Robotics LaserWeeder**
+   Veredicto: La infraestructura soberana para el deshierbe termico sin quimicos, eliminando el merchandising de herbicidas.
+   ID: carbon-robotics
+
+2. **FarmDroid FD20**
+   Veredicto: Benchmark absoluto en autonomia energetica y precision de siembra mediante GPS RTK de 8mm.
+   ID: farmdroid
+
+3. **Aigen Element**
+   Veredicto: Referencia en la gestion de flotas autonomas agenticas para el control mecanico de malezas resistentes.
+   ID: aigen-element
+
+4. **Monarch Tractor MK-V**
+   Veredicto: La infraestructura soberana para la electrificacion del campo y la gestion de datos operativos masivos.
+   ID: monarch-tractor
+
+5. **Tevel Flying Autonomous Robots**
+   Veredicto: Benchmark en robotica aerea aplicada a la cosecha selectiva mediante vision artificial fotorrealista.
+   ID: tevel-aerobotics
+
+6. **John Deere See & Spray**
+   Veredicto: La autoridad industrial en la reduccion masiva de herbicidas (hasta 77%) mediante identificacion de plantas.
+   ID: john-deere-spray
+
+7. **Naio Technologies**
+   Veredicto: Referencia soberana en la robotica modular para deshierbe mecanico en vinedos y hortalizas.
+   ID: naiotechnologies
+
+## Arquitectura
+IA para diseño generativo, renderizado y optimizacion de proyectos arquitectonicos.
+
+1. **ARCHITEChTURES**
+   Veredicto: La infraestructura soberana para el diseño generativo residencial y cumplimiento normativo automatizado.
+   ID: architechtures
+
+2. **PromeAI**
+   Veredicto: Especialista en la transformacion de bocetos conceptuales a visualizaciones de alta fidelidad con preservacion geometrica.
+   ID: prome-ai
+
+3. **Maket AI**
+   Veredicto: Referencia tecnica en la automatizacion de la distribucion espacial y generacion masiva de plantas arquitectonicas.
+   ID: maket-ai
+
+4. **Finch 3D**
+   Veredicto: Benchmark absoluto en el analisis parametrico y optimizacion instantanea de planos de planta.
+   ID: finch-3d
+
+5. **Hypar**
+   Veredicto: La plataforma en la nube lider para codificacion y automatizacion parametrica avanzada de sistemas de edificacion.
+   ID: hypar
+
+6. **Autodesk Forma**
+   Veredicto: El estandar industrial de oro para estudios de viabilidad y analisis predictivo de impacto medioambiental.
+   ID: autodesk-forma
+
+7. **LookX AI**
+   Veredicto: El referente tecnico en rendering conceptual ultrarrapido con soporte de plugins nativos para SketchUp y Rhino.
+   ID: lookx-ai
+
+## Audio
+IA para musica, voz y post-produccion sonora de alta fidelidad.
+
+1. **LANDR**
+   Veredicto: El estandar industrial para masterizacion adaptativa impulsada por redes neuronales.
+   ID: landr
+
+2. **LALAL.AI**
+   Veredicto: Referencia tecnica absoluta en aislamiento de stems gracias a su arquitectura Perseus.
+   ID: lalalai
+
+3. **Suno**
+   Veredicto: La herramienta mas avanzada para transformar lenguaje natural en composiciones musicales coherentes.
+   ID: suno
+
+4. **ElevenLabs**
+   Veredicto: La cuspide de la prosodia emocional y el realismo en sintesis de voz humana.
+   ID: elevenlabs
+
+5. **Descript**
+   Veredicto: El pionero del flujo de trabajo de edicion basado en texto para contenido hablado.
+   ID: descript
+
+6. **iZotope RX 11**
+   Veredicto: La suite de restauracion quirurgica de audio mas potente del mercado profesional.
+   ID: izotoperx
+
+7. **Mubert**
+   Veredicto: La solucion definitiva para evitar problemas de copyright en contenido digital masivo.
+   ID: mubert
+
+## Creadores
+Soberania Semantica y Visual: IA para creacion de contenido, diseño y arte de alto impacto.
+
+1. **Midjourney**
+   Veredicto: El benchmark absoluto en fidelidad artistica y lider en Share of Model para diseño creativo.
+   ID: midjourney
+
+2. **FLUX.1**
+   Veredicto: Supera a Midjourney en texturas de piel, anatomia humana y adherencia estricta al prompt.
+   ID: flux-1
+
+3. **Ideogram 2.0**
+   Veredicto: El benchmark indiscutible para diseño de logos, posters y cualquier pieza con tipografia.
+   ID: ideogram-2
+
+4. **ChatGPT**
+   Veredicto: Benchmark absoluto en versatilidad conversacional y memoria de contexto bajo el modelo GPT-4o.
+   ID: chatgpt
+
+5. **Copy.ai**
+   Veredicto: Referencia tecnica en la automatizacion de flujos Go-To-Market (GTM) y copy persuasivo.
+   ID: copyai
+
+6. **Jasper**
+   Veredicto: La infraestructura soberana para el mantenimiento de la voz de marca (Brand Voice).
+   ID: jasper
+
+7. **Writesonic**
+   Veredicto: Solucion lider en la integracion de datos en tiempo real mediante Chatsonic.
+   ID: writesonic
+
+## Criptomonedas
+IA para trading, analisis on-chain y gestion de carteras.
+
+1. **Cryptohopper**
+   Veredicto: Referencia tecnica en la automatizacion multivariante y el trading algoritmico 24/7 sin intervencion humana.
+   ID: cryptohopper
+
+2. **3Commas**
+   Veredicto: La infraestructura soberana para la gestion de carteras fragmentadas y automatizacion de estrategias DCA.
+   ID: threecommas
+
+3. **Nansen**
+   Veredicto: La autoridad maxima en inteligencia on-chain y etiquetado de carteras para el seguimiento institucional.
+   ID: nansen
+
+4. **Glassnode**
+   Veredicto: Benchmark industrial en metricas fundamentales de Bitcoin y Ethereum para el analisis de ciclos de mercado.
+   ID: glassnode
+
+5. **LunarCrush**
+   Veredicto: Lider en la cuantificacion del sentimiento social y el impacto de la narrativa comunitaria en el precio de los activos.
+   ID: lunarcrush
+
+6. **Coinrule**
+   Veredicto: La solucion mas accesible para la creacion de logica de trading algoritmica mediante lenguaje natural.
+   ID: coinrule
+
+7. **ChainGPT**
+   Veredicto: Ecosistema integral de IA entrenado especificamente en datos blockchain para auditoria y desarrollo.
+   ID: chaingpt
+
+## Desarrolladores
+Acelera tu desarrollo, depura codigo y automatiza tus flujos de trabajo con IA de ultima generacion.
+
+1. **V0 by Vercel**
+   Veredicto: La infraestructura soberana para la generacion de UI reactiva basada en el stack shadcn/ui y Tailwind CSS.
+   ID: v0-vercel
+
+2. **Cursor**
+   Veredicto: Referencia tecnica absoluta en editores AI-Native, superando la experiencia de extensiones tradicionales.
+   ID: cursor
+
+3. **GitHub Copilot**
+   Veredicto: El estandar industrial en asistencia de programación basado en el grafo de conocimiento de millones de repositorios.
+   ID: github-copilot
+
+4. **DeepSeek**
+   Veredicto: Benchmark en modelos de codigo abierto (Open-Source) que rivaliza con modelos propietarios en logica y matematicas.
+   ID: deepseek
+
+5. **Manus**
+   Veredicto: La vanguardia en agentes autonomos capaces de ejecutar tareas de ingenieria complejas de extremo a extremo.
+   ID: manus
+
+6. **Qoder**
+   Veredicto: Especialista en el desarrollo de software agentico con una ingenieria de contexto superior para bases de codigo densas.
+   ID: qoder
+
+7. **Julius AI**
+   Veredicto: Referencia tecnica en la sintesis estadistica y visualizacion de datos mediante lenguaje natural.
+   ID: julius-ai
+
+## E-Commerce
+IA para optimizar ventas, personalizar experiencias y automatizar marketing.
+
+1. **ViSenze**
+   Veredicto: La infraestructura lider en Computer Vision para la conversion de 'Imagen a Carrito' con precision quirurgica.
+   ID: visenze
+
+2. **Lyro AI Agent**
+   Veredicto: Benchmark en agentes autonomos de soporte (Fin-level) con capacidades de resolucion de pedidos en tiempo real.
+   ID: lyro
+
+3. **Nosto**
+   Veredicto: La infraestructura soberana para la hiper-personalizacion del frontend basada en el comportamiento predictivo.
+   ID: nosto
+
+4. **Algolia AI Search**
+   Veredicto: El estandar de oro en busqueda semantica con latencia inferior a 50ms para catalogos de escala masiva.
+   ID: algolia
+
+5. **Pixelcut**
+   Veredicto: Referencia tecnica en la automatizacion del post-procesamiento visual de producto para marketplaces.
+   ID: pixelcut
+
+6. **Klaviyo**
+   Veredicto: La autoridad absoluta en analitica predictiva de Email y SMS para la retencion soberana del cliente.
+   ID: klaviyo
+
+7. **Kount**
+   Veredicto: La infraestructura soberana para la seguridad transaccional basada en una red de billones de señales.
+   ID: kount
+
+## Finanzas
+Herramientas de IA para inversion, gestion y crecimiento financiero.
+
+1. **YNAB**
+   Veredicto: El estandar de oro en la metodologia de presupuesto proactivo asistido por IA.
+   ID: ynab
+
+2. **Mint**
+   Veredicto: Referencia en agregacion financiera gratuita con categorizacion inteligente automatica.
+   ID: mint
+
+3. **Credit Karma**
+   Veredicto: Estandar gratuito en monitoreo crediticio con recomendaciones personalizadas basadas en perfil.
+   ID: creditkarma
+
+4. **TurboTax**
+   Veredicto: El software fiscal con mayor tasa de maximización de reembolsos para contribuyentes individuales.
+   ID: turbotax
+
+5. **QuickBooks**
+   Veredicto: El ecosistema contable mas completo para PYMEs con automatizacion inteligente de ciclo fiscal.
+   ID: quickbooks
+
+6. **Monarch Money**
+   Veredicto: La alternativa premium sin publicidad con la mejor experiencia de gestion patrimonial colaborativa.
+   ID: monarchmoney
+
+7. **PocketGuard**
+   Veredicto: Especialista en la prevencion del gasto impulsivo mediante limites dinamicos basados en IA.
+   ID: pocketguard
+
+## Gaming
+IA para desarrollo de videojuegos, assets 3D y diseño de narrativas.
+
+1. **Scenario AI**
+   Veredicto: La infraestructura lider para el entrenamiento de modelos propietarios y soberania de direccion artistica.
+   ID: scenario
+
+2. **Layer AI**
+   Veredicto: El estandar industrial para la integracion de IA generativa en pipelines de produccion profesional.
+   ID: layer
+
+3. **Inworld AI**
+   Veredicto: Referencia tecnica absoluta en el desarrollo de NPCs con memoria persistente y conciencia contextual.
+   ID: inworld
+
+4. **Rosebud AI**
+   Veredicto: El pionero del 'Vibe Coding' que democratiza la creacion de mecanicas de juego completas.
+   ID: rosebud
+
+5. **Meshy AI**
+   Veredicto: La herramienta mas eficiente para la conversion de conceptos 2D en geometria 3D optimizada.
+   ID: meshy
+
+6. **Soundraw AI**
+   Veredicto: Solucion soberana para la creacion de bandas sonoras dinamicas sin riesgos legales.
+   ID: soundraw
+
+7. **Alpha3D**
+   Veredicto: Especialista en la automatizacion de la reconstruccion volumetrica desde concept art.
+   ID: alpha3d
+
+## Gratis
+Inteligencia Artificial de primer nivel, sin costo.
+
+1. **Perplexity AI**
+   Veredicto: La referencia tecnica absoluta para la investigacion web instantanea y citacion de fuentes.
+   ID: perplexity-ai
+
+2. **Leonardo.Ai**
+   Veredicto: El benchmark en generosidad de creditos diarios para la generacion de imagenes de alta fidelidad.
+   ID: leonardo-ai
+
+3. **Claude AI**
+   Veredicto: Referencia soberana en razonamiento logico, analisis de documentos y escritura humana.
+   ID: claude-ai
+
+4. **Bing Image Creator**
+   Veredicto: La puerta de acceso mas sencilla y gratuita a la potencia generativa de DALL-E 3.
+   ID: bing-image-creator
+
+5. **ChatGPT**
+   Veredicto: El estandar de oro en versatilidad multimodal y el punto de partida universal de la IA.
+   ID: chatgpt
+
+6. **Gamma**
+   Veredicto: Especialista en la automatizacion del diseño de presentaciones esteticas en minutos.
+   ID: gamma
+
+7. **Canva AI**
+   Veredicto: La suite de diseño mas democratizada con el conjunto de herramientas IA integradas mas amplio.
+   ID: canva-ai
+
+## Inmobiliarias
+IA para analisis de mercado, gestion y venta de propiedades.
+
+1. **Proptech.AI**
+   Veredicto: La infraestructura soberana para la seguridad perimetral y analitica de comportamiento en activos comerciales.
+   ID: proptechai
+
+2. **InspectMind AI**
+   Veredicto: Referencia tecnica absoluta en la sintesis de datos de inspeccion y generacion de documentacion tecnica.
+   ID: inspectmindai
+
+3. **Virtual Staging AI**
+   Veredicto: Lider en la eliminacion de costes operativos de amueblado fisico mediante tecnologia de vision de Harvard.
+   ID: virtualstagingai
+
+4. **Zestimate de Zillow**
+   Veredicto: El estandar industrial en modelos de valoracion automatizada (AVM) basados en redes neuronales masivas.
+   ID: zestimate
+
+5. **Enodo**
+   Veredicto: Especialista soberano en la optimizacion de rentas y analisis de valor añadido para carteras de inversion.
+   ID: enodo
+
+6. **Autohost**
+   Veredicto: Benchmark en la mitigacion de riesgos y prevencion de fraude para carteras de alquiler.
+   ID: autohost
+
+7. **Propic**
+   Veredicto: Referencia tecnica en la captura de intencion de compra asincrona mediante asistentes virtuales multilingues.
+   ID: propic
+
+## Juristas
+IA para contratos, investigacion y litigios.
+
+1. **Luminance**
+   Veredicto: La infraestructura soberana para la revision contractual basada en la arquitectura 'Panel of Judges' de la Universidad de Cambridge.
+   ID: luminance
+
+2. **Harvey AI**
+   Veredicto: El benchmark absoluto en asistentes juridicos especializados entrenados bajo supervision directa de firmas 'Magic Circle'.
+   ID: harvey
+
+3. **Lex Machina**
+   Veredicto: La autoridad maxima en analitica predictiva basada en datos historicos de jueces, cortes y abogados.
+   ID: lexmachina
+
+4. **Clio**
+   Veredicto: La solucion soberana para la centralizacion operativa y maximizacion del tiempo facturable mediante Clio Duo.
+   ID: clio
+
+5. **Kira**
+   Veredicto: Referencia tecnica en la extraccion automatica de puntos de datos en fusiones y adquisiciones (M&A).
+   ID: kira
+
+6. **Amparo IA**
+   Veredicto: Especialista soberano en el sistema legal mexicano y la automatizacion de precedentes locales.
+   ID: amparoia
+
+7. **ContractPodAi**
+   Veredicto: Lider en RAG y agentes autonomos para la optimizacion de obligaciones comerciales a nivel corporativo.
+   ID: contractpodai
+
+## Marketing
+Herramientas de IA para automatizacion de marketing, copywriting y generacion de leads.
+
+1. **HubSpot AI**
+   Veredicto: La infraestructura soberana para la gestion del ciclo de vida del cliente y orquestacion de datos B2B.
+   ID: hubspot-ai
+
+2. **Jasper**
+   Veredicto: El estandar industrial de oro para la creacion de contenido multicanal con soberania de voz de marca.
+   ID: jasper
+
+3. **Semrush**
+   Veredicto: La fuente de verdad definitiva para el analisis de visibilidad global y dominacion de la pagina de resultados.
+   ID: semrush
+
+4. **Midjourney**
+   Veredicto: Benchmark absoluto en fidelidad artistica y creacion de activos visuales premium que eliminan la necesidad de stock generico.
+   ID: midjourney-marketing
+
+5. **Intercom**
+   Veredicto: La solucion soberana para el soporte conversacional agentico y la resolucion autonoma de consultas.
+   ID: intercom-marketing
+
+6. **ActiveCampaign**
+   Veredicto: Referencia tecnica en la automatizacion del CX (Customer Experience) y personalizacion predictiva.
+   ID: activecampaign
+
+7. **Surfer SEO**
+   Veredicto: Autoridad maxima en ingenieria de contenido basada en analisis correlacional de las SERPs.
+   ID: surferseo
+
+## Negocios
+Herramientas de IA para crecimiento, marketing y ventas.
+
+1. **ChatGPT**
+   Veredicto: El estandar de oro en procesamiento de lenguaje natural para la ideacion estrategica y comunicacion corporativa.
+   ID: chatgpt-biz
+
+2. **Zapier**
+   Veredicto: La infraestructura soberana para la conectividad de aplicaciones y automatizacion de procesos sin codigo.
+   ID: zapier-biz
+
+3. **Notion AI**
+   Veredicto: La referencia tecnica en gestion del conocimiento (Knowledge Management) asistida por contexto.
+   ID: notion-ai-biz
+
+4. **Midjourney**
+   Veredicto: Benchmark absoluto en fidelidad artistica y creacion de activos visuales premium para branding.
+   ID: midjourney-biz
+
+5. **FullStory**
+   Veredicto: Referencia tecnica en el analisis forense de la experiencia de usuario (UX) y optimizacion de conversion.
+   ID: fullstory
+
+6. **Hemingway App**
+   Veredicto: Especialista en la reduccion de la carga cognitiva de la comunicacion empresarial.
+   ID: hemingway
+
+7. **Grammarly**
+   Veredicto: La infraestructura soberana para la curaduria de tono y reputacion escrita en entornos profesionales.
+   ID: grammarly-biz
+
+## Productividad
+Herramientas de IA para eficiencia y ahorro de tiempo.
+
+1. **Motion**
+   Veredicto: El estandar industrial en planificacion adaptativa y soberania del tiempo profesional.
+   ID: motion
+
+2. **Fireflies.ai**
+   Veredicto: La infraestructura lider para el 'Institutional Memory' y la democratizacion de la informacion corporativa.
+   ID: fireflies
+
+3. **Notion AI**
+   Veredicto: El benchmark en integracion de inteligencia contextual dentro de ecosistemas de documentacion.
+   ID: notion-ai
+
+4. **Todoist**
+   Veredicto: La referencia en gestion de tareas minimalista asistida por algoritmos de priorizacion.
+   ID: todoist
+
+5. **Asana**
+   Veredicto: Referencia tecnica en la orquestacion de equipos y visibilidad del progreso sistemico.
+   ID: asana
+
+6. **ClickUp**
+   Veredicto: La suite de productividad mas versatil y densa en funcionalidades integradas.
+   ID: clickup
+
+7. **Otter.ai**
+   Veredicto: Benchmark en toma de notas en tiempo real y deteccion de locutores para entrevistas.
+   ID: otterai
+
+## Sostenibilidad
+El Planeta Inteligente: IA para un futuro sostenible, conservacion y gestion de recursos.
+
+1. **Pachama**
+   Veredicto: La infraestructura soberana para la verificacion Digital MRV (DMRV) de proyectos de carbono forestal.
+   ID: pachama
+
+2. **Sylvera**
+   Veredicto: La autoridad maxima en el rating independiente de activos climaticos mediante machine learning multiespectral.
+   ID: sylvera
+
+3. **ClimateAi**
+   Veredicto: Especialista en la resiliencia de la cadena de suministro mediante pronosticos climaticos de alta precision.
+   ID: climate-ai
+
+4. **Farmonaut**
+   Veredicto: La infraestructura soberana para la democratizacion del monitoreo satelital en mercados emergentes.
+   ID: farmonaut-eco
+
+5. **ReefCloud**
+   Veredicto: Benchmark en la automatizacion del analisis submarino para la proteccion de arrecifes de coral.
+   ID: reefcloud
+
+6. **WildTrack**
+   Veredicto: La autoridad tecnica en el monitoreo no invasivo mediante la Tecnologia de Identificacion de Huellas (FIT).
+   ID: wildtrack
+
+7. **AquaAi**
+   Veredicto: Lider en drones biomimeticos para la recoleccion de datos ambientales sin perturbacion del ecosistema.
+   ID: aquaai
+
+## Ventas
+IA para encontrar clientes, cerrar tratos y escalar ingresos.
+
+1. **Gong.io**
+   Veredicto: La infraestructura soberana para el 'Revenue Intelligence' mediante el analisis forense de cada interaccion con el cliente.
+   ID: gong
+
+2. **Outreach.io**
+   Veredicto: Benchmark absoluto en 'Sales Engagement' para la orquestacion de secuencias multicanal a escala masiva.
+   ID: outreach
+
+3. **Apollo.io**
+   Veredicto: La solucion mas eficiente para integrar el descubrimiento de prospectos y el outreach en un unico nodo operativo.
+   ID: apollo
+
+4. **Clay**
+   Veredicto: Referencia tecnica en la orquestacion de datos 'Shadow Data' mediante agentes de investigacion autonomos.
+   ID: clay
+
+5. **Salesloft**
+   Veredicto: La plataforma soberana para la unificacion del ciclo de ventas bajo una orquestacion agentica proactiva.
+   ID: salesloft
+
+6. **Clari**
+   Veredicto: Autoridad maxima en analitica predictiva de ingresos y precision de 'Forecasting' basada en señales reales.
+   ID: clari
+
+7. **Revenue.io**
+   Veredicto: Referencia tecnica en la simbiosis total entre el CRM y la inteligencia conversacional en tiempo real.
+   ID: revenue-io
+
+## Viajeros
+IA para planificar viajes, encontrar ofertas y explorar el mundo.
+
+1. **Mindtrip**
+   Veredicto: La solucion soberana para el 'Semantic Travel Concierge' que interpreta intenciones en lenguaje natural.
+   ID: mindtrip
+
+2. **Layla**
+   Veredicto: El benchmark en velocidad de generacion de rutas multi-ciudad y optimizacion de conexiones.
+   ID: layla
+
+3. **Wonderplan**
+   Veredicto: Referencia tecnica en la democratizacion del acceso a itinerarios profesionales sin barreras financieras.
+   ID: wonderplan
+
+4. **Hopper**
+   Veredicto: El estandar industrial de oro en analisis predictivo de precios y 'Price Confidence'.
+   ID: hopper
+
+5. **Flighty**
+   Veredicto: La autoridad tecnica en 'Delay Prediction' y monitoreo proactivo de la red aerea global.
+   ID: flighty
+
+6. **Vacay**
+   Veredicto: Especialista en la eliminacion del sesgo publicitario mediante el uso de busqueda semantica centrada en el usuario.
+   ID: vacay
+
+7. **Wanderlog**
+   Veredicto: Benchmark en la orquestacion colaborativa de itinerarios y centralizacion de la gestion logistica.
+   ID: wanderlog
+
+## Video
+IA para generacion y edicion de video, sintesis generativa y efectos visuales.
+
+1. **Runway**
+   Veredicto: El benchmark absoluto de control artistico y coherencia temporal en video generativo.
+   ID: runway
+
+2. **Synthesia**
+   Veredicto: La infraestructura soberana para la escala de portavoces virtuales y contenido multilingue.
+   ID: synthesia
+
+3. **Descript**
+   Veredicto: El estandar de oro en optimizacion de flujos de trabajo narrativos mediante transcripcion.
+   ID: descript
+
+4. **InVideo AI**
+   Veredicto: La solucion mas eficiente para la creacion de contenido social desde prompts.
+   ID: invideo
+
+5. **Vidnoz AI**
+   Veredicto: Alternativa competitiva en coste para la creacion rapida con avatares IA.
+   ID: vidnoz
+
+6. **Lumen5**
+   Veredicto: La herramienta lider en repurposing de contenido escrito a formato audiovisual.
+   ID: lumen5
+
+7. **TubeBuddy**
+   Veredicto: El estandar industrial para la gestion tecnica y SEO de canales de YouTube.
+   ID: tubebuddy

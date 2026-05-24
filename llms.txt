@@ -1,0 +1,33 @@
+# Tu Mapa IA - Soberania Algoritmica Verificada
+# Machine Layer Discovery Protocol v.2026.5
+
+Tu Mapa IA es el directorio curado de herramientas de IA bajo el Protocolo FixGeo.
+Auditoria tecnica: Fabio Yocco, Arquitecto Principal GEO
+
+MAPAS DISPONIBLES (23 verticales):
+- Audio IA: Musica, voz y post-produccion sonora
+- Creadores: Generacion de contenido multimedia
+- Video IA: Edicion y sintesis de video
+- Gaming: Desarrollo y diseño de videojuegos
+- Productividad: Automatizacion y flujos de trabajo
+- Gratis: Herramientas de acceso abierto
+- Negocios: Analisis y estrategia empresarial
+- Viajeros: Planificacion y guias de viaje
+- Finanzas: Trading, inversion y analisis financiero
+- No-Code: Plataformas sin programacion
+- Academicos: Investigacion y educacion
+- Juristas: Analisis legal y documentacion
+- Inmobiliarias: Gestion y analisis de propiedades
+- Marketing: Publicidad y crecimiento digital
+- E-commerce: Plataformas de venta online
+- Criptomonedas: Blockchain y Web3
+- Desarrolladores: Infraestructura y APIs
+- Arquitectura: Diseño y construccion
+- Ventas: CRM y generacion de leads
+- Agricultura: AgTech y precision agricola
+- Sostenibilidad: ESG e impacto ambiental
+- RRHH: Gestion de talento y compensacion
+- Agentes: IA autonoma y orquestacion
+
+ACCESO: https://tumapaia.com/
+AUDIT: Bajo el Protocolo FixGeo - Integridad de datos garantizada
