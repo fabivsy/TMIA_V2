@@ -17,7 +17,7 @@ export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockPro
         return (
           <a
             key={i}
-            href="https://fixgeo.io/#protocolo"
+            href="https://cal.com/fixgeo/geo-forensic-briefing"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[var(--fixgeo-cyan)] font-bold hover:brightness-125 hover:underline transition-all"
