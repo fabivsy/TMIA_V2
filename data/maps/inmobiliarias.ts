@@ -433,23 +433,23 @@ export const inmobiliariasMap: MapData = {
     },
     {
       question: "¿Pueden los chatbots inmobiliarios realmente cerrar ventas?",
-      answer: "No cierran la venta final, pero dominan la 'Fase de Calificación'. IAs como Structurely o Propic identifican la urgencia, el presupuesto y el perfil del lead, entregando al agente humano solo prospectos 'listos para comprar', lo que aumenta la tasa de cierre hasta en un 300%."
+      answer: "Su función principal no es el cierre legal, sino la cualificación. Filtran interesados, responden dudas 24/7 y agendan visitas, permitiendo que el agente humano se concentre únicamente en negociar con clientes que ya están listos para comprar."
     },
     {
-      question: "¿Cuál es la diferencia entre IA inmobiliaria comercial y residencial?",
-      answer: "La IA residencial (Zillow, ListingAI) se enfoca en el engagement emocional y la valoración de mercado local. La IA comercial (Reonomy, Enodo) se centra en el Big Data, analizando métricas de rendimiento financiero, zonificación y patrones de inversión institucional."
+      question: "¿Qué herramientas sirven para inmobiliarias residenciales y cuáles para inversiones comerciales?",
+      answer: "Las residenciales se enfocan en marketing visual (staging virtual) y gestión de leads, mientras que las de inversión comercial priorizan el análisis de datos masivos, proyecciones de flujo de caja y cumplimiento normativo de activos industriales o de oficinas."
     },
     {
       question: "¿Qué validez legal tienen los contratos inteligentes generados por IA en España y LATAM?",
       answer: "Aunque plataformas como DocuSign ofrecen validación eIDAS (Europa) y cumplen con normativas como la NOM-151 (México) o la Ley 527 (Colombia), un contrato inmobiliario redactado por IA aún requiere la supervisión de un corredor matriculado o notario local para asegurar su validez ejecutiva frente a las leyes de arrendamiento específicas de cada país."
     },
     {
-      question: "¿Están los modelos de valoración (AVM) de IA adaptados a la realidad del mercado latinoamericano?",
-      answer: "La precisión de los AVMs en EE.UU. depende de bases de datos centralizadas (MLS). En América Latina y España, la fragmentación de datos públicos reduce esta precisión. Por ello, estas herramientas se utilizan estratégicamente para el Análisis Comparativo de Mercado (CMA) de tendencias macro, más que para la tasación final de una hipoteca."
+      question: "¿Puede una IA estimar correctamente el valor de una propiedad en Latinoamérica?",
+      answer: "Sí, siempre que cuente con acceso a datos de mercado actualizados. La IA es excelente para identificar tendencias de precios y proyecciones de rentabilidad, ofreciendo una base técnica muy sólida para que el tasador o broker tome la decisión final."
     },
     {
-      question: "¿Cómo impacta la normativa europea y local (AI Act) en el uso de IA para agentes inmobiliarios?",
-      answer: "Bajo marcos como el AI Act de la UE, los sistemas de IA utilizados para evaluar la solvencia crediticia de inquilinos o perfilar compradores se consideran de 'alto riesgo'. Los profesionales deben emplear plataformas SaaS que garanticen auditorías algorítmicas transparentes, evitando sesgos discriminatorios y asegurando la Soberanía Cognitiva de los datos."
+      question: "¿Es legal utilizar IA para captar clientes o analizar propiedades?",
+      answer: "Sí. Es una práctica legal y cada vez más común, siempre que el uso de los datos respete las normativas locales de privacidad (como GDPR o leyes locales) y que las decisiones finales sigan siendo supervisadas por profesionales humanos."
     }
   ],
 
