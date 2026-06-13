@@ -39,7 +39,9 @@ export interface ExpertIdentity {
   bio: string;
   credentials: string[];
   methodology: string;
+  methodologyTitle?: string;
   auditFocus?: string;
+  auditFocusTitle?: string;
   auditNode?: string;
   badge?: string;
   badgeSubtext?: string;

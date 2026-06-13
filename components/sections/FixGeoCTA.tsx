@@ -19,10 +19,28 @@ export default function FixGeoCTA() {
             ¿Cómo te encuentra una IA?
           </h2>
           
-          <p className="text-xl text-white/60 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Hoy las personas ya no buscan únicamente en Google. Preguntan directamente a sistemas de inteligencia artificial qué proveedor contratar, qué herramienta utilizar o qué empresa recomendar.<br /><br />
-            FixGeo analiza cómo tu organización es descubierta, comprendida y citada dentro de estos nuevos ecosistemas de búsqueda.
-          </p>
+          <div className="text-xl text-white/60 mb-8 max-w-3xl mx-auto leading-relaxed space-y-6">
+            <p>
+              Hoy las personas ya no buscan únicamente en Google. Preguntan directamente a sistemas de inteligencia artificial qué proveedor contratar, qué herramienta utilizar o qué empresa recomendar.
+            </p>
+            <p>
+              FixGeo analiza cómo tu organización es descubierta, comprendida y citada dentro de estos nuevos ecosistemas de búsqueda.
+            </p>
+            <p className="text-base text-white/50 border-t border-white/5 pt-6 mt-6">
+              Esta nueva disciplina se conoce como GEO (Generative Engine Optimization). Mientras el SEO tradicional busca generar tráfico hacia una web, GEO busca que una organización sea comprendida, atribuida y recomendada directamente dentro de respuestas generadas por inteligencia artificial.
+            </p>
+          </div>
+
+          <div className="mb-12">
+            <Link 
+              href="https://fixgeo.io/#protocolo" 
+              target="_blank"
+              className="hover:underline font-semibold text-sm transition-all"
+              style={{ color: "#00D1FF", fontFamily: "var(--font-poppins)" }}
+            >
+              ¿Qué es GEO? →
+            </Link>
+          </div>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             <Link 

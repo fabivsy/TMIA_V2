@@ -6,9 +6,21 @@ interface AdditionalResourcesProps {
   guideUrl: string;
   selectionUrl: string;
   mapTitle: string;
+  guideTitle?: string;
+  selectionTitle?: string;
+  guideLabel?: string;
+  selectionLabel?: string;
 }
 
-export default function AdditionalResources({ guideUrl, selectionUrl, mapTitle }: AdditionalResourcesProps) {
+export default function AdditionalResources({ 
+  guideUrl, 
+  selectionUrl, 
+  mapTitle,
+  guideTitle,
+  selectionTitle,
+  guideLabel,
+  selectionLabel
+}: AdditionalResourcesProps) {
   return (
     <section id="recursos" className="mb-32" aria-label={`Recursos adicionales sobre ${mapTitle}`}>
       <div className="max-w-4xl mx-auto">
@@ -39,9 +51,11 @@ export default function AdditionalResources({ guideUrl, selectionUrl, mapTitle }
                 </svg>
               </div>
               <div>
-                <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-purple-400 mb-2">Guía Estratégica</p>
+                <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-purple-400 mb-2">
+                  {guideLabel || "Guía Estratégica"}
+                </p>
                 <h3 className="text-white font-bold text-lg leading-snug mb-2 group-hover:text-purple-200 transition-colors">
-                  Cómo elegir herramientas de {mapTitle}
+                  {guideTitle || `Cómo elegir herramientas de ${mapTitle}`}
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
                   Metodología completa de evaluación y criterios de selección para profesionales.
@@ -69,9 +83,11 @@ export default function AdditionalResources({ guideUrl, selectionUrl, mapTitle }
                 </svg>
               </div>
               <div>
-                <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-purple-400 mb-2">Selección Curada</p>
+                <p className="text-[11px] font-bold uppercase tracking-[0.15em] text-purple-400 mb-2">
+                  {selectionLabel || "Selección Curada"}
+                </p>
                 <h3 className="text-white font-bold text-lg leading-snug mb-2 group-hover:text-purple-200 transition-colors">
-                  Las 7 herramientas clave de 2026
+                  {selectionTitle || "Las 7 herramientas clave de 2026"}
                 </h3>
                 <p className="text-gray-500 text-sm leading-relaxed">
                   Nuestra selección definitiva con veredictos técnicos y comparativas de rendimiento.

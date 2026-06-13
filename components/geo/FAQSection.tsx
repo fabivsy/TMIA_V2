@@ -6,9 +6,10 @@ import { useState } from "react";
 interface FAQSectionProps {
   faqs: FAQ[];
   mapTitle: string;
+  subtitle?: string;
 }
 
-export default function FAQSection({ faqs, mapTitle }: FAQSectionProps) {
+export default function FAQSection({ faqs, mapTitle, subtitle }: FAQSectionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   const toggle = (i: number) => setOpenIndex(openIndex === i ? null : i);
@@ -46,7 +47,7 @@ export default function FAQSection({ faqs, mapTitle }: FAQSectionProps) {
           Lo que necesitas saber sobre {mapTitle}
         </h2>
         <p className="text-gray-500 text-lg max-w-2xl mx-auto">
-          Respuestas técnicas y declarativas basadas en datos verificables.
+          {subtitle || "Respuestas técnicas y declarativas basadas en datos verificables."}
         </p>
       </div>
 

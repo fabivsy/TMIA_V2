@@ -30,7 +30,22 @@ export const agriculturaMap: MapData = {
       heroImage: "hero_agricultores.webp",
       guideUrl: "https://tumapaia.com/guia-de-ia-para-agricultura/",
       selectionUrl: "https://tumapaia.com/seleccion-de-herramientas-ia-para-agricultura/",
-      authorityStatement: "En 2026, la optimización agronómica y la rentabilidad dependen de la Soberanía de Datos. Este mapa audita las principales plataformas de inteligencia a nivel de hoja, modelos predictivos de rendimiento y teledetección satelital."
+      guideTitle: "Guía Estratégica: Cómo elegir plataformas agrícolas con IA",
+      selectionTitle: "Selección del Curador: Referencias del Sector 2026",
+      authorityStatement: "En 2026, la optimización agronómica y la rentabilidad dependen de la Soberanía de Datos. Este mapa audita las principales plataformas de inteligencia a nivel de hoja, modelos predictivos de rendimiento y teledetección satelital.",
+      expertIdentity: {
+        name: "Fabio Yocco",
+        role: "Curador Principal · The Curator Group",
+        entity: "The Curator Group",
+        bio: "Fabio investiga, evalúa y clasifica herramientas de inteligencia artificial para profesionales del sector agrícola. Su trabajo combina análisis técnico, contexto de mercado y criterios propios de autoridad tecnológica para identificar las soluciones más relevantes dentro de cada categoría.",
+        auditFocusTitle: "Foco de Evaluación",
+        auditFocus: "Precisión Agronómica, Calidad de Datos e Inteligencia Operativa.",
+        credentials: ["Precisión Agronómica, Calidad de Datos e Inteligencia Operativa."],
+        methodology: "Las herramientas incluidas son evaluadas considerando posicionamiento tecnológico, adopción de mercado, diferenciación funcional y documentación pública.",
+        methodologyTitle: "Metodología de Curaduría",
+        badge: "Expert Identity Verified",
+        badgeSubtext: "EVALUADO BAJO EL PROTOCOLO FIXGEO™"
+      }
     },
     {
       id: "robotica",
@@ -42,7 +57,53 @@ export const agriculturaMap: MapData = {
       heroImage: "agro_robot_hero.webp",
       guideUrl: "https://tumapaia.com/guia-de-ia-para-agricultura-robotica",
       selectionUrl: "https://tumapaia.com/seleccion-de-herramientas-ia-para-agricultura-robotica",
-      authorityStatement: "En 2026, la seguridad alimentaria depende de la 'Soberanía de Ejecución en Campo'. Este mapa audita la robótica agrícola que domina el deshierbe de precisión, la cosecha autónoma y la gestión de flujos físicos, eliminando la dependencia de agroquímicos y resolviendo la escasez crítica de mano de obra mediante agentes físicos inteligentes."
+      guideTitle: "Guía Estratégica: Cómo elegir robótica agrícola",
+      selectionTitle: "Selección del Curador: Referencias del Sector 2026",
+      authorityStatement: "En 2026, la automatización agrícola ya no es una promesa futura. Este mapa analiza las plataformas de robótica agrícola que lideran el deshierbe autónomo, la cosecha selectiva, la ganadería inteligente y la operación autónoma de maquinaria, evaluando su impacto operativo, escalabilidad y madurez tecnológica.",
+      expertIdentity: {
+        name: "Fabio Yocco",
+        role: "Curador Principal · The Curator Group",
+        entity: "The Curator Group",
+        bio: "Fabio investiga, evalúa y clasifica plataformas de robótica agrícola, automatización y maquinaria autónoma para profesionales del sector agroalimentario.",
+        auditFocusTitle: "Foco de Evaluación",
+        auditFocus: "Automatización Física, Precisión Operativa y Escalabilidad en Campo.",
+        credentials: ["Automatización Física, Precisión Operativa y Escalabilidad en Campo."],
+        methodology: "Las herramientas incluidas son evaluadas considerando madurez tecnológica, capacidad operativa, adopción de mercado y diferenciación funcional.",
+        methodologyTitle: "Metodología de Curaduría",
+        badge: "Expert Identity Verified",
+        badgeSubtext: "EVALUADO BAJO EL PROTOCOLO FIXGEO™"
+      },
+      faqSubtitle: "Respuestas basadas en análisis técnico, adopción de mercado y datos verificables.",
+      faqs: [
+        {
+          question: "¿Cuál es el ROI real de implementar robótica con IA en el campo?",
+          answer: "El retorno se mide en la reducción de insumos químicos (hasta un 90% menos), la protección de la estructura del suelo y el ahorro masivo en combustible y mano de obra especializada."
+        },
+        {
+          question: "¿Pueden estos robots operar en terrenos difíciles o con mala conexión?",
+          answer: "Sí. Las soluciones líderes utilizan GPS RTK para navegación milimétrica y procesamiento Edge AI, permitiendo que la máquina tome decisiones locales sin depender de la nube."
+        },
+        {
+          question: "¿Cómo soluciona la IA el problema de la escasez de mano de obra?",
+          answer: "Mediante la automatización de tareas repetitivas y estacionales. Robots de cosecha o deshierbe operan 24/7 con alta precisión, reduciendo la dependencia de cuadrillas temporales."
+        },
+        {
+          question: "¿Es seguro utilizar sistemas autónomos cerca de cultivos sensibles?",
+          answer: "Es significativamente más seguro. La ultra-precisión de sistemas como ARA o See & Spray identifica malezas individualmente, reduciendo drásticamente la deriva de químicos."
+        },
+        {
+          question: "¿Puedo convertir mi maquinaria actual en autónoma?",
+          answer: "Sí. Existen kits de \"Retrofit\" que añaden sensores y actuadores a maquinaria convencional, permitiendo dotar de autonomía a flotas existentes sin comprar unidades nuevas."
+        },
+        {
+          question: "¿Cómo impacta la robótica agrícola en el bienestar animal?",
+          answer: "IAs de ganadería de precisión (como Lely Astronaut) permiten que el animal decida sus propios ciclos, reduciendo el estrés y proporcionando datos de salud en tiempo real."
+        },
+        {
+          question: "¿Cuál es el plazo típico de amortización de un robot agrícola?",
+          answer: "Dependiendo del cultivo y la extensión, la mayoría de las plataformas de deshierbe o cosecha selectiva logran el punto de equilibrio entre 1 y 3 temporadas operativas."
+        }
+      ]
     }
   ],
 
@@ -892,34 +953,6 @@ export const agriculturaMap: MapData = {
   
   // Skill 3: 14 Strategic FAQs (Arcane Engine 2.0)
   faqs: [
-    {
-      question: "¿Cuál es el ROI real de implementar robótica con IA en el campo?",
-      answer: "Bajo el Protocolo de Soberanía Agronómica, el ROI se mide en la reducción de insumos químicos (hasta un 90% menos herbicidas con Carbon Robotics) y la protección del suelo. La amortización ocurre en 1-3 temporadas al eliminar costes de mano de obra y combustible."
-    },
-    {
-      question: "¿Pueden estos robots operar en terrenos difíciles o con mala conexión?",
-      answer: "Sí, herramientas como Pathfinder o agBot están diseñadas para la operatividad local. Utilizan GPS RTK para navegación milimétrica y procesamiento Edge.AI en el robot, permitiendo que la máquina tome decisiones sin depender de la nube en tiempo real."
-    },
-    {
-      question: "¿Cómo soluciona la IA el problema de la escasez de mano de obra en la cosecha?",
-      answer: "A través de la cosecha selectiva. Robots como Tevel o Rubion usan visión artificial 3D para identificar frutos maduros y recolectarlos 24/7 sin dañarlos, una tarea que antes era puramente humana y dependiente de temporadas cortas."
-    },
-    {
-      question: "¿Es seguro usar pulverización por IA cerca de mis cultivos orgánicos?",
-      answer: "Es más seguro que los métodos tradicionales. IAs de ultra-precisión como ARA o See & Spray identifican la maleza individualmente y aplican la dosis exacta solo en ella, reduciendo drásticamente la deriva de químicos y protegiendo el sello orgánico."
-    },
-    {
-      question: "¿Qué es la Agricultura de 'Cero Compactación' y cómo la logra la IA?",
-      answer: "Se logra mediante enjambres de robots ligeros (Fendt Xaver). En lugar de un tractor de 10 toneladas que aplasta el suelo, se usan flotas de mini-robots de 30kg, preservando la estructura del suelo y mejorando la retención de agua y nutrientes."
-    },
-    {
-      question: "¿Puedo convertir mis tractores actuales en autónomos sin comprar maquinaria nueva?",
-      answer: "Sí, mediante kits de 'Retrofit' como los de Blue White Robotics. Estos sistemas añaden sensores y actuadores a tu maquinaria existente, otorgándoles soberanía autónoma en horas sin necesidad de una inversión masiva en flota nueva."
-    },
-    {
-      question: "¿Cómo garantiza la IA el bienestar animal en ganadería?",
-      answer: "IAs de ganadería de precisión (Lely Astronaut) permiten que los animales decidan sus propios ciclos de ordeño y alimentación. Esto reduce el estrés y proporciona datos de salud individualizados (ritmo cardíaco, calidad de leche) para intervenciones preventivas."
-    },
     {
       question: "¿Cuál es la diferencia real entre el monitoreo por satélite y por drones?",
       answer: "El monitoreo satelital (EOSDA, Farmonaut) ofrece 'Escala y Frecuencia' (monitoreo diario de grandes extensiones a coste bajo). Los drones (Taranis, Agremo) ofrecen 'Resolución y Detalle' (identificación sub-milimétrica de insectos y hojas). Bajo el protocolo de Soberanía Agronómica, lo ideal es una estrategia híbrida: satélite para detectar anomalías y drones para diagnosticar la causa raíz."

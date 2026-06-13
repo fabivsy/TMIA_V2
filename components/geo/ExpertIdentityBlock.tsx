@@ -17,7 +17,7 @@ export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockPro
         return (
           <a
             key={i}
-            href="https://cal.com/fixgeo/geo-forensic-briefing"
+            href="https://fixgeo.io/#protocolo"
             target="_blank"
             rel="noopener noreferrer"
             className="text-[var(--fixgeo-cyan)] font-bold hover:brightness-125 hover:underline transition-all"
@@ -82,7 +82,7 @@ export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockPro
             <p className="text-gray-500 leading-relaxed text-[13px] mb-6 max-w-3xl italic border-l-2 border-brand-primary/30 pl-4">
               Algunas organizaciones incluidas en este mapa también son analizadas mediante el{" "}
               <a
-                href="https://cal.com/fixgeo/geo-forensic-briefing"
+                href="https://fixgeo.io/#protocolo"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[var(--fixgeo-cyan)] font-bold hover:brightness-125 hover:underline transition-all"
@@ -101,7 +101,7 @@ export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockPro
             {/* Credentials Grid */}
             <div className="mb-10">
               <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-gray-500 mb-5">
-                Foco de la Auditoría Técnica
+                {identity.auditFocusTitle || "Foco de la Auditoría Técnica"}
               </h4>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                 {identity.credentials.map((cred, i) => (
@@ -119,7 +119,7 @@ export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockPro
             {/* Methodology */}
             <div className="border-t border-white/[0.06] pt-8">
               <h4 className="text-[11px] font-bold uppercase tracking-[0.2em] text-gray-500 mb-4">
-                Metodología de Evaluación
+                {identity.methodologyTitle || "Metodología de Evaluación"}
               </h4>
               <p className="text-gray-400 text-sm leading-relaxed max-w-3xl">
                 {renderWithFixGeoLink(identity.methodology)}

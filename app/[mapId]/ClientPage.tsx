@@ -92,6 +92,8 @@ export default function MapPage({ params }: PageProps) {
   const displayGuideUrl = subMap ? subMap.guideUrl : mapData.guideUrl;
   const displaySelectionUrl = subMap ? subMap.selectionUrl : mapData.selectionUrl;
   
+  const displayExpertIdentity = subMap?.expertIdentity || mapData.expertIdentity;
+  
   // Custom guide content using authority statement
   const displayGuideContent = subMap && subMap.authorityStatement 
     ? `<h2>Soberanía de Ejecución en Campo</h2><p>${subMap.authorityStatement}</p>`
@@ -101,7 +103,7 @@ export default function MapPage({ params }: PageProps) {
     ? mapData.tools.filter(t => t.subCategory === activeSubMapId) 
     : mapData.tools;
 
-  const displayFaqs = mapData.faqs || [];
+  const displayFaqs = subMap?.faqs || mapData.faqs || [];
 
   const mainSchema = {
     "@context": "https://schema.org",
@@ -150,7 +152,7 @@ export default function MapPage({ params }: PageProps) {
       },
       {
         "@type": "FAQPage",
-        "mainEntity": displayFaqs.map(faq => ({
+        "mainEntity": displayFaqs.map((faq: { question: string; answer: string }) => ({
           "@type": "Question",
           "name": faq.question,
           "acceptedAnswer": {
@@ -216,12 +218,17 @@ export default function MapPage({ params }: PageProps) {
             />
             <div className="absolute inset-0 bg-gradient-to-b from-[#0A0B0D] via-transparent to-[#0A0B0D] pointer-events-none" />
 
+            {/* Authority Badge */}
+            <p className="text-xs font-bold uppercase tracking-[0.25em] text-[#4ADE80]/70 mb-6">
+              Investigación independiente&nbsp;&nbsp;•&nbsp;&nbsp;Curación sectorial&nbsp;&nbsp;•&nbsp;&nbsp;Protocolo FixGeo™
+            </p>
+
             {/* Title */}
             <h1 className="text-6xl md:text-8xl font-black mb-6 tracking-tighter leading-none pb-4 bg-gradient-to-r from-[#4ADE80] via-[#86EFAC] to-[#FFE4A0] bg-clip-text text-transparent drop-shadow-[0_4px_30px_rgba(74,222,128,0.15)]">
-              {mapData.title}
+              Agricultura e IA
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 max-w-3xl mx-auto mb-16 font-medium leading-relaxed drop-shadow-md">
-              El Centro de Mando de IA para Agricultura: software para la gestión o robots para la automatización.
+              Explora el ecosistema de tecnología agrícola más avanzado. Identifica las herramientas necesarias para digitalizar la gestión o automatizar la ejecución en campo.
             </p>
 
             {/* Split Cards Grid */}
@@ -230,9 +237,9 @@ export default function MapPage({ params }: PageProps) {
               {/* Card 1: Software y Análisis de Datos */}
               <button
                 onClick={() => handleSelectSubMap("software")}
-                className="relative group rounded-[40px] overflow-hidden bg-[#16181d]/50 border border-white/10 p-10 flex flex-col text-left backdrop-blur-2xl transition-all duration-500 hover:border-[#4A90E2]/40 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] cursor-pointer"
+                className="relative group rounded-[40px] overflow-hidden bg-[#16181d]/50 border border-white/10 p-10 flex flex-col text-left backdrop-blur-2xl transition-all duration-500 hover:border-[#3B82F6]/40 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] cursor-pointer"
               >
-                <div className="absolute -top-20 -right-20 w-64 h-64 blur-[100px] opacity-15 bg-gradient-to-br from-[#4A90E2] to-[#98D8AA] pointer-events-none rounded-full group-hover:opacity-25 transition-opacity" />
+                <div className="absolute -top-20 -right-20 w-64 h-64 blur-[100px] opacity-15 bg-gradient-to-br from-[#3B82F6] to-[#0EA5E9] pointer-events-none rounded-full group-hover:opacity-25 transition-opacity" />
                 <div className="relative w-16 h-16 mb-6 group-hover:scale-105 transition-transform duration-500">
                   <Image
                     src="/heroes/agricultores_logo.webp"
@@ -242,28 +249,28 @@ export default function MapPage({ params }: PageProps) {
                     className="object-contain"
                   />
                 </div>
-                <div className="flex justify-between items-start mb-4 w-full">
-                  <h2 className="text-2xl md:text-3xl font-black text-white leading-tight group-hover:text-[#4A90E2] transition-colors">
+                <div className="mb-4 w-full">
+                  <span className="inline-block px-3 py-1 bg-[#3B82F6]/10 border border-[#3B82F6]/20 rounded-full text-[9px] uppercase tracking-wider text-[#3B82F6] font-bold whitespace-nowrap mb-3">
+                    ANÁLISIS Y GESTIÓN
+                  </span>
+                  <h2 className="text-2xl md:text-3xl font-black text-white leading-tight group-hover:text-[#3B82F6] transition-colors">
                     Software y Análisis de Datos
                   </h2>
-                  <span className="px-3 py-1 bg-[#4A90E2]/10 border border-[#4A90E2]/20 rounded-full text-[9px] uppercase tracking-wider text-[#4A90E2] font-bold">
-                    Activo
-                  </span>
                 </div>
                 <p className="text-gray-400 text-sm md:text-base leading-relaxed font-medium mb-8 flex-grow group-hover:text-gray-300 transition-colors">
-                  Plataformas de gestión de fincas, análisis satelital predictivo y optimización de recursos híbridos.
+                  Optimiza la toma de decisiones mediante datos. Plataformas de gestión de fincas, análisis satelital predictivo y monitoreo de cultivos en tiempo real.
                 </p>
-                <div className="w-full px-6 py-4 bg-gradient-to-r from-[#4A90E2] to-[#98D8AA] text-white font-black rounded-2xl transition-all text-xs uppercase tracking-widest text-center shadow-[0_4px_20px_rgba(74,144,226,0.3)] group-hover:brightness-110 group-hover:shadow-[0_4px_30px_rgba(152,216,170,0.4)]">
-                  Explorar Mapa de Software
+                <div className="w-full px-6 py-4 bg-gradient-to-r from-[#3B82F6] to-[#0EA5E9] text-white font-black rounded-2xl transition-all text-xs uppercase tracking-widest text-center shadow-[0_4px_20px_rgba(59,130,246,0.3)] group-hover:brightness-110 group-hover:shadow-[0_4px_30px_rgba(14,165,233,0.4)]">
+                  EXPLORAR SOFTWARE →
                 </div>
               </button>
 
               {/* Card 2: Robótica y Automatización */}
               <button
                 onClick={() => handleSelectSubMap("robotica")}
-                className="relative group rounded-[40px] overflow-hidden bg-[#1a1d24]/60 border border-white/15 p-10 flex flex-col text-left backdrop-blur-2xl transition-all duration-500 hover:border-[#FFA726]/40 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] cursor-pointer"
+                className="relative group rounded-[40px] overflow-hidden bg-[#1a1d24]/60 border border-white/15 p-10 flex flex-col text-left backdrop-blur-2xl transition-all duration-500 hover:border-[#F97316]/40 hover:-translate-y-2 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5)] cursor-pointer"
               >
-                <div className="absolute -top-20 -right-20 w-64 h-64 blur-[100px] opacity-15 bg-gradient-to-br from-[#00695C] to-[#FFA726] pointer-events-none rounded-full group-hover:opacity-25 transition-opacity" />
+                <div className="absolute -top-20 -right-20 w-64 h-64 blur-[100px] opacity-15 bg-gradient-to-br from-[#F97316] to-[#F59E0B] pointer-events-none rounded-full group-hover:opacity-25 transition-opacity" />
                 <div className="relative w-16 h-16 mb-6 group-hover:scale-105 transition-transform duration-500">
                   <Image
                     src="/heroes/agro_robot_logo.webp"
@@ -273,22 +280,43 @@ export default function MapPage({ params }: PageProps) {
                     className="object-contain"
                   />
                 </div>
-                <div className="flex justify-between items-start mb-4 w-full">
-                  <h2 className="text-2xl md:text-3xl font-black text-white leading-tight group-hover:text-[#FFA726] transition-colors">
+                <div className="mb-4 w-full">
+                  <span className="inline-block px-3 py-1 bg-[#F97316]/10 border border-[#F97316]/20 rounded-full text-[9px] uppercase tracking-wider text-[#F97316] font-bold whitespace-nowrap mb-3">
+                    EJECUCIÓN EN CAMPO
+                  </span>
+                  <h2 className="text-2xl md:text-3xl font-black text-white leading-tight group-hover:text-[#F97316] transition-colors">
                     Robótica y Automatización
                   </h2>
-                  <span className="px-3 py-1 bg-[#FFA726]/10 border border-[#FFA726]/20 rounded-full text-[9px] uppercase tracking-wider text-[#FFA726] font-bold">
-                    Activo
-                  </span>
                 </div>
                 <p className="text-gray-400 text-sm md:text-base leading-relaxed font-medium mb-8 flex-grow group-hover:text-gray-300 transition-colors">
-                  Robots deshierbadores por láser, drones de cosecha selectiva y tractores autónomos de alta fidelidad técnica.
+                  Automatización física de alta fidelidad técnica. Robots deshierbadores por láser, drones de cosecha selectiva y tractores autónomos.
                 </p>
-                <div className="w-full px-6 py-4 bg-gradient-to-r from-[#00695C] to-[#FFA726] text-white font-black rounded-2xl transition-all text-xs uppercase tracking-widest text-center shadow-[0_4px_20px_rgba(0,105,92,0.3)] group-hover:brightness-110 group-hover:shadow-[0_4px_30px_rgba(255,167,38,0.4)]">
-                  Explorar Mapa Robótico
+                <div className="w-full px-6 py-4 bg-gradient-to-r from-[#F97316] to-[#F59E0B] text-white font-black rounded-2xl transition-all text-xs uppercase tracking-widest text-center shadow-[0_4px_20px_rgba(249,115,22,0.3)] group-hover:brightness-110 group-hover:shadow-[0_4px_30px_rgba(245,158,11,0.4)]">
+                  EXPLORAR MAPA ROBÓTICO →
                 </div>
               </button>
 
+            </div>
+
+            {/* Diferencia Clave Info-Box */}
+            <div className="mt-10 max-w-2xl mx-auto relative z-20">
+              <div className="bg-white/[0.025] backdrop-blur-xl border border-white/[0.06] rounded-2xl px-8 py-6">
+                <p className="text-[10px] font-bold uppercase tracking-[0.25em] text-white/30 mb-4">Diferencia Clave</p>
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="flex items-start gap-3">
+                    <span className="mt-0.5 text-[#3B82F6] text-lg font-black leading-none">▸</span>
+                    <p className="text-sm text-gray-400 leading-relaxed">
+                      <span className="text-[#3B82F6] font-bold">Software</span> = Análisis, monitoreo y administración digital.
+                    </p>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <span className="mt-0.5 text-[#F97316] text-lg font-black leading-none">▸</span>
+                    <p className="text-sm text-gray-400 leading-relaxed">
+                      <span className="text-[#F97316] font-bold">Robótica</span> = Automatización física y trabajo autónomo en el campo.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
 
             {/* Hub Curator Signatures */}
@@ -490,11 +518,11 @@ export default function MapPage({ params }: PageProps) {
           </section>
 
           {displayFaqs && displayFaqs.length > 0 && (
-            <FAQSection faqs={displayFaqs} mapTitle={displayTitle} />
+            <FAQSection faqs={displayFaqs} mapTitle={displayTitle} subtitle={subMap?.faqSubtitle} />
           )}
 
-          {mapData.expertIdentity && (
-            <ExpertIdentityBlock identity={mapData.expertIdentity} />
+          {displayExpertIdentity && (
+            <ExpertIdentityBlock identity={displayExpertIdentity} />
           )}
 
           {displayGuideUrl && displaySelectionUrl && (
@@ -502,6 +530,8 @@ export default function MapPage({ params }: PageProps) {
               guideUrl={displayGuideUrl}
               selectionUrl={displaySelectionUrl}
               mapTitle={displayTitle}
+              guideTitle={subMap?.guideTitle || (mapData.id === "agricultura" ? "Guía Estratégica: Cómo elegir software de IA" : undefined)}
+              selectionTitle={subMap?.selectionTitle || (mapData.id === "agricultura" ? "Selección del Curador: Plataformas líderes 2026" : undefined)}
             />
           )}
 
