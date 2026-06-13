@@ -1,0 +1,9 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="256" cy="256" r="200" stroke="#D4AF37" stroke-width="32"/>
+  <path d="M256 30L290 220H222L256 30Z" fill="#D4AF37"/>
+  <path d="M256 482L222 292H290L256 482Z" fill="#D4AF37" opacity="0.6"/>
+  <path d="M482 256L292 222V290L482 256Z" fill="#D4AF37" opacity="0.8"/>
+  <path d="M30 256L220 290V222L30 256Z" fill="#D4AF37" opacity="0.8"/>
+  <circle cx="256" cy="256" r="115" fill="#D4AF37"/>
+  <text x="256" y="302" font-family="Arial Black, sans-serif" font-weight="900" font-size="120" fill="white" text-anchor="middle" style="letter-spacing:-8px">IA</text>
+</svg>

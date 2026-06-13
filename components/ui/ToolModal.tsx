@@ -71,6 +71,45 @@ export default function ToolModal({ tool, onClose, primaryColor, secondaryColor 
         </div>
 
         <div className="px-10 pb-10 space-y-10 relative z-10">
+          {(tool.isAudited || tool.isFixGeoVerified) && (
+            <div 
+              className="bg-[#0F172A]/30 border-t border-b border-white/10 py-3.5 px-6 rounded-2xl flex flex-col sm:flex-row sm:items-center justify-between gap-4 select-none shadow-[inset_0_1px_0_0_rgba(255,255,255,0.05),0_4px_20px_-2px_rgba(0,0,0,0.3)]"
+              style={{
+                fontFamily: "var(--font-poppins), sans-serif",
+              }}
+            >
+              <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
+                {/* Status Badge */}
+                <div 
+                  className="font-mono text-xs font-bold text-[var(--fixgeo-cyan,#00D1FF)] tracking-wider flex items-center gap-2"
+                  style={{ 
+                    textShadow: "0 0 10px rgba(0, 209, 255, 0.4)",
+                    fontFamily: "'JetBrains Mono', ui-monospace, monospace"
+                  }}
+                >
+                  <span className="text-[10px] animate-pulse">🔵</span> PERFIL AUDITADO
+                </div>
+                
+                <span className="text-white/20 hidden sm:inline">|</span>
+                
+                {/* Methodology Label */}
+                <span className="text-xs font-semibold text-white/70">
+                  Evaluado mediante Protocolo FixGeo™
+                </span>
+              </div>
+              
+              {/* Benchmark Link */}
+              <a 
+                href={tool.benchmarkUrl || "https://fixgeo.io"}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-sans text-xs font-bold text-white hover:text-[var(--fixgeo-cyan,#00D1FF)] px-4 py-2 rounded-xl bg-white/5 border border-white/10 hover:border-[var(--fixgeo-cyan,#00D1FF)] hover:bg-[var(--fixgeo-cyan,#00D1FF)]/10 transition-all flex items-center gap-1 group/bench shadow-sm"
+              >
+                Ver Benchmark Sectorial <span className="group-hover/bench:translate-x-1 transition-transform">→</span>
+              </a>
+            </div>
+          )}
+
           {/* Main Description / Authority Verdict */}
           <div className="bg-white/5 border border-white/5 rounded-3xl p-8 space-y-6">
             {tool.verdict && (

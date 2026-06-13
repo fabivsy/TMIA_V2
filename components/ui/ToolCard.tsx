@@ -111,7 +111,7 @@ export default function ToolCard({ tool, onOpenDetails, gradientClass, primaryCo
                     className="text-[9px] uppercase tracking-widest font-black"
                     style={{ color: secondaryColor || 'var(--brand-secondary, #FFD700)' }}
                   >
-                    Auditado bajo Protocolo FixGeo
+                    FIXGEO AUDITADO
                   </span>
                 </div>
               </div>

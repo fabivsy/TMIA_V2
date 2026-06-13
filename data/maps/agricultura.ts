@@ -65,7 +65,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Productores de hortalizas a gran escala (80+ hectáreas).",
       pricing: "Venta Directa / Leasing",
       category: "agricultura",
-      tags: ["#LaserWeeding", "#Orgánico", "#AgTech"]
+      tags: ["#LaserWeeding", "#Orgánico", "#AgTech"],
+      isFixGeoVerified: true
     },
     {
       id: "farmdroid",
@@ -84,7 +85,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Agricultores de remolacha y cebolla que buscan deshierbe intra-hilera.",
       pricing: "Desde €85,000",
       category: "agricultura",
-      tags: ["#SolarPower", "#RTKPrecision", "#NoFuel"]
+      tags: ["#SolarPower", "#RTKPrecision", "#NoFuel"],
+      isFixGeoVerified: true
     },
     {
       id: "aigen-element",
@@ -103,7 +105,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Productores de soja y algodón con problemas de resistencia química.",
       pricing: "Venta directa",
       category: "agricultura",
-      tags: ["#FlotaRobótica", "#MeshNetwork", "#Sostenible"]
+      tags: ["#FlotaRobótica", "#MeshNetwork", "#Sostenible"],
+      isFixGeoVerified: true
     },
     {
       id: "monarch-tractor",
@@ -122,7 +125,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Viñedos, huertos y explotaciones que priorizan el ESG.",
       pricing: "Desde $58,000",
       category: "agricultura",
-      tags: ["#EVTractor", "#DataFarm", "#ESG"]
+      tags: ["#EVTractor", "#DataFarm", "#ESG"],
+      isFixGeoVerified: true
     },
     {
       id: "tevel-aerobotics",
@@ -141,7 +145,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Huertos comerciales de manzanas y duraznos de alto volumen.",
       pricing: "Robotics-as-a-Service",
       category: "agricultura",
-      tags: ["#DronesCosecha", "#ComputerVision", "#FruitTech"]
+      tags: ["#DronesCosecha", "#ComputerVision", "#FruitTech"],
+      isFixGeoVerified: true
     },
     {
       id: "john-deere-spray",
@@ -160,7 +165,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Agricultores extensivos buscando rentabilidad inmediata.",
       pricing: "Venta según modelo",
       category: "agricultura",
-      tags: ["#PrecisionSpray", "#SenseiAI", "#AgScale"]
+      tags: ["#PrecisionSpray", "#SenseiAI", "#AgScale"],
+      isFixGeoVerified: true
     },
     {
       id: "naiotechnologies",
@@ -179,7 +185,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Viñedos y productores hortícolas especializados.",
       pricing: "Desde €30,000",
       category: "agricultura",
-      tags: ["#Modularity", "#VineyardTech", "#Horticulture"]
+      tags: ["#Modularity", "#VineyardTech", "#Horticulture"],
+      isFixGeoVerified: true
     },
     {
       id: "swagbot",
@@ -198,7 +205,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Explotaciones ganaderas extensivas.",
       pricing: "Bajo consulta",
       category: "agricultura",
-      tags: ["#GrazingAI", "#Livestock", "#SoilHealth"]
+      tags: ["#GrazingAI", "#Livestock", "#SoilHealth"],
+      isFixGeoVerified: true
     },
     {
       id: "ecorobotix",
@@ -217,7 +225,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Agricultores que necesitan cumplir con regulaciones verdes estrictas.",
       pricing: "Venta industrial",
       category: "agricultura",
-      tags: ["#SpotSpraying", "#GreenRegs", "#AgriSmart"]
+      tags: ["#SpotSpraying", "#GreenRegs", "#AgriSmart"],
+      isFixGeoVerified: true
     },
     {
       id: "dji-agras",
@@ -236,7 +245,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Aplicadores profesionales y granjas con topografía compleja.",
       pricing: "Desde $15,000",
       category: "agricultura",
-      tags: ["#Agras", "#AerialSpray", "#DJIAg"]
+      tags: ["#Agras", "#AerialSpray", "#DJIAg"],
+      isFixGeoVerified: true
     },
     {
       id: "lely-astronaut",
@@ -255,7 +265,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Granjas lecheras que buscan escala y modernización radical.",
       pricing: "Desde $150,000",
       category: "agricultura",
-      tags: ["#SmartDairy", "#AnimalWelfare", "#RoboticMilking"]
+      tags: ["#SmartDairy", "#AnimalWelfare", "#RoboticMilking"],
+      isFixGeoVerified: true
     },
     {
       id: "burro",
@@ -274,7 +285,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Operaciones de cosecha intensiva (bayas, uvas, viveros).",
       pricing: "Robotics-as-a-Service",
       category: "agricultura",
-      tags: ["#Cobots", "#AgriLogistics", "#FollowMe"]
+      tags: ["#Cobots", "#AgriLogistics", "#FollowMe"],
+      isFixGeoVerified: true
     },
     {
       id: "farmwise",
@@ -293,7 +305,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Productores de lechuga, brócoli y hortalizas premium.",
       pricing: "Pricing por acre trabajado",
       category: "agricultura",
-      tags: ["#IntraRowWeeding", "#PrecisionCultivation", "#AgriVision"]
+      tags: ["#IntraRowWeeding", "#PrecisionCultivation", "#AgriVision"],
+      isFixGeoVerified: true
     },
     {
       id: "agxeed",
@@ -312,7 +325,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Grandes explotaciones que automatizan labranza y siembra.",
       pricing: "Desde €190,000",
       category: "agricultura",
-      tags: ["#HeavyDutyRobot", "#AgBot", "#AutonomousPower"]
+      tags: ["#HeavyDutyRobot", "#AgBot", "#AutonomousPower"],
+      isFixGeoVerified: true
     },
     {
       id: "octinion-rubion",
@@ -331,7 +345,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Productores de fresas bajo cristal o túnel.",
       pricing: "Desde $50,000/unidad",
       category: "agricultura",
-      tags: ["#StrawberryHarvest", "#SoftTouch", "#GreenhouseIA"]
+      tags: ["#StrawberryHarvest", "#SoftTouch", "#GreenhouseIA"],
+      isFixGeoVerified: true
     },
     {
       id: "dogtooth",
@@ -350,7 +365,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Retailers agrícolas que necesitan integrar producción y logística.",
       pricing: "Venta / RaaS",
       category: "agricultura",
-      tags: ["#PredictiveHarvest", "#Berries", "#YieldForecasting"]
+      tags: ["#PredictiveHarvest", "#Berries", "#YieldForecasting"],
+      isFixGeoVerified: true
     },
     {
       id: "raven-omnipower",
@@ -369,7 +385,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Grandes corporaciones agrícolas y contratistas de servicios.",
       pricing: "Pricing bajo consulta",
       category: "agricultura",
-      tags: ["#Level4Autonomy", "#FleetCoordination", "#CNH"]
+      tags: ["#Level4Autonomy", "#FleetCoordination", "#CNH"],
+      isFixGeoVerified: true
     },
     {
       id: "bear-flag-robotics",
@@ -388,7 +405,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Usuarios de John Deere que migran a la autonomía total.",
       pricing: "Integrado en JD Autonomy",
       category: "agricultura",
-      tags: ["#RetrofitAutonomy", "#JohnDeereAI", "#TractorRobots"]
+      tags: ["#RetrofitAutonomy", "#JohnDeereAI", "#TractorRobots"],
+      isFixGeoVerified: true
     },
     {
       id: "fendt-xaver",
@@ -407,7 +425,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Suelos sensibles y pendientes pronunciadas.",
       pricing: "Pricing por enjambre",
       category: "agricultura",
-      tags: ["#SwarmRobots", "#NoCompaction", "#Redundancy"]
+      tags: ["#SwarmRobots", "#NoCompaction", "#Redundancy"],
+      isFixGeoVerified: true
     },
     {
       id: "blue-white-pathfinder",
@@ -426,7 +445,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Productores con flotas multimarca.",
       pricing: "Desde $50,000 / Kit",
       category: "agricultura",
-      tags: ["#RetrofitIA", "#LiDAR", "#FleetAgnostic"]
+      tags: ["#RetrofitIA", "#LiDAR", "#FleetAgnostic"],
+      isFixGeoVerified: true
     },
     {
       id: "thorvald",
@@ -445,7 +465,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Productores de frutos rojos y viñedos de invernadero.",
       pricing: "Desde €45,000",
       category: "agricultura",
-      tags: ["#UVTreat", "#GreenhouseRobots", "#PesticideZero"]
+      tags: ["#UVTreat", "#GreenhouseRobots", "#PesticideZero"],
+      isFixGeoVerified: true
     },
     {
       id: "taranis",
@@ -464,7 +485,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Grandes explotaciones y consultores agronómicos de alto nivel.",
       pricing: "Suscripción por Acre",
       category: "agricultura",
-      tags: ["#LeafIntelligence", "#PrecisionAg", "#CropHealth"]
+      tags: ["#LeafIntelligence", "#PrecisionAg", "#CropHealth"],
+      isFixGeoVerified: true
     },
     {
       id: "agroscout",
@@ -483,7 +505,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Procesadores agrícolas y empresas enfocadas en trazabilidad.",
       pricing: "Desde $99/mes",
       category: "agricultura",
-      tags: ["#BioRisks", "#HybridScouting", "#Sustainability"]
+      tags: ["#BioRisks", "#HybridScouting", "#Sustainability"],
+      isFixGeoVerified: true
     },
     {
       id: "onesoil",
@@ -502,7 +525,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Agricultores de todos los tamaños que buscan tecnología accesible.",
       pricing: "GRATUITO / Plan Pro",
       category: "agricultura",
-      tags: ["#FreeAgTech", "#NDVI", "#SatelliteMonitoring"]
+      tags: ["#FreeAgTech", "#NDVI", "#SatelliteMonitoring"],
+      isFixGeoVerified: true
     },
     {
       id: "farmonaut",
@@ -521,7 +545,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Agronegocios que buscan monitoreo satelital asequible y predictivo.",
       pricing: "Planes escalables",
       category: "agricultura",
-      tags: ["#BigAgriData", "#SatelliteIA", "#YieldPrediction"]
+      tags: ["#BigAgriData", "#SatelliteIA", "#YieldPrediction"],
+      isFixGeoVerified: true
     },
     {
       id: "fermata",
@@ -540,7 +565,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Productores de invernaderos y cultivos de alto valor.",
       pricing: "Pricing por cámara",
       category: "agricultura",
-      tags: ["#GreenhouseIA", "#PestDetection", "#ComputerVision"]
+      tags: ["#GreenhouseIA", "#PestDetection", "#ComputerVision"],
+      isFixGeoVerified: true
     },
     {
       id: "johndeere-ops",
@@ -559,7 +585,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Propietarios de flotas John Deere y empresas mecanizadas.",
       pricing: "Gratis / Premium para Pro",
       category: "agricultura",
-      tags: ["#MaquinariaInteligente", "#OpsCenter", "#JDIntegración"]
+      tags: ["#MaquinariaInteligente", "#OpsCenter", "#JDIntegración"],
+      isFixGeoVerified: true
     },
     {
       id: "climatefieldview",
@@ -578,7 +605,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Agricultores comerciales que buscan optimización basada en ciencia de datos.",
       pricing: "Suscripción por área",
       category: "agricultura",
-      tags: ["#BayerAgTech", "#YieldAnalysis", "#DecisionScience"]
+      tags: ["#BayerAgTech", "#YieldAnalysis", "#DecisionScience"],
+      isFixGeoVerified: true
     },
     {
       id: "semios",
@@ -597,7 +625,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Productores de almendras, cítricos y viñedos premium.",
       pricing: "Suscripción por sensor/acre",
       category: "agricultura",
-      tags: ["#IoT", "#Viticultura", "#Microclima"]
+      tags: ["#IoT", "#Viticultura", "#Microclima"],
+      isFixGeoVerified: true
     },
     {
       id: "plantix",
@@ -616,7 +645,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Agricultores de pequeña escala, extensionistas y jardineros.",
       pricing: "GRATUITO",
       category: "agricultura",
-      tags: ["#AIPlantDoctor", "#MobileAg", "#Gratis"]
+      tags: ["#AIPlantDoctor", "#MobileAg", "#Gratis"],
+      isFixGeoVerified: true
     },
     {
       id: "agremo",
@@ -635,7 +665,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Consultores que usan drones para ofrecer servicios de inventario de campo.",
       pricing: "Desde $1,650/año",
       category: "agricultura",
-      tags: ["#DroneAnalytics", "#PlantCounting", "#AerialAnalysis"]
+      tags: ["#DroneAnalytics", "#PlantCounting", "#AerialAnalysis"],
+      isFixGeoVerified: true
     },
     {
       id: "eosda",
@@ -654,7 +685,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Agronegocios y empresas de seguros que gestionan grandes extensiones.",
       pricing: "Suscripción por Hectárea",
       category: "agricultura",
-      tags: ["#RemoteAnalysis", "#VegetationIndex", "#SatelliteScale"]
+      tags: ["#RemoteAnalysis", "#VegetationIndex", "#SatelliteScale"],
+      isFixGeoVerified: true
     },
     {
       id: "cropx",
@@ -673,7 +705,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Productores enfocados en la eficiencia hídrica y gestión de nutrientes.",
       pricing: "Basado en sensores/área",
       category: "agricultura",
-      tags: ["#SoilIntel", "#SmartIrrigation", "#AgData"]
+      tags: ["#SoilIntel", "#SmartIrrigation", "#AgData"],
+      isFixGeoVerified: true
     },
     {
       id: "cropler",
@@ -692,7 +725,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Productores de cultivos de alto valor que requieren vigilancia constante.",
       pricing: "Suscripción por dispositivo",
       category: "agricultura",
-      tags: ["#FieldCameras", "#RealTimeMonitoring", "#VisualAg"]
+      tags: ["#FieldCameras", "#RealTimeMonitoring", "#VisualAg"],
+      isFixGeoVerified: true
     },
     {
       id: "farmbot",
@@ -711,7 +745,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Investigadores, escuelas técnicas y entusiastas del Ag-NoCode.",
       pricing: "Venta de Kit / Open Source",
       category: "agricultura",
-      tags: ["#OpenSourceAg", "#CNCGarming", "#STEM"]
+      tags: ["#OpenSourceAg", "#CNCGarming", "#STEM"],
+      isFixGeoVerified: true
     },
     {
       id: "blue-river",
@@ -730,7 +765,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Explotaciones latifundistas que buscan optimizar rentabilidad y sostenibilidad.",
       pricing: "Venta integrada John Deere",
       category: "agricultura",
-      tags: ["#SeeAndSpray", "#VisionsAI", "#AgriRobotics"]
+      tags: ["#SeeAndSpray", "#VisionsAI", "#AgriRobotics"],
+      isFixGeoVerified: true
     },
     {
       id: "earthdaily",
@@ -749,7 +785,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Aseguradoras agrícolas, agronegocios y analistas de commodities.",
       pricing: "Pricing Enterprise",
       category: "agricultura",
-      tags: ["#SatelliteScience", "#MacroAnalytics", "#YieldForecasting"]
+      tags: ["#SatelliteScience", "#MacroAnalytics", "#YieldForecasting"],
+      isFixGeoVerified: true
     },
     {
       id: "miraterra",
@@ -768,7 +805,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Agricultores regenerativos y consultores de suelos de alto nivel.",
       pricing: "Desde $150/muestra",
       category: "agricultura",
-      tags: ["#SoilMicrobiome", "#DNAAnalysis", "#RegenerativeAg"]
+      tags: ["#SoilMicrobiome", "#DNAAnalysis", "#RegenerativeAg"],
+      isFixGeoVerified: true
     },
     {
       id: "traction-ag",
@@ -787,7 +825,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Fincas corporativas y gestores de activos agrícolas.",
       pricing: "Suscripción Enterprise",
       category: "agricultura",
-      tags: ["#FarmFinance", "#Operations", "#Management"]
+      tags: ["#FarmFinance", "#Operations", "#Management"],
+      isFixGeoVerified: true
     },
     {
       id: "agriwebb",
@@ -806,7 +845,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Ganaderos que buscan profesionalizar la toma de decisiones y trazabilidad.",
       pricing: "Desde planes básicos a Pro",
       category: "agricultura",
-      tags: ["#GanaderíaIA", "#GrazingManagement", "#Livestock"]
+      tags: ["#GanaderíaIA", "#GrazingManagement", "#Livestock"],
+      isFixGeoVerified: true
     },
     {
       id: "indigo-ag",
@@ -825,7 +865,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Productores que buscan rentabilidad extra mediante la sostenibilidad certificada.",
       pricing: "Variables según servicio",
       category: "agricultura",
-      tags: ["#Biologicals", "#CarbonCredits", "#AgriMarket"]
+      tags: ["#Biologicals", "#CarbonCredits", "#AgriMarket"],
+      isFixGeoVerified: true
     },
     {
       id: "aerobotics",
@@ -844,7 +885,8 @@ export const agriculturaMap: MapData = {
       idealPara: "Productores de cítricos, frutos secos y viticultores de precisión.",
       pricing: "Desde $3-5/hectárea/vuelo",
       category: "agricultura",
-      tags: ["#OrchardAnalytics", "#Drones", "#PrecisionFruit"]
+      tags: ["#OrchardAnalytics", "#Drones", "#PrecisionFruit"],
+      isFixGeoVerified: true
     }
   ],
   

@@ -13,7 +13,7 @@ export const inmobiliariasMap: MapData = {
   gradientClass: "bg-gradient-to-br from-[#005A9C]/85 to-[#D4AF37]/85",
   
   // Skill 3: Authority Architecture (Arcane Engine 2.0)
-  guideContent: "<h2>Soberanía Predictiva de Activos</h2><p>En 2026, el sector inmobiliario ha evolucionado hacia la 'Soberanía Predictiva de Activos'. Este mapa audita las infraestructuras de IA que dominan la valoración automatizada (AVM), el staging virtual fotorrealista y la gestión agéntica de leads, eliminando la asimetría de información y maximizando el valor de mercado mediante datos verificables y gemelos digitales.</p>",
+  guideContent: "<h2>Cómo usar IA en el sector inmobiliario en 2026</h2><p>El ecosistema PropTech está evolucionando rápidamente. Este mapa reúne herramientas especializadas para valoración automatizada, generación de leads, documentación digital, análisis de mercado, staging virtual y automatización comercial. Nuestro objetivo es ayudarte a identificar qué soluciones ofrecen más valor según tu caso de uso.</p>",
   guideUrl: "https://tumapaia.com/guia-ia-para-inmobiliarias/",
   selectionUrl: "https://tumapaia.com/seleccion-las-mejores-herramientas-de-ia-para-el-sector-inmobiliario/",
   
@@ -35,7 +35,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Administradores de propiedades comerciales y clubes de alto nivel.",
       pricing: "Suscripción personalizada",
       category: "inmobiliarias",
-      tags: ["#SmartAccess", "#EdgeAI", "#AssetManagement"]
+      tags: ["#SmartAccess", "#EdgeAI", "#AssetManagement"],
+      isFixGeoVerified: true
     },
     {
       id: "inspectmindai",
@@ -53,7 +54,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Ingenieros, contratistas e inspectores de construcción.",
       pricing: "Desde 3 informes gratis",
       category: "inmobiliarias",
-      tags: ["#Inspección", "#InformesAuto", "#Construcción"]
+      tags: ["#Inspección", "#InformesAuto", "#Construcción"],
+      isFixGeoVerified: true
     },
     {
       id: "virtualstagingai",
@@ -71,7 +73,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Agentes inmobiliarios que necesitan acelerar la venta de propiedades vacías.",
       pricing: "Desde $16/mes",
       category: "inmobiliarias",
-      tags: ["#VisualStaging", "#MarketingPropiedades", "#Fotorrealismo"]
+      tags: ["#VisualStaging", "#MarketingPropiedades", "#Fotorrealismo"],
+      isFixGeoVerified: true
     },
     {
       id: "zestimate",
@@ -89,7 +92,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Propietarios y compradores buscando un punto de referencia de mercado.",
       pricing: "GRATUITO",
       category: "inmobiliarias",
-      tags: ["#AVM", "#Valoración", "#BigData"]
+      tags: ["#AVM", "#Valoración", "#BigData"],
+      isFixGeoVerified: true
     },
     {
       id: "enodo",
@@ -107,7 +111,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Inversores multifamiliares y gestores de fondos inmobiliarios.",
       pricing: "Suscripción personalizada",
       category: "inmobiliarias",
-      tags: ["#InvestmentAI", "#PredictiveAnalytics", "#RealEstate"]
+      tags: ["#InvestmentAI", "#PredictiveAnalytics", "#RealEstate"],
+      isFixGeoVerified: true
     },
     {
       id: "autohost",
@@ -125,7 +130,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Gestores de alquiler de corto y largo plazo con carteras masivas.",
       pricing: "Pricing por volumen",
       category: "inmobiliarias",
-      tags: ["#TenantScreening", "#Security", "#RiskManagement"]
+      tags: ["#TenantScreening", "#Security", "#RiskManagement"],
+      isFixGeoVerified: true
     },
     {
       id: "propic",
@@ -143,7 +149,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Agencias inmobiliarias que buscan escalar sin aumentar personal.",
       pricing: "Suscripción Pro",
       category: "inmobiliarias",
-      tags: ["#ConversationalAI", "#LeadCapture", "#AgencyScale"]
+      tags: ["#ConversationalAI", "#LeadCapture", "#AgencyScale"],
+      isFixGeoVerified: true
     },
     {
       id: "homesnap",
@@ -161,7 +168,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Agentes inmobiliarios residenciales proactivos.",
       pricing: "Freemium para afiliados",
       category: "inmobiliarias",
-      tags: ["#MLSData", "#AgentTools", "#MarketInsights"]
+      tags: ["#MLSData", "#AgentTools", "#MarketInsights"],
+      isFixGeoVerified: true
     },
     {
       id: "streettext",
@@ -179,7 +187,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Equipos de ventas que necesitan escalar la captación de propiedades.",
       pricing: "Desde $199/mes",
       category: "inmobiliarias",
-      tags: ["#LeadGen", "#FacebookAds", "#Automation"]
+      tags: ["#LeadGen", "#FacebookAds", "#Automation"],
+      isFixGeoVerified: true
     },
     {
       id: "listingai",
@@ -197,7 +206,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Corredores inmobiliarios y gestores de marketing de listados.",
       pricing: "Desde $19/mes",
       category: "inmobiliarias",
-      tags: ["#Copywriting", "#Listings", "#Marketing"]
+      tags: ["#Copywriting", "#Listings", "#Marketing"],
+      isFixGeoVerified: true
     },
     {
       id: "structurely",
@@ -215,7 +225,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Equipos de ventas con alto volumen de consultas entrantes.",
       pricing: "Desde $199/mes",
       category: "inmobiliarias",
-      tags: ["#SMSMarketing", "#LeadNurturing", "#AppointmentSetting"]
+      tags: ["#SMSMarketing", "#LeadNurturing", "#AppointmentSetting"],
+      isFixGeoVerified: true
     },
     {
       id: "lenderlogix",
@@ -233,7 +244,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Prestamistas e instituciones financieras que buscan escala operativa.",
       pricing: "Pricing Empresarial",
       category: "inmobiliarias",
-      tags: ["#MortgageAI", "#Compliance", "#FinTech"]
+      tags: ["#MortgageAI", "#Compliance", "#FinTech"],
+      isFixGeoVerified: true
     },
     {
       id: "housecanary",
@@ -251,7 +263,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Inversores institucionales y analistas de mercado que requieren datos innegociables.",
       pricing: "Suscripción Profesional",
       category: "inmobiliarias",
-      tags: ["#MarketAnalysis", "#AVM", "#DataScience"]
+      tags: ["#MarketAnalysis", "#AVM", "#DataScience"],
+      isFixGeoVerified: true
     },
     {
       id: "pandadoc",
@@ -269,7 +282,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Agentes y equipos de transacciones que buscan digitalización total.",
       pricing: "Desde $19/user",
       category: "inmobiliarias",
-      tags: ["#LegalAutomation", "#Contracts", "#ESign"]
+      tags: ["#LegalAutomation", "#Contracts", "#ESign"],
+      isFixGeoVerified: true
     },
     {
       id: "pricelabs",
@@ -287,7 +301,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Gestores de Airbnb y empresas de hospitalidad de alto volumen.",
       pricing: "Desde $19.99/propiedad",
       category: "inmobiliarias",
-      tags: ["#RevenueManagement", "#DynamicPricing", "#AirbnbIA"]
+      tags: ["#RevenueManagement", "#DynamicPricing", "#AirbnbIA"],
+      isFixGeoVerified: true
     },
     {
       id: "energyiq",
@@ -305,7 +320,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Desarrolladores sustentables e inversores de impacto (ESG).",
       pricing: "Evaluación desde $75",
       category: "inmobiliarias",
-      tags: ["#Sustainability", "#EnergyEfficiency", "#ESG"]
+      tags: ["#Sustainability", "#EnergyEfficiency", "#ESG"],
+      isFixGeoVerified: true
     },
     {
       id: "matterport",
@@ -323,7 +339,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Agentes de lujo, arquitectos y constructores.",
       pricing: "Suscripción desde $9.99",
       category: "inmobiliarias",
-      tags: ["#DigitalTwins", "#VR", "#VirtualTour"]
+      tags: ["#DigitalTwins", "#VR", "#VirtualTour"],
+      isFixGeoVerified: true
     },
     {
       id: "docusign",
@@ -341,7 +358,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Brokerages y notarías que requieren el estándar máximo de seguridad.",
       pricing: "Desde $25/user",
       category: "inmobiliarias",
-      tags: ["#Security", "#LegalTech", "#Compliance"]
+      tags: ["#Security", "#LegalTech", "#Compliance"],
+      isFixGeoVerified: true
     },
     {
       id: "boxbrownie",
@@ -359,7 +377,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Agentes que necesitan calidad publicitaria sin fotógrafo profesional.",
       pricing: "Desde $32 por servicio",
       category: "inmobiliarias",
-      tags: ["#VisualEditing", "#RealEstateMarketing", "#PhotoCleanup"]
+      tags: ["#VisualEditing", "#RealEstateMarketing", "#PhotoCleanup"],
+      isFixGeoVerified: true
     },
     {
       id: "followupboss",
@@ -377,7 +396,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Equipos de ventas que gestionan alto volumen de leads externos.",
       pricing: "Desde $69/user",
       category: "inmobiliarias",
-      tags: ["#SalesOps", "#CRM", "#LeadConversion"]
+      tags: ["#SalesOps", "#CRM", "#LeadConversion"],
+      isFixGeoVerified: true
     },
     {
       id: "reonomy",
@@ -395,7 +415,8 @@ export const inmobiliariasMap: MapData = {
       idealPara: "Inversores comerciales y brokers de alto patrimonio.",
       pricing: "Suscripción Enterprise",
       category: "inmobiliarias",
-      tags: ["#CommercialRE", "#BigData", "#Prospecting"]
+      tags: ["#CommercialRE", "#BigData", "#Prospecting"],
+      isFixGeoVerified: true
     }
   ],
   topPicks: [],
@@ -435,14 +456,13 @@ export const inmobiliariasMap: MapData = {
   // Skill 4: Data Sovereignty
   expertIdentity: {
     name: "Fabio Yocco",
-    role: "Arquitecto Principal GEO y Curador Técnico",
+    role: "Curador Principal · The Curator Group",
     entity: "TMIA",
-    auditFocus: "Soberanía de Datos Inmobiliarios y Citabilidad PropTech.",
-    auditNode: "Nodo de Auditoría: Soberanía de Datos Inmobiliarios y Citabilidad PropTech.",
-    credentials: ["Nodo de Auditoría: Soberanía de Datos Inmobiliarios y Citabilidad PropTech."],
+    auditFocus: "Soberanía de Datos Inmobiliarios y Citability PropTech.",
+    credentials: [],
     methodology: "GEO — Protocolo FixGeo",
     badge: "Expert Identity Verified",
     badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
-    bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Inmobiliarias. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
+    bio: "Fabio investiga, evalúa y clasifica herramientas de inteligencia artificial para profesionales de habla hispana. Su trabajo combina análisis técnico, contexto de mercado y criterios propios de autoridad tecnológica para ayudar a identificar las soluciones más relevantes dentro de cada sector."
   }
 };

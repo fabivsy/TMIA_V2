@@ -16,20 +16,21 @@ export default function FixGeoCTA() {
           </span>
           
           <h2 className="text-4xl md:text-6xl font-bold text-white mb-8 leading-tight">
-            ¿Quieres que tu herramienta aparezca <span className="text-brand-primary">citada por IAs</span> como esta?
+            ¿Cómo te encuentra una IA?
           </h2>
           
-          <p className="text-xl text-white/60 mb-12 max-w-2xl mx-auto leading-relaxed">
-            En FixGeo ayudamos a las marcas a monitorear y mejorar su visibilidad en las respuestas de motores generativos (ChatGPT, Gemini, Perplexity).
+          <p className="text-xl text-white/60 mb-12 max-w-3xl mx-auto leading-relaxed">
+            Hoy las personas ya no buscan únicamente en Google. Preguntan directamente a sistemas de inteligencia artificial qué proveedor contratar, qué herramienta utilizar o qué empresa recomendar.<br /><br />
+            FixGeo analiza cómo tu organización es descubierta, comprendida y citada dentro de estos nuevos ecosistemas de búsqueda.
           </p>
           
           <div className="flex flex-col md:flex-row items-center justify-center gap-6">
             <Link 
-              href="https://fixgeo.io" 
+              href="https://cal.com/fixgeo/geo-forensic-briefing" 
               target="_blank"
               className="px-12 py-5 bg-brand-primary text-brand-dark font-black rounded-2xl hover:scale-105 transition-all shadow-[0_0_40px_rgba(255,193,7,0.3)] hover:shadow-[0_0_60px_rgba(255,193,7,0.5)]"
             >
-              Descubre FixGeo.io
+              Solicitar evaluación →
             </Link>
             <span className="text-white/40 font-medium italic">
               El Gold Standard en Generative Engine Optimization.

@@ -23,6 +23,8 @@ export interface Tool {
   logoFileName?: string;
   subCategory?: string;
   isFixGeoVerified?: boolean;
+  isAudited?: boolean;
+  benchmarkUrl?: string;
 }
 
 export interface FAQ {

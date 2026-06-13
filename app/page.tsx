@@ -46,14 +46,83 @@ export default function Home() {
           <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-white/10 to-transparent" />
           <div className="container mx-auto px-6">
             <div className="max-w-4xl mx-auto text-center">
-              <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+
+              {/* Authority badge */}
+              <p
+                className="mb-4 tracking-widest uppercase"
+                style={{
+                  fontSize: "0.7rem",
+                  color: "rgba(255,193,7,0.55)",
+                  fontFamily: "var(--font-poppins)",
+                  letterSpacing: "0.18em",
+                }}
+              >
+                Investigación independiente&nbsp;&nbsp;•&nbsp;&nbsp;Curación sectorial&nbsp;&nbsp;•&nbsp;&nbsp;Protocolo FixGeo™
+              </p>
+
+              <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
                 Nuestra <span className="text-brand-primary">Filosofía</span>
               </h2>
-              <p className="text-xl text-white/60 leading-relaxed mb-12">
-                No somos un listado genérico. Somos curadores. Cada herramienta que recomendamos
-                ha sido evaluada bajo un protocolo riguroso que mide rendimiento real,
-                no promesas de marketing. Tu tiempo es valioso — nosotros hacemos la investigación.
-              </p>
+
+              {/* Compressed philosophy text */}
+              <div className="text-left md:text-center mb-5 space-y-4">
+                <p className="text-xl text-white/70 leading-relaxed font-semibold">
+                  No somos un listado genérico. Somos curadores.
+                </p>
+                <p className="text-lg text-white/55 leading-relaxed">
+                  Cada herramienta incluida en TuMapaIA pasa por un proceso de investigación, análisis y evaluación independiente realizado por <span className="text-white/80 font-medium">The Curator Group</span>.
+                </p>
+                <p className="text-lg text-white/55 leading-relaxed">
+                  Nuestro objetivo es ayudar a profesionales de habla hispana a identificar las soluciones más relevantes para sus necesidades mediante información clara, verificable y contextualizada.
+                </p>
+                <p className="text-lg text-white/70 leading-relaxed font-semibold">
+                  Tu tiempo es valioso. Nosotros hacemos la investigación.
+                </p>
+              </div>
+
+              {/* Methodology link — subtle, sits between philosophy and eval box */}
+              <div className="mb-10">
+                <a
+                  href="https://fixgeo.io"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-sm font-medium transition-all duration-200 hover:gap-2"
+                  style={{
+                    color: "var(--fixgeo-cyan)",
+                    fontFamily: "var(--font-poppins)",
+                    letterSpacing: "0.01em",
+                  }}
+                >
+                  Conoce nuestra metodología →
+                </a>
+              </div>
+
+              {/* "Cómo evaluamos" info-box */}
+              <div
+                className="rounded-2xl p-8 text-left mb-14 space-y-4"
+                style={{
+                  background: "rgba(255,255,255,0.03)",
+                  border: "1px solid rgba(255,255,255,0.08)",
+                  borderLeft: "3px solid var(--fixgeo-cyan)",
+                }}
+              >
+                <h3
+                  className="tracking-wide uppercase"
+                  style={{ color: "var(--fixgeo-cyan)", fontFamily: "var(--font-poppins)", fontSize: "0.72rem", fontWeight: 600, letterSpacing: "0.15em", marginBottom: "0.75rem" }}
+                >
+                  Cómo evaluamos las herramientas
+                </h3>
+                <p className="text-white/50 leading-relaxed text-base">
+                En TuMapaIA evaluamos herramientas de IA mediante investigación independiente, análisis sectorial y criterios propios de autoridad tecnológica.
+                </p>
+                <p className="text-white/50 leading-relaxed text-base">
+                  Algunas empresas también son evaluadas mediante el <span className="text-white/70">Protocolo FixGeo™</span>, un estándar desarrollado por <span className="text-white/70">The Curator Group</span> para medir visibilidad, atribución y descubrimiento dentro de ecosistemas de inteligencia artificial.
+                </p>
+                <p className="text-white/50 leading-relaxed text-base">
+                Nuestro objetivo es ayudarte a identificar las soluciones más relevantes con información clara, verificable y contextualizada.
+                </p>
+              </div>
+
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="p-8 bg-white/5 rounded-3xl border border-white/10">
                   <div className="text-4xl mb-4">🔬</div>
