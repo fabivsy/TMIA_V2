@@ -506,7 +506,7 @@ export const productividadMap: MapData = {
     credentials: ["Nodo de Auditoría: Métricas de Resultado Cognitivo y Soberanía de Datos de Productividad."],
     methodology: "GEO — Protocolo FixGeo",
     badge: "Expert Identity Verified",
-    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    badgeSubtext: "EVALUADO BAJO EL PROTOCOLO FIXGEO™",
     bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Productividad. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

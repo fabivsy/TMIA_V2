@@ -9,11 +9,11 @@ interface ExpertIdentityBlockProps {
 export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockProps) {
   const renderWithFixGeoLink = (text: string | undefined) => {
     if (!text) return null;
-    const regex = /(PROTOCOLO FIXGEO|Protocolo FixGeo)/gi;
+    const regex = /(PROTOCOLO FIXGEO™?|Protocolo FixGeo™?)/gi;
     const parts = text.split(regex);
     
     return parts.map((part, i) => {
-      if (part.toLowerCase() === "protocolo fixgeo") {
+      if (/^protocolo fixgeo/i.test(part)) {
         return (
           <a
             key={i}
@@ -72,11 +72,26 @@ export default function ExpertIdentityBlock({ identity }: ExpertIdentityBlockPro
                 <p className="text-brand-primary text-sm font-bold uppercase tracking-widest mt-1">
                   {identity.role}
                 </p>
-                <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider mt-1">
-                  {renderWithFixGeoLink(identity.badgeSubtext || "Operado bajo el Protocolo FixGeo")}
+                <p className="text-gray-500 text-xs font-semibold uppercase tracking-wider mt-1" style={{ fontFamily: "'JetBrains Mono', 'Courier New', monospace" }}>
+                  {renderWithFixGeoLink(identity.badgeSubtext || "EVALUADO BAJO EL PROTOCOLO FIXGEO™")}
                 </p>
               </div>
             </div>
+
+            {/* Introductory context */}
+            <p className="text-gray-500 leading-relaxed text-[13px] mb-6 max-w-3xl italic border-l-2 border-brand-primary/30 pl-4">
+              Algunas organizaciones incluidas en este mapa también son analizadas mediante el{" "}
+              <a
+                href="https://cal.com/fixgeo/geo-forensic-briefing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--fixgeo-cyan)] font-bold hover:brightness-125 hover:underline transition-all"
+                style={{ textShadow: "0 0 8px rgba(0, 209, 255, 0.4)" }}
+              >
+                Protocolo FixGeo™
+              </a>
+              , un estándar desarrollado para medir visibilidad, atribución y descubrimiento en ecosistemas de inteligencia artificial.
+            </p>
 
             {/* Bio */}
             <p className="text-gray-400 leading-relaxed text-[15px] mb-10 max-w-3xl">

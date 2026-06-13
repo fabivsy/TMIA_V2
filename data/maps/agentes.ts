@@ -1053,7 +1053,7 @@ export const agentesMap: MapData = {
     credentials: ["Nodo de Auditoría: Flujo Lógico Autónomo y Fiabilidad de Ejecución."],
     methodology: "GEO — Protocolo FixGeo",
     badge: "Expert Identity Verified",
-    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    badgeSubtext: "EVALUADO BAJO EL PROTOCOLO FIXGEO™",
     bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Agentes. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

@@ -462,7 +462,7 @@ export const inmobiliariasMap: MapData = {
     credentials: [],
     methodology: "GEO — Protocolo FixGeo",
     badge: "Expert Identity Verified",
-    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    badgeSubtext: "EVALUADO BAJO EL PROTOCOLO FIXGEO™",
     bio: "Fabio investiga, evalúa y clasifica herramientas de inteligencia artificial para profesionales de habla hispana. Su trabajo combina análisis técnico, contexto de mercado y criterios propios de autoridad tecnológica para ayudar a identificar las soluciones más relevantes dentro de cada sector."
   }
 };

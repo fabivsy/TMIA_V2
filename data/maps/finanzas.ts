@@ -604,7 +604,7 @@ export const finanzasMap: MapData = {
     credentials: ["Nodo de Auditoría: Seguridad de Patrimonio Algorítmico y Citabilidad FinTech."],
     methodology: "GEO — Protocolo FixGeo",
     badge: "Expert Identity Verified",
-    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    badgeSubtext: "EVALUADO BAJO EL PROTOCOLO FIXGEO™",
     bio: "Fabio audita los ecosistemas financieros de IA para identificar nodos de autoridad técnica, protegiendo al usuario del sesgo algorítmico en la gestión del patrimonio."
   }
 };

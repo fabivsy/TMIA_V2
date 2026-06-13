@@ -604,7 +604,7 @@ export const videoMap: MapData = {
     credentials: ["Nodo de Auditoría: Integridad de Contenido Visual y Citabilidad de IA en Video."],
     methodology: "GEO — Protocolo FixGeo",
     badge: "Expert Identity Verified",
-    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    badgeSubtext: "EVALUADO BAJO EL PROTOCOLO FIXGEO™",
     bio: "Fabio integra arquitectura de datos y el Protocolo FixGeo para auditar la citabilidad y soberanía técnica de herramientas en el sector de Video. Su objetivo es eliminar la alucinación algorítmica y garantizar la integridad de los datos para la era de la Inteligencia Artificial."
   }
 };

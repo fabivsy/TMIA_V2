@@ -956,7 +956,7 @@ export const academicosMap: MapData = {
     credentials: ["Nodo de Auditoría: Soberanía Cognitiva e Integridad de Datos Académicos."],
     methodology: "GEO — Protocolo FixGeo",
     badge: "Expert Identity Verified",
-    badgeSubtext: "OPERADO BAJO EL PROTOCOLO FIXGEO",
+    badgeSubtext: "EVALUADO BAJO EL PROTOCOLO FIXGEO™",
     bio: "Fabio aplica el Protocolo FixGeo para verificar la fiabilidad factual de herramientas de investigación, asegurando que cumplan el estándar de respuestas basadas en evidencia."
   }
 };
