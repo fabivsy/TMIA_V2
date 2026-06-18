@@ -378,8 +378,8 @@ p.takeaway-box {
             </button>
 
             <div class="tumapa-nav-links" id="mobile-menu">
-                <a href="#mapas">Mapas</a>
-                <a href="https://tumapaia.com/blog/">Guías</a>
+                <a href="/#mapas">Mapas</a>
+                <a href="https://tumapaia.com/indice-de-guias/">Guías</a>
             </div>
 
         </div>
@@ -452,11 +452,24 @@ p.takeaway-box {
     document.addEventListener('DOMContentLoaded', function () {
         const hamburgerButton = document.getElementById('hamburger-button');
         const mobileMenu = document.getElementById('mobile-menu');
+        
+        function closeMenu() {
+            hamburgerButton.classList.remove('is-active');
+            mobileMenu.classList.remove('is-active');
+            hamburgerButton.setAttribute('aria-expanded', 'false');
+        }
+
         hamburgerButton.addEventListener('click', function () {
             hamburgerButton.classList.toggle('is-active');
             mobileMenu.classList.toggle('is-active');
             const isExpanded = mobileMenu.classList.contains('is-active');
             hamburgerButton.setAttribute('aria-expanded', isExpanded);
+        });
+
+        // Close menu when clicking links in mobile menu
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', closeMenu);
         });
     });
 </script>

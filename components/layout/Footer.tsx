@@ -31,12 +31,12 @@ export default function Footer() {
             <h4 className="text-white font-bold mb-6 text-lg">Explorar</h4>
             <ul className="flex flex-col gap-4">
               <li>
-                <Link href="#mapas" className="text-white/60 hover:text-brand-primary transition-colors">
+                <Link href="/#mapas" className="text-white/60 hover:text-brand-primary transition-colors">
                   Mapas de IA
                 </Link>
               </li>
               <li>
-                <Link href="https://tumapaia.com/blog/" className="text-white/60 hover:text-brand-primary transition-colors">
+                <Link href="https://tumapaia.com/indice-de-guias/" className="text-white/60 hover:text-brand-primary transition-colors">
                   Guías y Tutoriales
                 </Link>
               </li>

@@ -44,13 +44,13 @@ export default function Navbar() {
         {/* Desktop Links */}
         <div className="hidden md:flex items-center gap-8">
           <Link
-            href="#mapas"
+            href="/#mapas"
             className="font-medium text-white/80 hover:text-brand-primary transition-colors"
           >
             Mapas
           </Link>
           <Link
-            href="https://tumapaia.com/blog/"
+            href="https://tumapaia.com/indice-de-guias/"
             className="font-medium text-white/80 hover:text-brand-primary transition-colors"
           >
             Guías
@@ -104,14 +104,14 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden bg-brand-dark border-b border-white/10 px-6 py-8 flex flex-col gap-6 animate-in slide-in-from-top duration-300">
           <Link
-            href="#mapas"
+            href="/#mapas"
             className="text-lg font-medium text-white/80"
             onClick={() => setIsMobileMenuOpen(false)}
           >
             Mapas
           </Link>
           <Link
-            href="https://tumapaia.com/blog/"
+            href="https://tumapaia.com/indice-de-guias/"
             className="text-lg font-medium text-white/80"
             onClick={() => setIsMobileMenuOpen(false)}
           >
