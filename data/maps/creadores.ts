@@ -28,7 +28,7 @@ export const creadoresMap: MapData = {
     {
       id: "midjourney",
       name: "Midjourney",
-      logoFileName: "creadores_logos/midjourney.webp",
+      logoFileName: "midjourney.webp",
       url: "https://midjourney.com",
       slogan: "El estándar de oro en estética visual y generación de imágenes.",
       shortDescription: "Generación de activos visuales de alta fidelidad con control artístico avanzado.",
@@ -46,7 +46,7 @@ export const creadoresMap: MapData = {
     {
       id: "flux-1",
       name: "FLUX.1",
-      logoFileName: undefined,
+      logoFileName: "back_forest.webp",
       url: "https://blackforestlabs.ai/",
       slogan: "Potencia de código abierto con realismo fotográfico extremo.",
       shortDescription: "El nuevo estándar en realismo y fidelidad de prompts complejos.",
@@ -64,7 +64,7 @@ export const creadoresMap: MapData = {
     {
       id: "ideogram-2",
       name: "Ideogram 2.0",
-      logoFileName: undefined,
+      logoFileName: "ideogram.webp",
       url: "https://ideogram.ai/",
       slogan: "La IA definitiva para tipografía y diseño gráfico.",
       shortDescription: "Líder en generación de texto legible y layouts de diseño profesional.",

@@ -443,7 +443,7 @@ export const productividadMap: MapData = {
     {
       id: "opal",
       name: "Opal by Google",
-      logoFileName: "productividad_logos_for_v2/opal_logo.webp",
+      logoFileName: "productividad_logos_for_v2/opal.webp",
       url: "https://opal.withgoogle.com/",
       slogan: "Agentes de flujo de trabajo que automatizan tareas complejas.",
       shortDescription: "Agentes de Google para automatización de procesos multi-paso e investigación de perfiles de negocio.",

@@ -468,7 +468,7 @@ export const videoMap: MapData = {
     {
       id: "obsstudio",
       name: "OBS Studio",
-      logoFileName: "video_logos/obsstudio.webp",
+      logoFileName: "video_logos/obs_studio.webp",
       url: "https://obsproject.com/es",
       slogan: "Streaming y grabación gratuita con plugins de IA.",
       shortDescription: "Software de streaming open-source altamente personalizable con IA.",

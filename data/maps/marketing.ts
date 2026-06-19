@@ -76,7 +76,7 @@ export const marketingMap: MapData = {
     {
       id: "midjourney-marketing",
       name: "Midjourney",
-      logoFileName: "midjourney_.webp",
+      logoFileName: "midjourney.webp",
       url: "https://www.midjourney.com/",
       slogan: "Genera imágenes profesionales para branding.",
       shortDescription: "Laboratorio de investigación y red neuronal para la síntesis de imágenes fotorrealistas y dirección de arte.",

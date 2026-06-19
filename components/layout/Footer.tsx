@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-brand-dark border-top border-white/10 py-20">
+    <footer className="bg-brand-dark border-t border-white/10 py-20">
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-4 gap-12 mb-16">
           <div className="col-span-2">
@@ -22,34 +22,37 @@ export default function Footer() {
                 Tu Mapa <span className="text-[#D4AF37]">IA</span>
               </span>
             </Link>
-            <p className="text-white/60 max-w-sm text-lg leading-relaxed">
-              Navegando el universo de la Inteligencia Artificial, juntos. La herramienta es artificial, la inteligencia es tuya.
-            </p>
+            <div className="space-y-4 max-w-sm">
+              <p className="text-white/90 font-semibold text-lg leading-relaxed">
+                Inteligencia Aplicada para la Era de la IA.
+              </p>
+              <p className="text-white/60 text-sm leading-relaxed">
+                Mapas, análisis y estrategias para profesionales que buscan aplicar la Inteligencia Artificial con criterio, no seguir tendencias.
+              </p>
+              <p className="text-brand-primary text-sm font-medium italic">
+                La herramienta es artificial. La inteligencia es tuya.
+              </p>
+            </div>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6 text-lg">Explorar</h4>
+            <h4 className="text-white font-bold mb-6 text-sm tracking-wider uppercase">Explorar</h4>
             <ul className="flex flex-col gap-4">
               <li>
-                <Link href="/#mapas" className="text-white/60 hover:text-brand-primary transition-colors">
-                  Mapas de IA
+                <Link href="/" className="text-white/60 hover:text-brand-primary transition-colors">
+                  Inicio
                 </Link>
               </li>
               <li>
                 <Link href="https://tumapaia.com/indice-de-guias/" className="text-white/60 hover:text-brand-primary transition-colors">
-                  Guías y Tutoriales
-                </Link>
-              </li>
-              <li>
-                <Link href="#newsletter" className="text-white/60 hover:text-brand-primary transition-colors">
-                  Comunidad
+                  Índice de Guías
                 </Link>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-white font-bold mb-6 text-lg">Legal</h4>
+            <h4 className="text-white font-bold mb-6 text-sm tracking-wider uppercase">Legal</h4>
             <ul className="flex flex-col gap-4">
               <li>
                 <Link href="https://tumapaia.com/terminos-y-condiciones/" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-brand-primary transition-colors">
@@ -65,13 +68,8 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-white/10 flex flex-col md:row justify-between items-center gap-6 text-white/40 text-sm">
-          <p>© 2025 The Curator Group LLC. Todos los derechos reservados.</p>
-          <div className="flex gap-6">
-            <Link href="https://x.com/tumapaia" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors">X</Link>
-            <Link href="https://linkedin.com/company/tumapaia/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors">LinkedIn</Link>
-            <Link href="https://www.instagram.com/tumapaia/" target="_blank" rel="noopener noreferrer" className="hover:text-brand-primary transition-colors">Instagram</Link>
-          </div>
+        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-6 text-white/40 text-sm">
+          <p>© 2026 The Curator Group LLC. Investigación, Curaduría y Protocolo FixGeo™.</p>
         </div>
       </div>
     </footer>
